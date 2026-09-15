@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cpu-egosmooth"
-version = "1.0.0"
+version = "1.0.1"
 description = "Code and reproducibility materials for studying accuracy-constrained post-processing of ego-trajectory predictions."
 authors = [
     {name = "Kexin Zhu"},

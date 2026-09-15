@@ -7,7 +7,7 @@ def test_citation_cff_has_required_software_fields():
     citation = yaml.safe_load(Path("CITATION.cff").read_text(encoding="utf-8"))
     assert citation["cff-version"] == "1.2.0"
     assert citation["type"] == "software"
-    assert citation["version"] == "1.0.0"
+    assert citation["version"] == "1.0.1"
     assert citation["title"] == (
         "Accuracy-Constrained Evaluation of Geometric Effects in Short-Horizon "
         "Open-Loop Ego-Trajectory Post-Processing"

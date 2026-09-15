@@ -10,5 +10,5 @@ authors:
   - family-names: "Xu"
     given-names: "Xu"
     orcid: "https://orcid.org/0000-0003-3602-1391"
-version: "1.0.0"
+version: "1.0.1"
 repository-code: "https://github.com/xin259663-star/cpu-egosmooth"
