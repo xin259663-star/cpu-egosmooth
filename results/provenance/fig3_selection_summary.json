@@ -1,0 +1,204 @@
+{
+  "status": "REAL_BEV_GENERATED_FROM_OFFICIAL_NUSCENES_SEMANTIC_PRIOR",
+  "manual_override": false,
+  "data_scope": {
+    "test_windows": 2901,
+    "test_scenes": 93,
+    "test_logs": 7,
+    "formal_runs": 50
+  },
+  "primary_key": [
+    "run_id",
+    "scene_token",
+    "sample_token"
+  ],
+  "coordinate_convention": {
+    "stored": "ego-centric local; x forward, y left; final history point at origin",
+    "display": "horizontal=lateral y, vertical=longitudinal x",
+    "map_transform": "global = anchor_translation + R(anchor_yaw) @ local"
+  },
+  "map_source": {
+    "asset_type": "official nuScenes semantic-prior raster",
+    "resolution_m_per_pixel": 0.1,
+    "expansion_lane_layers_available": false,
+    "surrounding_agent_annotations_available": false,
+    "note": "No lane or agent geometry was invented; only the official semantic prior is shown."
+  },
+  "reference_run": {
+    "robust_scale": {
+      "delta_ade_FR": {
+        "median": -0.0008192872268604973,
+        "q1": -0.0021676971389151993,
+        "q3": -0.00023326139937374183,
+        "iqr": 0.0019344357395414576,
+        "zero_iqr_fallback_to_one": false
+      },
+      "delta_fde_FR": {
+        "median": -0.0008897710130278931,
+        "q1": -0.002048040626300139,
+        "q3": -4.734695984418534e-05,
+        "iqr": 0.002000693666455954,
+        "zero_iqr_fallback_to_one": false
+      },
+      "delta_shape_FR": {
+        "median": -0.7083474354497458,
+        "q1": -1.0290392538682622,
+        "q3": -0.5135931926674887,
+        "iqr": 0.5154460612007735,
+        "zero_iqr_fallback_to_one": false
+      },
+      "delta_ade_SF": {
+        "median": 0.0,
+        "q1": -0.0018928032561196882,
+        "q3": 0.0,
+        "iqr": 0.0018928032561196882,
+        "zero_iqr_fallback_to_one": false
+      },
+      "delta_fde_SF": {
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0013946879866023026,
+        "iqr": 0.0013946879866023026,
+        "zero_iqr_fallback_to_one": false
+      },
+      "delta_shape_SF": {
+        "median": -0.027370696548865918,
+        "q1": -0.1120107846442266,
+        "q3": 0.0,
+        "iqr": 0.1120107846442266,
+        "zero_iqr_fallback_to_one": false
+      }
+    },
+    "selected": {
+      "run_id": "P2B_042_log_primary_PositionalTransformer_s1",
+      "model": "PositionalTransformer",
+      "seed": 1,
+      "delta_ade_FR": -0.0005175839896210369,
+      "delta_fde_FR": -0.00047119843444000533,
+      "delta_shape_FR": -0.5160475427043004,
+      "delta_ade_SF": -0.0007093689650360976,
+      "delta_fde_SF": 0.00047119843444000533,
+      "delta_shape_SF": -0.02643883674617647,
+      "selected_smoother": "qreg_l1",
+      "selected_family": "QuadraticRegularization",
+      "selected_params": "{\"lam\": 1.0}",
+      "endpoints_fixed": true,
+      "distance_to_median": 0.6796669429179533,
+      "eligible_reference": true,
+      "rank": 1
+    }
+  },
+  "case_selection": {
+    "manual_override": false,
+    "panel_a": {
+      "criterion": "Closest negative Fixed-minus-Raw Shape change to the negative-change median; accuracy-change tie-break.",
+      "median_negative_delta_shape_FR": -0.32368411878002357,
+      "negative_candidate_count": 2705
+    },
+    "panel_b": {
+      "criterion": "Small Fixed-minus-Raw ADE/FDE change with the most negative non-outer-fence Shape change.",
+      "quantile_used": 0.1,
+      "abs_delta_ADE_threshold": 0.00026525860734999407,
+      "abs_delta_FDE_threshold": 0.0029581855198454257,
+      "Tukey_outer_fence_delta_shape_FR": -2.0632017745239994,
+      "candidate_count": 23
+    },
+    "panel_c": {
+      "criterion": "Fixed-minus-Raw positive-tail severity nearest one, preferring negative Shape change.",
+      "P95_positive_delta_ADE": 0.008277336234303184,
+      "P95_positive_delta_FDE": 0.04103809683097934,
+      "severity_band_used": [
+        0.9,
+        1.1
+      ]
+    },
+    "panel_d": {
+      "criterion": "Selected-minus-Fixed sign pattern (-,+,-), then robust distance to the all-window median effect vector.",
+      "selected_smoother": "qreg_l1",
+      "median_vector": {
+        "delta_ade_SF": 0.0021263227764737325,
+        "delta_fde_SF": 0.004333788712822084,
+        "delta_shape_SF": -0.07773797468394328
+      },
+      "iqr_vector": {
+        "delta_ade_SF": 0.01425415449678702,
+        "delta_fde_SF": 0.017442398406906756,
+        "delta_shape_SF": 0.14038731975386076
+      },
+      "preferred_candidate_count": 395,
+      "fallback": null,
+      "sign_combinations_if_fallback": null
+    }
+  },
+  "selected_windows": [
+    {
+      "panel": "a",
+      "run_id": "P2B_042_log_primary_PositionalTransformer_s1",
+      "scene_token": "36e3167610cc48eabcaad06a72479ac7",
+      "sample_token": "e7eb475f0434413fa8f207a2fc113a06",
+      "window_index": 9,
+      "log_token": "69271ec7af1f446ca16820ac46d2047a",
+      "map_location": "boston-seaport",
+      "map_token": "36092f0b03a857c6a3403e25b4b7aab3",
+      "ego_global_x": 1444.8146395712877,
+      "ego_global_y": 926.264390042933,
+      "ego_global_yaw": 2.436412043190594,
+      "ego_pose_token": "b70881316dd446a4bd707be7bec598f9",
+      "lidar_top_sample_data_token": "b70881316dd446a4bd707be7bec598f9"
+    },
+    {
+      "panel": "b",
+      "run_id": "P2B_042_log_primary_PositionalTransformer_s1",
+      "scene_token": "64a3a2d22172406c848f2a92275808ba",
+      "sample_token": "1f60f2715ba14d4c85a64f2aca576862",
+      "window_index": 3,
+      "log_token": "69271ec7af1f446ca16820ac46d2047a",
+      "map_location": "boston-seaport",
+      "map_token": "36092f0b03a857c6a3403e25b4b7aab3",
+      "ego_global_x": 1309.0194887480113,
+      "ego_global_y": 1044.601674288407,
+      "ego_global_yaw": 2.4666797173872093,
+      "ego_pose_token": "ce4a3259e0324cac9f9ae8460ffce7d3",
+      "lidar_top_sample_data_token": "ce4a3259e0324cac9f9ae8460ffce7d3"
+    },
+    {
+      "panel": "c",
+      "run_id": "P2B_042_log_primary_PositionalTransformer_s1",
+      "scene_token": "634e7fbfe29c4a72b1ceb692b1d2ab44",
+      "sample_token": "6c91a4e361c94bd7b976f7a971cd03d3",
+      "window_index": 12,
+      "log_token": "69271ec7af1f446ca16820ac46d2047a",
+      "map_location": "boston-seaport",
+      "map_token": "36092f0b03a857c6a3403e25b4b7aab3",
+      "ego_global_x": 1911.6324121179098,
+      "ego_global_y": 873.4122052142366,
+      "ego_global_yaw": -3.1234178301385396,
+      "ego_pose_token": "23b0a481f99c4f58afaa7c674026d178",
+      "lidar_top_sample_data_token": "23b0a481f99c4f58afaa7c674026d178"
+    },
+    {
+      "panel": "d",
+      "run_id": "P2B_042_log_primary_PositionalTransformer_s1",
+      "scene_token": "696a45dbd11346b794fdce43fa0a1770",
+      "sample_token": "0d45f0bedc6d455ea5a28cb4939c910d",
+      "window_index": 13,
+      "log_token": "f61e86a4241b484484da143725dce8fc",
+      "map_location": "singapore-queenstown",
+      "map_token": "93406b464a165eaba6d9de76ca09f5da",
+      "ego_global_x": 838.2838507070239,
+      "ego_global_y": 1525.713770643669,
+      "ego_global_yaw": 2.77544560400226,
+      "ego_pose_token": "11ee98669b19452db0131e034c357c79",
+      "lidar_top_sample_data_token": "11ee98669b19452db0131e034c357c79"
+    }
+  ],
+  "common_extent": {
+    "lateral_min": -12.0,
+    "lateral_max": 12.0,
+    "longitudinal_min": -12.354376792907715,
+    "longitudinal_max": 26.890262603759766
+  },
+  "metric_QA": "ADE/FDE recomputed from frozen trajectories and matched parquet within 1e-5; Shape uses authoritative parquet values.",
+  "third_party_map_assets_included": false,
+  "trajectory_npz_included": false
+}

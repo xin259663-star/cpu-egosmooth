@@ -1,0 +1,10 @@
+split,comparison,metric,estimate,ci_low,ci_high,bootstrap_unit,bootstrap_replicates,bootstrap_seed,interval,same_sign_as_primary
+log_primary,"Fixed SG(5,2) - Raw",ade,-0.0010925586692876823,-0.0014740860502299362,-0.0009073358577056268,whole log,5000,20260731,percentile,True
+log_primary,"Fixed SG(5,2) - Raw",fde,-0.0013518001249313244,-0.0018876794420280506,-0.0006190153218973015,whole log,5000,20260731,percentile,True
+log_primary,"Fixed SG(5,2) - Raw",history_aware_mean_jerk,-0.8310773852927689,-1.0254783568368881,-0.7551992789203739,whole log,5000,20260731,percentile,True
+log_primary,Validation-B-selected - Raw,ade,-0.0024903699649118398,-0.003331845141203281,-0.0021164684617384745,whole log,5000,20260731,percentile,True
+log_primary,Validation-B-selected - Raw,fde,-0.0004247532217724884,-0.000603222753357212,-0.00024064923694303128,whole log,5000,20260731,percentile,True
+log_primary,Validation-B-selected - Raw,history_aware_mean_jerk,-0.8693327112708378,-1.0525870858137862,-0.7982795214917108,whole log,5000,20260731,percentile,True
+log_primary,"Validation-B-selected - Fixed SG(5,2)",ade,-0.0013978112956241572,-0.001980270356792579,-0.001179917183732894,whole log,5000,20260731,percentile,True
+log_primary,"Validation-B-selected - Fixed SG(5,2)",fde,0.0009270469031588358,0.0003728006796435967,0.0013201672559928139,whole log,5000,20260731,percentile,True
+log_primary,"Validation-B-selected - Fixed SG(5,2)",history_aware_mean_jerk,-0.038255325978069035,-0.044254614231853555,-0.0268969375343567,whole log,5000,20260731,percentile,True

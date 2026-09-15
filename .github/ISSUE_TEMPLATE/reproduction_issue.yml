@@ -1,0 +1,15 @@
+
+name: Reproduction issue
+description: Report a mismatch when reproducing a public table, figure, or test.
+body:
+  - type: dropdown
+    attributes:
+      label: Reproduction level
+      options: [Level 1, Level 2, Level 3, Figure 3]
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Command, expected result, and observed result
+    validations:
+      required: true

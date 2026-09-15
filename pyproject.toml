@@ -1,0 +1,23 @@
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cpu-egosmooth"
+version = "1.0.0"
+description = "Code and reproducibility materials for studying accuracy-constrained post-processing of ego-trajectory predictions."
+authors = [
+    {name = "Kexin Zhu"},
+    {name = "Xu Xu"},
+]
+license = "BSD-3-Clause"
+requires-python = ">=3.11"
+dependencies = ["numpy", "pandas", "matplotlib"]
+
+[project.optional-dependencies]
+train = ["torch", "pyarrow", "nuscenes-devkit"]
+test = ["pytest", "pyyaml"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

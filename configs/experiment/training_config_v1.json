@@ -1,0 +1,39 @@
+{
+  "protocol": "p2_log_grouped_v1",
+  "optimizer": "Adam",
+  "adam_betas": [0.9, 0.999],
+  "adam_epsilon": 1e-8,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "batch_size": 128,
+  "maximum_epochs": 60,
+  "early_stopping_patience": 12,
+  "early_stopping_min_delta": 0.0,
+  "loss": "mean squared error in train-normalized future x/y",
+  "checkpoint_monitor": "Validation-A normalized MSE",
+  "checkpoint_tie_rule": "exact ties retain the earlier epoch",
+  "gradient_clipping": null,
+  "scheduler": null,
+  "dropout": 0.0,
+  "primary_seeds": [0,1,2,3,4,5,6,7,8,9],
+  "replication_seeds": [0,1,2,3,4],
+  "ablation_seeds": [0,1,2,3,4],
+  "dataloader": {
+    "train_shuffle": true,
+    "validation_shuffle": false,
+    "num_workers": 0,
+    "drop_last": false,
+    "pin_memory": false,
+    "worker_seed_rule": "base seed plus worker id; zero workers in frozen configuration"
+  },
+  "determinism": {
+    "python_random": true,
+    "numpy": true,
+    "torch": true,
+    "torch_cuda_manual_seed_all": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "torch_use_deterministic_algorithms": true,
+    "claim": "best-effort deterministic; any unsupported GPU operation must fail rather than silently continue"
+  }
+}

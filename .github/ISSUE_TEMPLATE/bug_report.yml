@@ -1,0 +1,14 @@
+
+name: Bug report
+description: Report a problem in public code or documentation.
+body:
+  - type: textarea
+    attributes:
+      label: Description
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction command and environment
+    validations:
+      required: true

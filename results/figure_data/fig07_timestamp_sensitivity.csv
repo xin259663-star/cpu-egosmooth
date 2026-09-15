@@ -1,0 +1,5 @@
+comparison,timing_definition,raw_shape,post_shape,absolute_delta_shape,relative_reduction_percent,direction
+"Fixed SG(5,2) - Raw",nominal_0.5_s,1.878068294165992,1.0469909088732234,-0.8310773852927686,44.251712670642334,negative
+"Fixed SG(5,2) - Raw",exact_timestamps,2.728406316949655,2.087799892470552,-0.640606424479103,23.47914313566382,negative
+Validation-B-selected - Raw,nominal_0.5_s,1.878068294165992,1.0087355828951543,-0.8693327112708378,46.28866340863759,negative
+Validation-B-selected - Raw,exact_timestamps,2.728406316949655,2.054413043300686,-0.6739932736489691,24.702818984911687,negative

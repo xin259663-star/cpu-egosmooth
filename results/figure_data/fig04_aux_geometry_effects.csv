@@ -1,0 +1,13 @@
+comparison,metric,metric_label,unit,family,validity_scope,mean_paired_difference,median_paired_difference,p95_paired_difference,paired_n
+"Fixed SG(5,2) - Raw",mean_geometric_acceleration,Mean geometric acceleration,m s^-2,non-third-difference,all_matched_records,-0.2765345696442122,-0.17160212248563766,0.012203236669301912,145050
+"Validation-B-selected - Fixed SG(5,2)",mean_geometric_acceleration,Mean geometric acceleration,m s^-2,non-third-difference,all_matched_records,-0.04127682987655783,-0.021913377568125725,0.08245476931333527,145050
+Validation-B-selected - Raw,mean_geometric_acceleration,Mean geometric acceleration,m s^-2,non-third-difference,all_matched_records,-0.31781139952077003,-0.2099343165755272,0.0,145050
+"Fixed SG(5,2) - Raw",integrated_squared_acceleration,Integrated squared acceleration,m^2 s^-3,non-third-difference,all_matched_records,-1.090967211085439,-0.3791285026818514,-0.019371638074517254,145050
+"Validation-B-selected - Fixed SG(5,2)",integrated_squared_acceleration,Integrated squared acceleration,m^2 s^-3,non-third-difference,all_matched_records,-0.08023277004911207,-0.012701913714408875,0.10952021256089181,145050
+Validation-B-selected - Raw,integrated_squared_acceleration,Integrated squared acceleration,m^2 s^-3,non-third-difference,all_matched_records,-1.171199981134551,-0.4420332685112953,-0.01705638207495235,145050
+"Fixed SG(5,2) - Raw",mean_abs_curvature,Mean absolute curvature,m^-1,non-third-difference,common_valid_all_strategies,-0.04467532351168802,-0.00029411651269128924,0.00124444814864546,126353
+"Validation-B-selected - Fixed SG(5,2)",mean_abs_curvature,Mean absolute curvature,m^-1,non-third-difference,common_valid_all_strategies,-0.007011165716597775,-6.48518544039689e-05,0.0003359942953466056,126353
+Validation-B-selected - Raw,mean_abs_curvature,Mean absolute curvature,m^-1,non-third-difference,common_valid_all_strategies,-0.05168648922828579,-0.0005485438341565896,0.00013715579043491674,126353
+"Fixed SG(5,2) - Raw",integrated_squared_third_difference,Integrated squared third difference,m^2 s^-5,third-difference,all_matched_records,-12.558058341799644,-3.7041945457458496,1.03914543390274,145050
+"Validation-B-selected - Fixed SG(5,2)",integrated_squared_third_difference,Integrated squared third difference,m^2 s^-5,third-difference,all_matched_records,-0.5763589107837709,0.0,4.527726206183432,145050
+Validation-B-selected - Raw,integrated_squared_third_difference,Integrated squared third difference,m^2 s^-5,third-difference,all_matched_records,-13.134417252583415,-4.282441824674606,0.07241540700197084,145050

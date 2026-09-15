@@ -1,0 +1,25 @@
+{
+  "protocol": "p2_log_grouped_v1",
+  "selection_unit": "one candidate per model-seed run; never per window",
+  "complete_future_sequence_available": true,
+  "online_causal_claim": false,
+  "candidates": [
+    {"id":"raw","family":"Raw","params":{},"endpoints_fixed":true},
+    {"id":"ma_w3","family":"MovingAverage","params":{"window":3},"endpoints_fixed":false},
+    {"id":"ma_w5","family":"MovingAverage","params":{"window":5},"endpoints_fixed":false},
+    {"id":"exp_a05","family":"ExponentialBlend","params":{"alpha":0.5},"endpoints_fixed":false},
+    {"id":"exp_a07","family":"ExponentialBlend","params":{"alpha":0.7},"endpoints_fixed":false},
+    {"id":"exp_a09","family":"ExponentialBlend","params":{"alpha":0.9},"endpoints_fixed":false},
+    {"id":"lap_l01","family":"Laplacian","params":{"lam":0.1},"endpoints_fixed":true},
+    {"id":"lap_l025","family":"Laplacian","params":{"lam":0.25},"endpoints_fixed":true},
+    {"id":"lap_l04","family":"Laplacian","params":{"lam":0.4},"endpoints_fixed":true},
+    {"id":"sg_w3_p2","family":"SavitzkyGolay","params":{"window":3,"polyorder":2},"mode":"interp","endpoints_fixed":false},
+    {"id":"sg_w5_p2","family":"SavitzkyGolay","params":{"window":5,"polyorder":2},"mode":"interp","endpoints_fixed":false,"formal_fixed_reference":true},
+    {"id":"qreg_l01","family":"QuadraticRegularization","params":{"lam":0.1},"endpoints_fixed":true},
+    {"id":"qreg_l1","family":"QuadraticRegularization","params":{"lam":1.0},"endpoints_fixed":true}
+  ],
+  "epsilon_candidates": [0,0.0005,0.001,0.0025,0.005],
+  "epsilon_selection": "On Validation-B, select the smallest epsilon whose median run-level relative jerk improvement is at least 95% of the maximum median improvement over the frozen epsilon grid.",
+  "candidate_feasibility": "Both relative ADE increase and relative FDE increase must be <= epsilon; absolute and relative deltas are both reported.",
+  "candidate_order": "history-aware mean geometric jerk, ADE, FDE, frozen enumeration order"
+}

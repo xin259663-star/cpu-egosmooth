@@ -1,0 +1,10 @@
+,mean
+raw_ade,0.8019032841465916
+raw_fde,1.7214446197749231
+raw_history_aware_mean_jerk,1.8780682941659925
+fixed_ade,0.8008107254773041
+fixed_fde,1.7200928196499918
+fixed_history_aware_mean_jerk,1.0469909088732234
+selected_ade,0.7994129141816799
+selected_fde,1.7210198665531504
+selected_history_aware_mean_jerk,1.0087355828951545
