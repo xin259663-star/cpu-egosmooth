@@ -1,7 +1,7 @@
 
 # CPU EgoSmooth
 
-CPU EgoSmooth provides code and reproducibility materials for accuracy-constrained post-processing of short-horizon ego-trajectory predictions. The study separates displacement accuracy, sampled-path geometry, local paired costs, and candidate-selection stability. It does not claim improved safety, comfort, physical jerk, closed-loop behavior, or complete autonomous-driving performance.
+CPU EgoSmooth provides code and reproducibility materials for accuracy-constrained post-processing of short-horizon ego-trajectory predictions. The study separates displacement accuracy, sampled-path geometry, local paired effects, and selection sensitivity. It does not claim improved safety, comfort, physical jerk, closed-loop behavior, or complete autonomous-driving performance.
 
 ```bash
 python scripts/reproduce_tables.py --results-root results
@@ -10,7 +10,7 @@ python scripts/reproduce_figures.py --fig all
 
 ## Paper
 
-**Accuracy-Constrained Evaluation of Geometric Effects in Short-Horizon Open-Loop Ego-Trajectory Post-Processing**
+**Multidimensional Audit of Short-Horizon Open-Loop Ego-Trajectory Post-Processing under Accuracy-Constrained Selection**
 
 Kexin Zhu ([ORCID](https://orcid.org/0009-0004-7456-9491)), Xu Xu ([ORCID](https://orcid.org/0000-0003-3602-1391))
 
@@ -57,7 +57,21 @@ Figures 4-8 and the processed-result tables are regenerated from the included CS
 
 ## Figure 3 qualitative cases
 
-Figure 3 contains four automatically selected real held-out Test windows: (a) typical geometry reduction, (b) accuracy preserved with altered geometry, (c) local error increase, and (d) Selected differs from Fixed SG. The reference run is `P2B_042_log_primary_PositionalTransformer_s1` (Pos-Transformer, seed 1); the selected smoother is QReg-L1 (implementation ID `qreg_l1`); `manual_override=false`. Map context is used only for visualization and is not provided to predictors, post-processing, candidate selection, or quantitative evaluation. See `docs/FIGURE3_PROVENANCE.md`.
+Figure 3 contains four automatically selected real held-out Test windows:
+(a) typical sampled-geometry change,
+(b) near-preserved displacement accuracy with altered geometry,
+(c) a positive-tail local-error case, and
+(d) a Selected-versus-Fixed-SG trade-off.
+
+The reference run is
+`P2B_042_log_primary_PositionalTransformer_s1`
+(Pos-Transformer, seed 1); the selected smoother is QReg-L1
+(implementation ID `qreg_l1`); `manual_override=false`.
+
+Map context is used only for visualization and is not provided to predictors,
+post-processing, candidate selection, or quantitative evaluation.
+
+See `docs/FIGURE3_PROVENANCE.md`.
 
 ## Reproducibility levels
 
