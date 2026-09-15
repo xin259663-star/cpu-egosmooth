@@ -7,15 +7,15 @@ The study uses the publicly available nuScenes trainval release. The original da
 
 ## Derived inputs
 
-The formal predictor input has shape `(N, 4, 5)` and the future target has shape `(N, 6, 2)` on a nominal 0.5 s grid. Split construction is log-exclusive. Complete derived tensors are not included in this compact repository.
+The predictor input has shape `(N, 4, 5)` and the future target has shape `(N, 6, 2)` on a nominal 0.5 s grid. Split construction is log-exclusive. Complete derived tensors are not included in this repository.
 
 ## Prediction outputs
 
-The evaluated strategies are Raw, Fixed SG(5,2), and Validation-B-selected. Complete prediction archives are excluded and may later be deposited in a separately reviewed archival repository.
+The evaluated strategies are Raw, Fixed SG(5,2), and Validation-B-selected. Complete prediction archives are not included in this repository.
 
 ## Figure 3
 
-Published provenance identifies the selected held-out windows, deterministic selection rules, run/model/seed, and metric values. The selected-trajectory NPZ, original map assets, sample annotations, and original metadata tables are not redistributed. Trajectory/map visualization can be regenerated after providing reviewed saved predictions and a local nuScenes installation.
+The provenance files identify the selected held-out windows, deterministic selection rules, run/model/seed, and metric values. The selected-trajectory NPZ, original map assets, sample annotations, and original metadata tables are not redistributed. Trajectory and map visualizations can be regenerated using the corresponding saved predictions and a local nuScenes installation.
 
 ## Metrics
 
@@ -23,4 +23,4 @@ ADE is mean Euclidean displacement error over six future points. FDE is final-po
 
 ## Provenance keys
 
-`window_index` is not globally unique. The public cross-run key is `run_id + scene_token + sample_token`. Within one run, `scene_token + window_index` also locates a record. Never join records by `window_index` alone.
+`window_index` is not globally unique. The cross-run key is `run_id + scene_token + sample_token`. Within one run, `scene_token + window_index` also locates a record. Never join records by `window_index` alone.

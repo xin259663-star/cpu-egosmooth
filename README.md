@@ -23,9 +23,9 @@ Repository: https://github.com/xin259663-star/cpu-egosmooth
 ## Repository structure
 
 - `src/egosmooth/`: metrics, post-processing, model definitions, selection, and alignment checks
-- `scripts/`: public command-line entry points and figure/table reproduction
-- `configs/`: frozen protocol, predictor, training, and candidate definitions
-- `results/`: compact processed summaries, figure data, tables, and provenance
+- `scripts/`: command-line entry points and figure/table reproduction
+- `configs/`: experiment protocol, predictor, training, and candidate definitions
+- `results/`: processed summaries, figure data, tables, and provenance
 - `figures/`: final manuscript figures and regenerated processed-result figures
 - `docs/`: data, protocol, figure, and reproducibility documentation
 
@@ -53,19 +53,19 @@ python scripts/reproduce_figures.py --fig all
 pytest -q
 ```
 
-Figures 4-8 and the processed-result tables are regenerated from public CSV files. Figure 3 requires locally available reviewed trajectory outputs and nuScenes map data; without them its script exits with an explanatory message.
+Figures 4-8 and the processed-result tables are regenerated from the included CSV files. Figure 3 requires the corresponding saved trajectory outputs and a local nuScenes installation; without them its script exits with an explanatory message.
 
 ## Figure 3 qualitative cases
 
-The formal Figure 3 contains four automatically selected real held-out Test windows: (a) typical geometry reduction, (b) accuracy preserved with altered geometry, (c) local error increase, and (d) Selected differs from Fixed SG. The reference run is `P2B_042_log_primary_PositionalTransformer_s1` (Pos-Transformer, seed 1); the selected smoother is QReg-L1 (implementation ID `qreg_l1`); `manual_override=false`. Map context is visualization only and is not provided to predictors, post-processing, candidate selection, or quantitative evaluation. See `docs/FIGURE3_PROVENANCE.md`.
+Figure 3 contains four automatically selected real held-out Test windows: (a) typical geometry reduction, (b) accuracy preserved with altered geometry, (c) local error increase, and (d) Selected differs from Fixed SG. The reference run is `P2B_042_log_primary_PositionalTransformer_s1` (Pos-Transformer, seed 1); the selected smoother is QReg-L1 (implementation ID `qreg_l1`); `manual_override=false`. Map context is used only for visualization and is not provided to predictors, post-processing, candidate selection, or quantitative evaluation. See `docs/FIGURE3_PROVENANCE.md`.
 
 ## Reproducibility levels
 
-- **Level 1, processed results to figures/tables: VERIFIED.**
-- **Level 2, saved predictions to metrics/results: VERIFIED INTERNALLY; complete predictions are not redistributed in this compact repository.**
-- **Level 3, raw nuScenes through held-out evaluation: PARTIALLY DOCUMENTED / REVIEW GATE.**
+- **Level 1, processed results to figures/tables:** Verified.
+- **Level 2, saved predictions to metrics/results:** Verified using the original saved predictions. These prediction files are not included in this repository.
+- **Level 3, raw nuScenes through held-out evaluation:** Partially documented. This level requires the original nuScenes data and additional environment setup. The scientific protocol and configurations are documented, but the full raw-data-to-evaluation pipeline has not been validated as a self-contained fresh-machine workflow.
 
-Archived formal training used CUDA, while the Level-1 reproduction path is CPU-friendly. The repository does not claim that every original training step was CPU-only.
+The processed-result reproduction path is CPU-friendly; the original predictor training used CUDA.
 
 ## Citation
 

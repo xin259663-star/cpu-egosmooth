@@ -14,7 +14,7 @@
 
 ## Reference-run selection
 
-The reference run was selected automatically from eligible formal runs whose selected candidate was QReg-L1 or QReg-L0.1. Six run-level paired-effect components were robust-scaled by median and interquartile range. The eligible run nearest the six-dimensional median effect vector was selected, with deterministic ordering. The complete selected-run audit is stored in `results/provenance/fig3_selection_summary.json`.
+The reference run was selected automatically from eligible formal runs whose selected candidate was QReg-L1 or QReg-L0.1. Six run-level paired-effect components were robust-scaled by median and interquartile range. The eligible run nearest the six-dimensional median effect vector was selected, with deterministic ordering. The complete selected-run record is stored in `results/provenance/fig3_selection_summary.json`.
 
 ## Four deterministic cases
 
