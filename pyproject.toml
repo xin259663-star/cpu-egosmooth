@@ -19,5 +19,8 @@ dependencies = ["numpy", "pandas", "matplotlib"]
 train = ["torch", "pyarrow", "nuscenes-devkit"]
 test = ["pytest", "pyyaml"]
 
+[project.urls]
+Repository = "https://github.com/xin259663-star/cpu-egosmooth"
+
 [tool.setuptools.packages.find]
 where = ["src"]

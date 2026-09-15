@@ -18,6 +18,8 @@ Target journal: *IET Intelligent Transport Systems*
 
 Article type: Original Research Paper
 
+Repository: https://github.com/xin259663-star/cpu-egosmooth
+
 ## Repository structure
 
 - `src/egosmooth/`: metrics, post-processing, model definitions, selection, and alignment checks
@@ -67,7 +69,7 @@ Archived formal training used CUDA, while the Level-1 reproduction path is CPU-f
 
 ## Citation
 
-See `CITATION.cff`. Repository URL and DOI metadata are omitted until they exist.
+See `CITATION.cff`. The public repository is https://github.com/xin259663-star/cpu-egosmooth. DOI metadata are omitted until they exist.
 
 ## License
 
