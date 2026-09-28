@@ -1,2 +1,136 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="78.83mm" viewBox="0 0 1400 620"><title>Editable scientific figure</title><style>text{font-family:Arial,Helvetica,sans-serif}</style><rect width="100%" height="100%" fill="white"/><text x="35" y="40" font-size="24" font-weight="700" text-anchor="start" fill="#172235">(a)</text><text x="82" y="40" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Frozen study workflow</text><text x="175" y="120" font-size="24" font-weight="700" text-anchor="middle" fill="#172235">Data</text><line x1="175" y1="157" x2="175" y2="187" stroke="#2F7FB3" stroke-width="4"/><text x="500" y="120" font-size="24" font-weight="700" text-anchor="middle" fill="#172235">Frozen predictions</text><line x1="500" y1="157" x2="500" y2="187" stroke="#7C6CAD" stroke-width="4"/><text x="865" y="120" font-size="24" font-weight="700" text-anchor="middle" fill="#172235">Validation-B selection</text><line x1="865" y1="157" x2="865" y2="187" stroke="#E89429" stroke-width="4"/><text x="1235" y="120" font-size="24" font-weight="700" text-anchor="middle" fill="#172235">Held-out Test</text><line x1="1235" y1="157" x2="1235" y2="187" stroke="#2F7FB3" stroke-width="4"/><line x1="250" y1="172" x2="385" y2="172" stroke="#667483" stroke-width="2"/><polygon points="385,172 375,167 375,177" fill="#667483"/><line x1="620" y1="172" x2="735" y2="172" stroke="#667483" stroke-width="2"/><polygon points="735,172 725,167 725,177" fill="#667483"/><line x1="990" y1="172" x2="1150" y2="172" stroke="#667483" stroke-width="2"/><polygon points="1150,172 1140,167 1140,177" fill="#667483"/><text x="175" y="225" font-size="19.5" font-weight="400" text-anchor="middle" fill="#172235">68 logs → log-exclusive split</text><text x="175" y="254" font-size="19.5" font-weight="400" text-anchor="middle" fill="#172235">4 history states, 6 future positions</text><text x="500" y="225" font-size="19.5" font-weight="400" text-anchor="middle" fill="#172235">5 predictors × 10 seeds</text><text x="500" y="254" font-size="19.5" font-weight="400" text-anchor="middle" fill="#172235">50 frozen predictor-seed runs</text><text x="865" y="225" font-size="19.5" font-weight="400" text-anchor="middle" fill="#172235">13 candidates; ADE/FDE feasibility</text><text x="865" y="254" font-size="19.5" font-weight="400" text-anchor="middle" fill="#172235">Shape ranking → Selected</text><text x="1235" y="225" font-size="19.5" font-weight="400" text-anchor="middle" fill="#172235">2,901 windows</text><text x="1235" y="254" font-size="19.5" font-weight="400" text-anchor="middle" fill="#172235">final evaluation only</text><line x1="1095" y1="80" x2="1095" y2="300" stroke="#D9534F" stroke-width="2.5" stroke-dasharray="9 7"/><text x="1095" y="72" font-size="19.5" font-weight="400" text-anchor="middle" fill="#D9534F">development frozen</text><text x="35" y="345" font-size="24" font-weight="700" text-anchor="start" fill="#172235">(b)</text><text x="82" y="345" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Audit outputs</text><text x="50" y="405" font-size="21" font-weight="700" text-anchor="start" fill="#172235">RQ1</text><text x="50" y="433" font-size="21" font-weight="700" text-anchor="start" fill="#172235">Accuracy ↔ geometry</text><text x="50" y="462" font-size="19.5" font-weight="400" text-anchor="start" fill="#172235">ADE/FDE vs Shape and E3</text><text x="460" y="405" font-size="21" font-weight="700" text-anchor="start" fill="#172235">RQ2</text><text x="460" y="433" font-size="21" font-weight="700" text-anchor="start" fill="#172235">Global ↔ local effects</text><text x="460" y="462" font-size="19.5" font-weight="400" text-anchor="start" fill="#172235">paired differences and tails</text><text x="460" y="485" font-size="19.5" font-weight="400" text-anchor="start" fill="#172235">boundary and endpoint</text><text x="965" y="405" font-size="21" font-weight="700" text-anchor="start" fill="#172235">RQ3a</text><text x="965" y="433" font-size="21" font-weight="700" text-anchor="start" fill="#172235">Predictor dependence</text><text x="965" y="462" font-size="19.5" font-weight="400" text-anchor="start" fill="#172235">predictor-stratified effects</text><text x="297.0" y="520" font-size="21" font-weight="700" text-anchor="start" fill="#172235">RQ3b</text><text x="297.0" y="548" font-size="21" font-weight="700" text-anchor="start" fill="#172235">Selection sensitivity</text><text x="297.0" y="577" font-size="19.5" font-weight="400" text-anchor="start" fill="#172235">ε and aggregation</text><text x="297.0" y="600" font-size="19.5" font-weight="400" text-anchor="start" fill="#172235">LOLO and configuration</text><text x="847.0" y="520" font-size="21" font-weight="700" text-anchor="start" fill="#172235">RQ4</text><text x="847.0" y="548" font-size="21" font-weight="700" text-anchor="start" fill="#172235">Interpretation boundary</text><text x="847.0" y="577" font-size="19.5" font-weight="400" text-anchor="start" fill="#172235">timing sensitivity and controls</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="64.21mm" viewBox="0 0 1400 505">
+<title>Editable scientific figure</title><desc>All labels, lines and markers are editable SVG objects.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172235}.axis{stroke:#172235;stroke-width:2;fill:none}.grid{stroke:#D8DEE4;stroke-width:1}.ref{stroke:#AEB7C0;stroke-width:2;stroke-dasharray:8 7}.thin{stroke-width:2;fill:none}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="35" y="42" font-size="25" font-weight="700" text-anchor="start" fill="#172235">Study protocol</text>
+<text x="170" y="98" font-size="26" font-weight="700" text-anchor="middle" fill="#172235">Data</text>
+<text x="170" y="134" font-size="24" font-weight="400" text-anchor="middle" fill="#172235">68 logs</text>
+<text x="500" y="98" font-size="26" font-weight="700" text-anchor="middle" fill="#172235">Frozen predictions</text>
+<text x="500" y="134" font-size="24" font-weight="400" text-anchor="middle" fill="#172235">50 runs</text>
+<text x="850" y="98" font-size="26" font-weight="700" text-anchor="middle" fill="#172235">Validation-B selection</text>
+<text x="850" y="134" font-size="24" font-weight="400" text-anchor="middle" fill="#172235">13 candidates</text>
+<text x="1230" y="98" font-size="26" font-weight="700" text-anchor="middle" fill="#172235">Held-out Test</text>
+<text x="1230" y="134" font-size="24" font-weight="400" text-anchor="middle" fill="#172235">2,901 windows</text>
+<line x1="295" y1="204" x2="365" y2="204" stroke="#172235" stroke-width="2.5"/>
+<polygon points="365,204 354.4210136494606,209.6643664954786 354.4210136494606,198.3356335045214" fill="#172235"/>
+<line x1="635" y1="204" x2="715" y2="204" stroke="#172235" stroke-width="2.5"/>
+<polygon points="715,204 704.4210136494605,209.6643664954786 704.4210136494605,198.3356335045214" fill="#172235"/>
+<line x1="990" y1="204" x2="1120" y2="204" stroke="#172235" stroke-width="2.5"/>
+<polygon points="1120,204 1109.4210136494605,209.6643664954786 1109.4210136494605,198.3356335045214" fill="#172235"/>
+<rect x="60" y="180" width="158.52941176470588" height="48" rx="0" fill="#667483" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<rect x="218.52941176470588" y="180" width="19.41176470588235" height="48" rx="0" fill="#2F7FB3" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<rect x="237.94117647058823" y="180" width="19.41176470588235" height="48" rx="0" fill="#35A28F" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<rect x="257.3529411764706" y="180" width="22.647058823529413" height="48" rx="0" fill="#E89429" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="170" y="254" font-size="19" font-weight="400" text-anchor="middle" fill="#172235">
+<tspan x="170" dy="0">Train / Val-A / Val-B / Test</tspan>
+</text>
+<rect x="402" y="164" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="422" y="164" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="442" y="164" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="462" y="164" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="482" y="164" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="502" y="164" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="522" y="164" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="542" y="164" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="562" y="164" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="582" y="164" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="402" y="181" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="422" y="181" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="442" y="181" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="462" y="181" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="482" y="181" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="502" y="181" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="522" y="181" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="542" y="181" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="562" y="181" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="582" y="181" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="402" y="198" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="422" y="198" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="442" y="198" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="462" y="198" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="482" y="198" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="502" y="198" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="522" y="198" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="542" y="198" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="562" y="198" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="582" y="198" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="402" y="215" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="422" y="215" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="442" y="215" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="462" y="215" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="482" y="215" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="502" y="215" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="522" y="215" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="542" y="215" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="562" y="215" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="582" y="215" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="402" y="232" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="422" y="232" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="442" y="232" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="462" y="232" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="482" y="232" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="502" y="232" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="522" y="232" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="542" y="232" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="562" y="232" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<rect x="582" y="232" width="13" height="11" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="0.65"/>
+<text x="500" y="274" font-size="20" font-weight="400" text-anchor="middle" fill="#172235">5 predictors × 10 seeds</text>
+<circle cx="755" cy="168" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="772" cy="168" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="789" cy="168" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="806" cy="168" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="823" cy="168" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="755" cy="191" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="772" cy="191" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="789" cy="191" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="806" cy="191" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="823" cy="191" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="755" cy="214" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="772" cy="214" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<circle cx="789" cy="214" r="4" fill="#847391" stroke="#847391" stroke-width="1"/>
+<polyline points="841.000,162.000 908.000,162.000 880.000,199.000 880.000,228.000" fill="none" stroke="#667483" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="841.000,162.000 869.000,199.000 869.000,228.000" fill="none" stroke="#667483" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="880" y1="234" x2="880" y2="249" stroke="#667483" stroke-width="2"/>
+<polygon points="880,249 874.3356335045214,238.42101364946058 885.6643664954786,238.42101364946058" fill="#667483"/>
+<polygon points="880,257 889,266 880,275 871,266" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<text x="895" y="273" font-size="20" font-weight="400" text-anchor="start" fill="#172235">Selected</text>
+<rect x="1132" y="168" width="196" height="74" rx="0" fill="none" stroke="#667483" stroke-width="2" opacity="1"/>
+<text x="1230" y="211" font-size="25" font-weight="400" text-anchor="middle" fill="#172235">Test only</text>
+<line x1="1080" y1="143" x2="1080" y2="299" stroke="#D9534F" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="1080" y="315" font-size="19" font-weight="400" text-anchor="middle" fill="#D9534F">development frozen</text>
+<text x="35" y="360" font-size="22" font-weight="700" text-anchor="start" fill="#172235">Analysis map</text>
+<polyline points="130.000,416.000 140.000,412.000 150.000,408.000 160.000,403.000 170.000,399.000 182.000,393.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="130.000,401.000 140.000,399.000 150.000,401.000 160.000,394.000 170.000,396.000 182.000,387.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="395.000,418.000 403.000,416.000 410.000,406.000 417.000,393.000 424.000,389.000 431.000,398.000 438.000,409.000 447.000,414.000 457.000,416.000 468.000,417.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="670" y="392" width="7" height="26" rx="0" fill="none" stroke="#667483" stroke-width="1.5" opacity="1"/>
+<rect x="683" y="392" width="7" height="26" rx="0" fill="none" stroke="#667483" stroke-width="1.5" opacity="1"/>
+<rect x="696" y="392" width="7" height="26" rx="0" fill="none" stroke="#667483" stroke-width="1.5" opacity="1"/>
+<rect x="709" y="392" width="7" height="26" rx="0" fill="none" stroke="#667483" stroke-width="1.5" opacity="1"/>
+<rect x="722" y="392" width="7" height="26" rx="0" fill="none" stroke="#667483" stroke-width="1.5" opacity="1"/>
+<line x1="945" y1="402" x2="965" y2="402" stroke="#667483" stroke-width="2"/>
+<polyline points="965.000,402.000 978.000,389.000 995.000,389.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="965.000,402.000 978.000,402.000 995.000,402.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="965.000,402.000 978.000,416.000 995.000,416.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="1207" y1="391" x2="1273" y2="391" stroke="#667483" stroke-width="1.5"/>
+<line x1="1210" y1="386" x2="1210" y2="396" stroke="#667483" stroke-width="1.5"/>
+<line x1="1225" y1="386" x2="1225" y2="396" stroke="#667483" stroke-width="1.5"/>
+<line x1="1240" y1="386" x2="1240" y2="396" stroke="#667483" stroke-width="1.5"/>
+<line x1="1255" y1="386" x2="1255" y2="396" stroke="#667483" stroke-width="1.5"/>
+<line x1="1270" y1="386" x2="1270" y2="396" stroke="#667483" stroke-width="1.5"/>
+<line x1="1207" y1="414" x2="1273" y2="414" stroke="#667483" stroke-width="1.5"/>
+<line x1="1210" y1="409" x2="1210" y2="419" stroke="#667483" stroke-width="1.5"/>
+<line x1="1221" y1="409" x2="1221" y2="419" stroke="#667483" stroke-width="1.5"/>
+<line x1="1239" y1="409" x2="1239" y2="419" stroke="#667483" stroke-width="1.5"/>
+<line x1="1250" y1="409" x2="1250" y2="419" stroke="#667483" stroke-width="1.5"/>
+<line x1="1270" y1="409" x2="1270" y2="419" stroke="#667483" stroke-width="1.5"/>
+<text x="160" y="456" font-size="20" font-weight="700" text-anchor="middle" fill="#172235">RQ1</text>
+<text x="160" y="489" font-size="20" font-weight="400" text-anchor="middle" fill="#172235">Accuracy ↔ geometry</text>
+<text x="430" y="456" font-size="20" font-weight="700" text-anchor="middle" fill="#172235">RQ2</text>
+<text x="430" y="489" font-size="20" font-weight="400" text-anchor="middle" fill="#172235">Local error</text>
+<text x="700" y="456" font-size="20" font-weight="700" text-anchor="middle" fill="#172235">RQ3a</text>
+<text x="700" y="489" font-size="20" font-weight="400" text-anchor="middle" fill="#172235">Predictor dependence</text>
+<text x="970" y="456" font-size="20" font-weight="700" text-anchor="middle" fill="#172235">RQ3b</text>
+<text x="970" y="489" font-size="20" font-weight="400" text-anchor="middle" fill="#172235">Selection sensitivity</text>
+<text x="1240" y="456" font-size="20" font-weight="700" text-anchor="middle" fill="#172235">RQ4</text>
+<text x="1240" y="489" font-size="20" font-weight="400" text-anchor="middle" fill="#172235">Definition sensitivity</text>
+</svg>

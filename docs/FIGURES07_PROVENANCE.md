@@ -26,4 +26,4 @@ Run:
 python scripts/reproduce_figures.py --fig S07 --root .
 ```
 
-This validates the saved source records and writes byte-identical locked SVG/PNG exports to `figures/reproduced/`. It does not recompute the experiments or regenerate a new S07 layout. The locked publication SVG and PNG remain the submission assets, with hashes in `figures/manifest_v6.json`.
+This validates the saved source records and writes byte-identical locked SVG/PNG exports to `figures/reproduced/`. It does not recompute the experiments or regenerate a new S07 layout. The locked publication SVG and PNG remain the submission assets, with unchanged hashes now recorded in `figures/manifest_v7_1.json`.

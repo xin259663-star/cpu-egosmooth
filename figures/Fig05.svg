@@ -1,130 +1,129 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="102.91mm" viewBox="0 0 1600 925">
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="117.925mm" viewBox="0 0 1600 1060">
 <title>Editable scientific figure</title><desc>All labels, lines and markers are editable SVG objects.</desc>
 <style>text{font-family:Arial,Helvetica,sans-serif;fill:#172235}.axis{stroke:#172235;stroke-width:2;fill:none}.grid{stroke:#D8DEE4;stroke-width:1}.ref{stroke:#AEB7C0;stroke-width:2;stroke-dasharray:8 7}.thin{stroke-width:2;fill:none}</style>
 <rect width="100%" height="100%" fill="white"/>
-<text x="35" y="55" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(a)</text>
-<text x="83" y="55" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Frequency of increased error (Δ &gt; 0)</text>
-<text x="820" y="55" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(b)</text>
-<text x="868" y="55" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Conditional magnitude among Δ &gt; 0</text>
-<line x1="170" y1="465" x2="650" y2="465" stroke="#172235" stroke-width="2"/>
-<line x1="170.0" y1="465" x2="170.0" y2="474" stroke="#172235" stroke-width="2"/>
-<text x="170.0" y="499" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">0</text>
-<line x1="330.0" y1="465" x2="330.0" y2="474" stroke="#172235" stroke-width="2"/>
-<text x="330.0" y="499" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">20</text>
-<line x1="490.0" y1="465" x2="490.0" y2="474" stroke="#172235" stroke-width="2"/>
-<text x="490.0" y="499" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">40</text>
-<line x1="650.0" y1="465" x2="650.0" y2="474" stroke="#172235" stroke-width="2"/>
-<text x="650.0" y="499" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">60</text>
-<text x="410.0" y="535" font-size="23" font-weight="400" text-anchor="middle" fill="#172235">Records with positive paired error (%)</text>
-<text x="45" y="132" font-size="21" font-weight="700" text-anchor="start" fill="#2F7FB3">Fixed SG − Raw</text>
-<text x="135" y="198" font-size="21" font-weight="400" text-anchor="end" fill="#172235">ADE</text>
-<circle cx="515.6" cy="190" r="11" fill="#FFFFFF" stroke="#2F7FB3" stroke-width="3"/>
-<text x="533.6" y="198" font-size="21" font-weight="400" text-anchor="start" fill="#2F7FB3">43.2%</text>
-<text x="135" y="278" font-size="21" font-weight="400" text-anchor="end" fill="#172235">FDE</text>
-<circle cx="546.8" cy="270" r="11" fill="#FFFFFF" stroke="#2F7FB3" stroke-width="3"/>
-<text x="564.8" y="278" font-size="21" font-weight="400" text-anchor="start" fill="#2F7FB3">47.1%</text>
-<text x="45" y="327" font-size="21" font-weight="700" text-anchor="start" fill="#E89429">Selected − Raw</text>
-<text x="135" y="393" font-size="21" font-weight="400" text-anchor="end" fill="#172235">ADE</text>
-<circle cx="518.8" cy="385" r="11" fill="#FFFFFF" stroke="#E89429" stroke-width="3"/>
-<text x="536.8" y="393" font-size="21" font-weight="400" text-anchor="start" fill="#E89429">43.6%</text>
-<text x="135" y="453" font-size="21" font-weight="400" text-anchor="end" fill="#172235">FDE</text>
-<circle cx="283.6" cy="445" r="11" fill="#FFFFFF" stroke="#E89429" stroke-width="3"/>
-<text x="301.6" y="453" font-size="21" font-weight="400" text-anchor="start" fill="#E89429">14.2%</text>
-<line x1="880" y1="465" x2="1510" y2="465" stroke="#172235" stroke-width="2"/>
-<line x1="880.0" y1="465" x2="880.0" y2="474" stroke="#172235" stroke-width="2"/>
-<text x="880.0" y="499" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">0</text>
-<line x1="1090.0" y1="465" x2="1090.0" y2="474" stroke="#172235" stroke-width="2"/>
-<text x="1090.0" y="499" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">20</text>
-<line x1="1300.0" y1="465" x2="1300.0" y2="474" stroke="#172235" stroke-width="2"/>
-<text x="1300.0" y="499" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">40</text>
-<line x1="1510.0" y1="465" x2="1510.0" y2="474" stroke="#172235" stroke-width="2"/>
-<text x="1510.0" y="499" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">60</text>
-<text x="1195.0" y="535" font-size="23" font-weight="400" text-anchor="middle" fill="#172235">Positive paired error (mm)</text>
-<text x="750" y="132" font-size="21" font-weight="700" text-anchor="start" fill="#2F7FB3">Fixed SG − Raw</text>
-<text x="845" y="198" font-size="21" font-weight="400" text-anchor="end" fill="#172235">ADE</text>
-<line x1="904.465" y1="190" x2="1041.595" y2="190" stroke="#2F7FB3" stroke-width="4"/>
-<circle cx="904.465" cy="190" r="11" fill="#FFFFFF" stroke="#2F7FB3" stroke-width="3"/>
-<polygon points="1041.595,178 1053.595,202 1029.595,202" fill="#2F7FB3" stroke="#2F7FB3" stroke-width="2"/>
-<text x="904.465" y="168" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">2.33</text>
-<text x="1041.595" y="168" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">15.39</text>
-<text x="845" y="278" font-size="21" font-weight="400" text-anchor="end" fill="#172235">FDE</text>
-<line x1="1000.855" y1="270" x2="1458.4450000000002" y2="270" stroke="#2F7FB3" stroke-width="4"/>
-<circle cx="1000.855" cy="270" r="11" fill="#FFFFFF" stroke="#2F7FB3" stroke-width="3"/>
-<polygon points="1458.4450000000002,258 1470.4450000000002,282 1446.4450000000002,282" fill="#2F7FB3" stroke="#2F7FB3" stroke-width="2"/>
-<text x="1000.855" y="248" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">11.51</text>
-<text x="1458.4450000000002" y="248" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">55.09</text>
-<text x="750" y="327" font-size="21" font-weight="700" text-anchor="start" fill="#E89429">Selected − Raw</text>
-<text x="845" y="393" font-size="21" font-weight="400" text-anchor="end" fill="#172235">ADE</text>
-<line x1="926.935" y1="385" x2="1191.325" y2="385" stroke="#E89429" stroke-width="4"/>
-<circle cx="926.935" cy="385" r="11" fill="#FFFFFF" stroke="#E89429" stroke-width="3"/>
-<polygon points="1191.325,373 1203.325,397 1179.325,397" fill="#E89429" stroke="#E89429" stroke-width="2"/>
-<text x="926.935" y="363" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">4.47</text>
-<text x="1191.325" y="363" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">29.65</text>
-<text x="845" y="453" font-size="21" font-weight="400" text-anchor="end" fill="#172235">FDE</text>
-<line x1="954.865" y1="445" x2="1252.96" y2="445" stroke="#E89429" stroke-width="4"/>
-<circle cx="954.865" cy="445" r="11" fill="#FFFFFF" stroke="#E89429" stroke-width="3"/>
-<polygon points="1252.96,433 1264.96,457 1240.96,457" fill="#E89429" stroke="#E89429" stroke-width="2"/>
-<text x="954.865" y="423" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">7.13</text>
-<text x="1252.96" y="423" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">35.52</text>
-<circle cx="1260" cy="145" r="9" fill="#FFFFFF" stroke="#667483" stroke-width="3"/>
-<text x="1280" y="152" font-size="21" font-weight="400" text-anchor="start" fill="#172235">median</text>
-<polygon points="1395,133 1405,153 1385,153" fill="#667483" stroke="#667483" stroke-width="2"/>
-<text x="1415" y="152" font-size="21" font-weight="400" text-anchor="start" fill="#172235">P95</text>
-<text x="35" y="570" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(c)</text>
-<text x="83" y="570" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Boundary and endpoint summaries</text>
-<circle cx="1030" cy="555" r="9" fill="#FFFFFF" stroke="#667483" stroke-width="3"/>
-<text x="1050" y="562" font-size="21" font-weight="400" text-anchor="start" fill="#172235">Raw</text>
-<rect x="1116" y="546" width="18" height="18" rx="0" fill="#2F7FB3" stroke="#2F7FB3" stroke-width="3" opacity="1"/>
-<text x="1145" y="562" font-size="21" font-weight="400" text-anchor="start" fill="#172235">Fixed SG</text>
-<polygon points="1260,545 1270,555 1260,565 1250,555" fill="#E89429" stroke="#E89429" stroke-width="2"/>
-<text x="1280" y="562" font-size="21" font-weight="400" text-anchor="start" fill="#172235">Selected</text>
-<g transform="translate(-140.0 0)"><text x="392.5" y="630" font-size="21" font-weight="700" text-anchor="middle" fill="#172235">Boundary speed mismatch</text>
-<line x1="220" y1="810" x2="565" y2="810" stroke="#172235" stroke-width="2"/>
-<line x1="220.0" y1="810" x2="220.0" y2="819" stroke="#172235" stroke-width="2"/>
-<text x="220.0" y="844" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">0.35</text>
-<line x1="392.5000000000001" y1="810" x2="392.5000000000001" y2="819" stroke="#172235" stroke-width="2"/>
-<text x="392.5000000000001" y="844" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">0.38</text>
-<line x1="565.0" y1="810" x2="565.0" y2="819" stroke="#172235" stroke-width="2"/>
-<text x="565.0" y="844" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">0.41</text>
-<line x1="398.25000000000017" y1="720" x2="398.25000000000017" y2="800" stroke="#667483" stroke-width="1" stroke-dasharray="4 5"/>
-<circle cx="398.25000000000017" cy="720" r="11" fill="#FFFFFF" stroke="#667483" stroke-width="3"/>
-<text x="420.25000000000017" y="702" font-size="21" font-weight="400" text-anchor="start" fill="#667483">0.381</text>
-<line x1="398.25000000000017" y1="762" x2="398.25000000000017" y2="800" stroke="#2F7FB3" stroke-width="1" stroke-dasharray="4 5"/>
-<rect x="387.25000000000017" y="751" width="22" height="22" rx="0" fill="#2F7FB3" stroke="#2F7FB3" stroke-width="3" opacity="1"/>
-<text x="416.25000000000017" y="769" font-size="21" font-weight="400" text-anchor="start" fill="#2F7FB3">0.381</text>
-<line x1="386.7500000000001" y1="804" x2="386.7500000000001" y2="800" stroke="#E89429" stroke-width="1" stroke-dasharray="4 5"/>
-<polygon points="386.7500000000001,792 398.7500000000001,804 386.7500000000001,816 374.7500000000001,804" fill="#E89429" stroke="#E89429" stroke-width="2"/>
-<text x="406.7500000000001" y="788" font-size="21" font-weight="400" text-anchor="start" fill="#E89429">0.379</text>
-<text x="392.5" y="887" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">m s⁻¹</text></g><g transform="translate(-10.0 0)"><text x="782.5" y="630" font-size="21" font-weight="700" text-anchor="middle" fill="#172235">Boundary acceleration mismatch</text>
-<line x1="610" y1="810" x2="955" y2="810" stroke="#172235" stroke-width="2"/>
-<line x1="610.0" y1="810" x2="610.0" y2="819" stroke="#172235" stroke-width="2"/>
-<text x="610.0" y="844" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">0.75</text>
-<line x1="782.5000000000002" y1="810" x2="782.5000000000002" y2="819" stroke="#172235" stroke-width="2"/>
-<text x="782.5000000000002" y="844" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">0.8</text>
-<line x1="955.0" y1="810" x2="955.0" y2="819" stroke="#172235" stroke-width="2"/>
-<text x="955.0" y="844" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">0.85</text>
-<line x1="920.5" y1="720" x2="920.5" y2="800" stroke="#667483" stroke-width="1" stroke-dasharray="4 5"/>
-<circle cx="920.5" cy="720" r="11" fill="#FFFFFF" stroke="#667483" stroke-width="3"/>
-<text x="936.5" y="727" font-size="21" font-weight="400" text-anchor="start" fill="#667483">0.840</text>
-<line x1="817.0000000000002" y1="762" x2="817.0000000000002" y2="800" stroke="#2F7FB3" stroke-width="1" stroke-dasharray="4 5"/>
-<rect x="806.0000000000002" y="751" width="22" height="22" rx="0" fill="#2F7FB3" stroke="#2F7FB3" stroke-width="3" opacity="1"/>
-<text x="833.0000000000002" y="769" font-size="21" font-weight="400" text-anchor="start" fill="#2F7FB3">0.810</text>
-<line x1="713.5000000000001" y1="804" x2="713.5000000000001" y2="800" stroke="#E89429" stroke-width="1" stroke-dasharray="4 5"/>
-<polygon points="713.5000000000001,792 725.5000000000001,804 713.5000000000001,816 701.5000000000001,804" fill="#E89429" stroke="#E89429" stroke-width="2"/>
-<text x="729.5000000000001" y="788" font-size="21" font-weight="400" text-anchor="start" fill="#E89429">0.780</text>
-<text x="782.5" y="887" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">m s⁻²</text></g><g transform="translate(120.0 0)"><text x="1172.5" y="630" font-size="21" font-weight="700" text-anchor="middle" fill="#172235">Endpoint shift vs Raw</text>
-<line x1="1000" y1="810" x2="1345" y2="810" stroke="#172235" stroke-width="2"/>
-<line x1="1000.0" y1="810" x2="1000.0" y2="819" stroke="#172235" stroke-width="2"/>
-<text x="1000.0" y="844" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">0</text>
-<line x1="1150.0" y1="810" x2="1150.0" y2="819" stroke="#172235" stroke-width="2"/>
-<text x="1150.0" y="844" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">10</text>
-<line x1="1300.0" y1="810" x2="1300.0" y2="819" stroke="#172235" stroke-width="2"/>
-<text x="1300.0" y="844" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">20</text>
-<line x1="1316.95" y1="720" x2="1316.95" y2="800" stroke="#2F7FB3" stroke-width="1" stroke-dasharray="4 5"/>
-<rect x="1305.95" y="709" width="22" height="22" rx="0" fill="#2F7FB3" stroke="#2F7FB3" stroke-width="3" opacity="1"/>
-<text x="1332.95" y="727" font-size="21" font-weight="400" text-anchor="start" fill="#2F7FB3">21.13</text>
-<line x1="1066.6" y1="762" x2="1066.6" y2="800" stroke="#E89429" stroke-width="1" stroke-dasharray="4 5"/>
-<polygon points="1066.6,750 1078.6,762 1066.6,774 1054.6,762" fill="#E89429" stroke="#E89429" stroke-width="2"/>
-<text x="1082.6" y="769" font-size="21" font-weight="400" text-anchor="start" fill="#E89429">4.44</text>
-<text x="1172.5" y="887" font-size="22.470000000000002" font-weight="400" text-anchor="middle" fill="#172235">mm</text></g></svg>
+<text x="35" y="50" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(a)</text>
+<text x="83" y="50" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Positive-error frequency</text>
+<text x="815" y="50" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(b)</text>
+<text x="863" y="50" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Conditional positive-error magnitude</text>
+<line x1="175" y1="520" x2="705" y2="520" stroke="#172235" stroke-width="2"/>
+<line x1="175.0" y1="520" x2="175.0" y2="529" stroke="#172235" stroke-width="2"/>
+<text x="175.0" y="554" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">0</text>
+<line x1="351.66666666666663" y1="520" x2="351.66666666666663" y2="529" stroke="#172235" stroke-width="2"/>
+<text x="351.66666666666663" y="554" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">20</text>
+<line x1="528.3333333333333" y1="520" x2="528.3333333333333" y2="529" stroke="#172235" stroke-width="2"/>
+<text x="528.3333333333333" y="554" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">40</text>
+<line x1="705.0" y1="520" x2="705.0" y2="529" stroke="#172235" stroke-width="2"/>
+<text x="705.0" y="554" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">60</text>
+<text x="440.0" y="590" font-size="23" font-weight="400" text-anchor="middle" fill="#172235">Positive paired error (%)</text>
+<line x1="950" y1="520" x2="1515" y2="520" stroke="#172235" stroke-width="2"/>
+<line x1="950.0" y1="520" x2="950.0" y2="529" stroke="#172235" stroke-width="2"/>
+<text x="950.0" y="554" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">0</text>
+<line x1="1138.3333333333333" y1="520" x2="1138.3333333333333" y2="529" stroke="#172235" stroke-width="2"/>
+<text x="1138.3333333333333" y="554" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">20</text>
+<line x1="1326.6666666666665" y1="520" x2="1326.6666666666665" y2="529" stroke="#172235" stroke-width="2"/>
+<text x="1326.6666666666665" y="554" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">40</text>
+<line x1="1515.0" y1="520" x2="1515.0" y2="529" stroke="#172235" stroke-width="2"/>
+<text x="1515.0" y="554" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">60</text>
+<text x="1232.5" y="590" font-size="23" font-weight="400" text-anchor="middle" fill="#172235">Positive paired error (mm)</text>
+<text x="35" y="118" font-size="22" font-weight="700" text-anchor="start" fill="#172235">Fixed SG − Raw</text>
+<text x="815" y="118" font-size="22" font-weight="700" text-anchor="start" fill="#172235">Fixed SG − Raw</text>
+<text x="150" y="178" font-size="22" font-weight="400" text-anchor="end" fill="#172235">ADE</text>
+<rect x="175" y="153" width="381.86429966678156" height="34" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="1"/>
+<text x="568.8642996667816" y="178" font-size="22" font-weight="400" text-anchor="start" fill="#172235">43.2%</text>
+<text x="925" y="178" font-size="22" font-weight="400" text-anchor="end" fill="#172235">ADE</text>
+<line x1="971.9320396155273" y1="170" x2="1094.8794286015582" y2="170" stroke="#2F7FB3" stroke-width="3"/>
+<circle cx="971.9320396155273" cy="170" r="9" fill="#FFFFFF" stroke="#2F7FB3" stroke-width="2.5"/>
+<polygon points="1094.8794286015582,161 1103.8794286015582,179 1085.8794286015582,179" fill="#2F7FB3" stroke="#2F7FB3" stroke-width="2"/>
+<text x="971.9320396155273" y="149" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">2.33</text>
+<text x="1094.8794286015582" y="149" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">15.39</text>
+<text x="150" y="273" font-size="22" font-weight="400" text-anchor="end" fill="#172235">FDE</text>
+<rect x="175" y="248" width="415.79696656325405" height="34" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="1"/>
+<text x="602.796966563254" y="273" font-size="22" font-weight="400" text-anchor="start" fill="#172235">47.1%</text>
+<text x="925" y="273" font-size="22" font-weight="400" text-anchor="end" fill="#172235">FDE</text>
+<line x1="1058.421001774919" y1="265" x2="1468.7461077512526" y2="265" stroke="#2F7FB3" stroke-width="3"/>
+<circle cx="1058.421001774919" cy="265" r="9" fill="#FFFFFF" stroke="#2F7FB3" stroke-width="2.5"/>
+<polygon points="1468.7461077512526,256 1477.7461077512526,274 1459.7461077512526,274" fill="#2F7FB3" stroke="#2F7FB3" stroke-width="2"/>
+<text x="1058.421001774919" y="244" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">11.51</text>
+<text x="1468.7461077512526" y="244" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">55.09</text>
+<text x="35" y="328" font-size="22" font-weight="700" text-anchor="start" fill="#172235">Selected − Raw</text>
+<text x="815" y="328" font-size="22" font-weight="700" text-anchor="start" fill="#172235">Selected − Raw</text>
+<text x="150" y="388" font-size="22" font-weight="400" text-anchor="end" fill="#172235">ADE</text>
+<rect x="175" y="363" width="385.4999425485464" height="34" rx="0" fill="#E89429" stroke="none" stroke-width="1" opacity="1"/>
+<text x="572.4999425485464" y="388" font-size="22" font-weight="400" text-anchor="start" fill="#172235">43.6%</text>
+<text x="925" y="388" font-size="22" font-weight="400" text-anchor="end" fill="#172235">ADE</text>
+<line x1="992.0973745199356" y1="380" x2="1229.2402115378695" y2="380" stroke="#E89429" stroke-width="3"/>
+<circle cx="992.0973745199356" cy="380" r="9" fill="#FFFFFF" stroke="#E89429" stroke-width="2.5"/>
+<polygon points="1229.2402115378695,371 1238.2402115378695,389 1220.2402115378695,389" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<text x="992.0973745199356" y="359" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">4.47</text>
+<text x="1229.2402115378695" y="359" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">29.65</text>
+<text x="150" y="483" font-size="22" font-weight="400" text-anchor="end" fill="#172235">FDE</text>
+<rect x="175" y="458" width="125.53625186717227" height="34" rx="0" fill="#E89429" stroke="none" stroke-width="1" opacity="1"/>
+<text x="312.53625186717227" y="483" font-size="22" font-weight="400" text-anchor="start" fill="#172235">14.2%</text>
+<text x="925" y="483" font-size="22" font-weight="400" text-anchor="end" fill="#172235">FDE</text>
+<line x1="1017.1745764778943" y1="475" x2="1284.4877414219418" y2="475" stroke="#E89429" stroke-width="3"/>
+<circle cx="1017.1745764778943" cy="475" r="9" fill="#FFFFFF" stroke="#E89429" stroke-width="2.5"/>
+<polygon points="1284.4877414219418,466 1293.4877414219418,484 1275.4877414219418,484" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<text x="1017.1745764778943" y="454" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">7.13</text>
+<text x="1284.4877414219418" y="454" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">35.52</text>
+<circle cx="1190" cy="98" r="8" fill="#FFFFFF" stroke="#667483" stroke-width="2"/>
+<text x="1208" y="105" font-size="20" font-weight="400" text-anchor="start" fill="#172235">median</text>
+<polygon points="1330,90 1338,106 1322,106" fill="#667483" stroke="#667483" stroke-width="2"/>
+<text x="1348" y="105" font-size="20" font-weight="400" text-anchor="start" fill="#172235">P95</text>
+<text x="35" y="645" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(c)</text>
+<text x="83" y="645" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Boundary and endpoint consequences</text>
+<text x="295" y="706" font-size="23" font-weight="400" text-anchor="middle" fill="#172235">Boundary speed mismatch</text>
+<text x="295" y="742" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">m s⁻¹</text>
+<line x1="120" y1="788" x2="120" y2="978" stroke="#667483" stroke-width="1.4"/>
+<line x1="120" y1="978" x2="470" y2="978" stroke="#667483" stroke-width="1.4"/>
+<line x1="114" y1="978.0" x2="120" y2="978.0" stroke="#667483" stroke-width="1.4"/>
+<text x="108" y="985.0" font-size="20" font-weight="400" text-anchor="end" fill="#172235">0</text>
+<line x1="114" y1="887.5238095238095" x2="120" y2="887.5238095238095" stroke="#667483" stroke-width="1.4"/>
+<text x="108" y="894.5238095238095" font-size="20" font-weight="400" text-anchor="end" fill="#172235">0.2</text>
+<line x1="114" y1="797.047619047619" x2="120" y2="797.047619047619" stroke="#667483" stroke-width="1.4"/>
+<text x="108" y="804.047619047619" font-size="20" font-weight="400" text-anchor="end" fill="#172235">0.4</text>
+<rect x="169" y="805.6428571428571" width="32" height="172.3571428571429" rx="0" fill="#667483" stroke="none" stroke-width="1" opacity="1"/>
+<text x="185" y="792.6428571428571" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">0.381</text>
+<text x="185" y="1012" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">Raw</text>
+<rect x="279" y="805.6428571428571" width="32" height="172.3571428571429" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="1"/>
+<text x="295" y="792.6428571428571" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">0.381</text>
+<text x="295" y="1012" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">Fixed SG</text>
+<rect x="389" y="806.547619047619" width="32" height="171.45238095238096" rx="0" fill="#E89429" stroke="none" stroke-width="1" opacity="1"/>
+<text x="405" y="793.547619047619" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">0.379</text>
+<text x="405" y="1012" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">Selected</text>
+<text x="825" y="706" font-size="23" font-weight="400" text-anchor="middle" fill="#172235">Boundary acceleration mismatch</text>
+<text x="825" y="742" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">m s⁻²</text>
+<line x1="650" y1="788" x2="650" y2="978" stroke="#667483" stroke-width="1.4"/>
+<line x1="650" y1="978" x2="1000" y2="978" stroke="#667483" stroke-width="1.4"/>
+<line x1="644" y1="978.0" x2="650" y2="978.0" stroke="#667483" stroke-width="1.4"/>
+<text x="638" y="985.0" font-size="20" font-weight="400" text-anchor="end" fill="#172235">0</text>
+<line x1="644" y1="898.0" x2="650" y2="898.0" stroke="#667483" stroke-width="1.4"/>
+<text x="638" y="905.0" font-size="20" font-weight="400" text-anchor="end" fill="#172235">0.4</text>
+<line x1="644" y1="818.0" x2="650" y2="818.0" stroke="#667483" stroke-width="1.4"/>
+<text x="638" y="825.0" font-size="20" font-weight="400" text-anchor="end" fill="#172235">0.8</text>
+<rect x="699" y="810.0" width="32" height="168.0" rx="0" fill="#667483" stroke="none" stroke-width="1" opacity="1"/>
+<text x="715" y="797.0" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">0.840</text>
+<text x="715" y="1012" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">Raw</text>
+<rect x="809" y="816.0" width="32" height="162.0" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="1"/>
+<text x="825" y="803.0" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">0.810</text>
+<text x="825" y="1012" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">Fixed SG</text>
+<rect x="919" y="822.0" width="32" height="156.0" rx="0" fill="#E89429" stroke="none" stroke-width="1" opacity="1"/>
+<text x="935" y="809.0" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">0.780</text>
+<text x="935" y="1012" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">Selected</text>
+<text x="1355" y="706" font-size="23" font-weight="400" text-anchor="middle" fill="#172235">Endpoint shift vs Raw</text>
+<text x="1355" y="742" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">mm</text>
+<line x1="1180" y1="788" x2="1180" y2="978" stroke="#667483" stroke-width="1.4"/>
+<line x1="1180" y1="978" x2="1530" y2="978" stroke="#667483" stroke-width="1.4"/>
+<line x1="1174" y1="978.0" x2="1180" y2="978.0" stroke="#667483" stroke-width="1.4"/>
+<text x="1168" y="985.0" font-size="20" font-weight="400" text-anchor="end" fill="#172235">0</text>
+<line x1="1174" y1="902.0" x2="1180" y2="902.0" stroke="#667483" stroke-width="1.4"/>
+<text x="1168" y="909.0" font-size="20" font-weight="400" text-anchor="end" fill="#172235">10</text>
+<line x1="1174" y1="826.0" x2="1180" y2="826.0" stroke="#667483" stroke-width="1.4"/>
+<text x="1168" y="833.0" font-size="20" font-weight="400" text-anchor="end" fill="#172235">20</text>
+<rect x="1279" y="817.412" width="32" height="160.58799999999997" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1295" y="804.412" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">21.13</text>
+<text x="1295" y="1012" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">Fixed SG</text>
+<rect x="1409" y="944.256" width="32" height="33.74400000000003" rx="0" fill="#E89429" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1425" y="931.256" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">4.44</text>
+<text x="1425" y="1012" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">Selected</text>
+</svg>

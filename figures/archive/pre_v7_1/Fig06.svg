@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="103.46mm" viewBox="0 0 1600 930">
+<title>Editable scientific figure</title><desc>All labels, lines and markers are editable SVG objects.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172235}.axis{stroke:#172235;stroke-width:2;fill:none}.grid{stroke:#D8DEE4;stroke-width:1}.ref{stroke:#AEB7C0;stroke-width:2;stroke-dasharray:8 7}.thin{stroke-width:2;fill:none}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="35" y="55" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(a)</text>
+<text x="83" y="55" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Predictor-stratified effects</text>
+<text x="1110" y="55" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(b)</text>
+<text x="1158" y="55" font-size="22" font-weight="700" text-anchor="start" fill="#172235">
+<tspan x="1158" dy="0">Composition of selected</tspan>
+<tspan x="1158" dy="21">candidates</tspan>
+</text>
+<line x1="215" y1="780" x2="365" y2="780" stroke="#172235" stroke-width="2"/>
+<line x1="260.45454545454544" y1="780" x2="260.45454545454544" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="260.45454545454544" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">−1</text>
+<line x1="351.3636363636364" y1="780" x2="351.3636363636364" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="351.3636363636364" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">0</text>
+<text x="290.0" y="122" font-size="22.470000000000002" font-weight="700" text-anchor="middle" fill="#172235"><tspan x="290.0" dy="0">Fixed SG</tspan><tspan x="290.0" dy="25">− Raw</tspan></text><line x1="351.3636363636364" y1="170" x2="351.3636363636364" y2="750" stroke="#AEB7C0" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="259.27272727272725,219 270.27272727272725,230 259.27272727272725,241 248.27272727272725,230" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="301.6363636363636,324 312.6363636363636,335 301.6363636363636,346 290.6363636363636,335" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="303.72727272727275,429 314.72727272727275,440 303.72727272727275,451 292.72727272727275,440" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="236.0,534 247.0,545 236.0,556 225.0,545" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="278.45454545454544,639 289.45454545454544,650 278.45454545454544,661 267.45454545454544,650" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<line x1="395" y1="780" x2="545" y2="780" stroke="#172235" stroke-width="2"/>
+<line x1="422.27272727272725" y1="780" x2="422.27272727272725" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="422.27272727272725" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">−4</text>
+<line x1="476.8181818181818" y1="780" x2="476.8181818181818" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="476.8181818181818" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">−2</text>
+<line x1="531.3636363636364" y1="780" x2="531.3636363636364" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="531.3636363636364" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">0</text>
+<text x="470.0" y="122" font-size="22.470000000000002" font-weight="700" text-anchor="middle" fill="#172235"><tspan x="470.0" dy="0">Selected −</tspan><tspan x="470.0" dy="25">Fixed SG</tspan></text><line x1="531.3636363636364" y1="170" x2="531.3636363636364" y2="750" stroke="#AEB7C0" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="497.5454545454545,219 508.5454545454545,230 497.5454545454545,241 486.5454545454545,230" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="517.4545454545455,324 528.4545454545455,335 517.4545454545455,346 506.4545454545455,335" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="527.2727272727273,429 538.2727272727273,440 527.2727272727273,451 516.2727272727273,440" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="412.1818181818182,534 423.1818181818182,545 412.1818181818182,556 401.1818181818182,545" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="511.72727272727275,639 522.7272727272727,650 511.72727272727275,661 500.72727272727275,650" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<line x1="575" y1="780" x2="725" y2="780" stroke="#172235" stroke-width="2"/>
+<line x1="575.0" y1="780" x2="575.0" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="575.0" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">−1</text>
+<line x1="612.5" y1="780" x2="612.5" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="612.5" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">0</text>
+<line x1="650.0" y1="780" x2="650.0" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="650.0" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">1</text>
+<line x1="687.5" y1="780" x2="687.5" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="687.5" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">2</text>
+<line x1="725.0" y1="780" x2="725.0" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="725.0" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">3</text>
+<text x="650.0" y="122" font-size="22.470000000000002" font-weight="700" text-anchor="middle" fill="#172235"><tspan x="650.0" dy="0">Selected −</tspan><tspan x="650.0" dy="25">Fixed SG</tspan></text><line x1="612.5" y1="170" x2="612.5" y2="750" stroke="#AEB7C0" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="662.375,219 673.375,230 662.375,241 651.375,230" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="633.5,324 644.5,335 633.5,346 622.5,335" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="621.875,429 632.875,440 621.875,451 610.875,440" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="707.375,534 718.375,545 707.375,556 696.375,545" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="611.0,639 622.0,650 611.0,661 600.0,650" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<line x1="755" y1="780" x2="905" y2="780" stroke="#172235" stroke-width="2"/>
+<line x1="775.2702702702703" y1="780" x2="775.2702702702703" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="770.2702702702703" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">−0.2</text>
+<line x1="815.8108108108108" y1="780" x2="815.8108108108108" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="817.8108108108108" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">−0.1</text>
+<line x1="856.3513513513514" y1="780" x2="856.3513513513514" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="856.3513513513514" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">0</text>
+<line x1="896.8918918918919" y1="780" x2="896.8918918918919" y2="789" stroke="#172235" stroke-width="2"/>
+<text x="896.8918918918919" y="814" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">0.1</text>
+<text x="830.0" y="122" font-size="22.470000000000002" font-weight="700" text-anchor="middle" fill="#172235"><tspan x="830.0" dy="0">Selected −</tspan><tspan x="830.0" dy="25">Fixed SG</tspan></text><line x1="856.3513513513514" y1="170" x2="856.3513513513514" y2="750" stroke="#AEB7C0" stroke-width="2" stroke-dasharray="7 6"/>
+<polygon points="842.9729729729729,219 853.9729729729729,230 842.9729729729729,241 831.9729729729729,230" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="840.9459459459459,324 851.9459459459459,335 840.9459459459459,346 829.9459459459459,335" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="857.5675675675676,429 868.5675675675676,440 857.5675675675676,451 846.5675675675676,440" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="780.9459459459459,534 791.9459459459459,545 780.9459459459459,556 769.9459459459459,545" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<polygon points="881.8918918918919,639 892.8918918918919,650 881.8918918918919,661 870.8918918918919,650" fill="#E89429" stroke="#E89429" stroke-width="2"/>
+<text x="205" y="237" font-size="21" font-weight="400" text-anchor="end" fill="#172235">MLP</text>
+<text x="205" y="342" font-size="21" font-weight="400" text-anchor="end" fill="#172235">GRU</text>
+<text x="205" y="447" font-size="21" font-weight="400" text-anchor="end" fill="#172235">LSTM</text>
+<text x="205" y="552" font-size="21" font-weight="400" text-anchor="end" fill="#172235">TemporalCNN</text>
+<text x="205" y="647.0" font-size="21" font-weight="400" text-anchor="end" fill="#172235"><tspan x="205" dy="0">Positional</tspan><tspan x="205" dy="23">Transformer</tspan></text>
+<text x="1165" y="202" font-size="21" font-weight="400" text-anchor="end" fill="#172235">
+<tspan x="1165" dy="0">MLP</tspan>
+</text>
+<rect x="1190.0" y="180" width="36.0" height="42" rx="0" fill="#2F7FB3" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1208.0" y="209" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">1</text>
+<rect x="1226.0" y="180" width="324.0" height="42" rx="0" fill="#35A28F" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1388.0" y="209" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">9</text>
+<text x="1165" y="297" font-size="21" font-weight="400" text-anchor="end" fill="#172235">
+<tspan x="1165" dy="0">GRU</tspan>
+</text>
+<rect x="1190.0" y="275" width="180.0" height="42" rx="0" fill="#2F7FB3" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1280.0" y="304" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">5</text>
+<rect x="1370.0" y="275" width="180.0" height="42" rx="0" fill="#35A28F" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1460.0" y="304" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">5</text>
+<text x="1165" y="392" font-size="21" font-weight="400" text-anchor="end" fill="#172235">
+<tspan x="1165" dy="0">LSTM</tspan>
+</text>
+<rect x="1190.0" y="370" width="252.0" height="42" rx="0" fill="#2F7FB3" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1316.0" y="399" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">7</text>
+<rect x="1442.0" y="370" width="108.0" height="42" rx="0" fill="#35A28F" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1496.0" y="399" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">3</text>
+<text x="1165" y="487" font-size="21" font-weight="400" text-anchor="end" fill="#172235">
+<tspan x="1165" dy="0">Temporal CNN</tspan>
+</text>
+<rect x="1190.0" y="465" width="36.0" height="42" rx="0" fill="#2F7FB3" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1208.0" y="494" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">1</text>
+<rect x="1226.0" y="465" width="324.0" height="42" rx="0" fill="#35A28F" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1388.0" y="494" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">9</text>
+<text x="1165" y="572" font-size="21" font-weight="400" text-anchor="end" fill="#172235">
+<tspan x="1165" dy="0">Positional</tspan>
+<tspan x="1165" dy="21">Transformer</tspan>
+</text>
+<rect x="1190" y="560" width="36.0" height="42" rx="0" fill="#667483" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1208.0" y="589" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">1</text>
+<rect x="1226.0" y="560" width="72.0" height="42" rx="0" fill="#2F7FB3" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1262.0" y="589" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">2</text>
+<rect x="1298.0" y="560" width="252.0" height="42" rx="0" fill="#35A28F" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1424.0" y="589" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">7</text>
+<line x1="1190" y1="645" x2="1550" y2="645" stroke="#D8DEE4" stroke-width="1.5"/>
+<text x="1165" y="690" font-size="21" font-weight="700" text-anchor="end" fill="#172235">Overall</text>
+<rect x="1190" y="665" width="7.2" height="42" rx="0" fill="#667483" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<line x1="1193.6" y1="662" x2="1193.6" y2="654" stroke="#667483" stroke-width="1.5"/>
+<text x="1193.6" y="650" font-size="21" font-weight="700" text-anchor="middle" fill="#667483">1/50</text>
+<rect x="1197.2" y="665" width="115.2" height="42" rx="0" fill="#2F7FB3" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1254.8" y="694" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">16/50</text>
+<rect x="1312.4" y="665" width="237.6" height="42" rx="0" fill="#35A28F" stroke="#FFFFFF" stroke-width="1" opacity="1"/>
+<text x="1431.2" y="694" font-size="21" font-weight="700" text-anchor="middle" fill="#FFFFFF">33/50</text>
+<line x1="1190" y1="745" x2="1550" y2="745" stroke="#172235" stroke-width="2"/>
+<line x1="1190.0" y1="745" x2="1190.0" y2="754" stroke="#172235" stroke-width="2"/>
+<text x="1190.0" y="779" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">0</text>
+<line x1="1280.0" y1="745" x2="1280.0" y2="754" stroke="#172235" stroke-width="2"/>
+<text x="1280.0" y="779" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">25</text>
+<line x1="1370.0" y1="745" x2="1370.0" y2="754" stroke="#172235" stroke-width="2"/>
+<text x="1370.0" y="779" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">50</text>
+<line x1="1460.0" y1="745" x2="1460.0" y2="754" stroke="#172235" stroke-width="2"/>
+<text x="1460.0" y="779" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">75</text>
+<line x1="1550.0" y1="745" x2="1550.0" y2="754" stroke="#172235" stroke-width="2"/>
+<text x="1550.0" y="779" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">100</text>
+<text x="1370.0" y="815" font-size="23" font-weight="400" text-anchor="middle" fill="#172235">Selected runs (%)</text>
+<rect x="1230" y="830" width="16" height="16" rx="0" fill="#667483" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1255" y="845" font-size="21" font-weight="400" text-anchor="start" fill="#172235">Raw</text>
+<rect x="1320" y="830" width="16" height="16" rx="0" fill="#2F7FB3" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1345" y="845" font-size="21" font-weight="400" text-anchor="start" fill="#172235">SG(5,2)</text>
+<rect x="1450" y="830" width="16" height="16" rx="0" fill="#35A28F" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1475" y="845" font-size="21" font-weight="400" text-anchor="start" fill="#172235">QReg</text>
+<text x="290" y="856" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">ΔShape</text><text x="290" y="881" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">(m s⁻³)</text><text x="470" y="856" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">ΔADE</text><text x="470" y="881" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">(mm)</text><text x="650" y="856" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">ΔFDE</text><text x="650" y="881" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">(mm)</text><text x="830" y="856" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">ΔShape</text><text x="830" y="881" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">(m s⁻³)</text><text x="30" y="455" font-size="21" font-weight="400" text-anchor="middle" fill="#172235" transform="rotate(-90 30 455)">Predictor</text></svg>

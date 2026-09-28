@@ -1,4 +1,4 @@
-"""Validate saved summaries and export locked v6 SVG/PNG; no experiments rerun.
+"""Validate saved summaries and export locked v7.1 SVG/PNG; no experiments rerun.
 
 This is frozen-artwork export, not regeneration of trajectories from raw data.
 Source checks validate displayed counts and the locked Fig.3 case independently.
@@ -6,7 +6,7 @@ Source checks validate displayed counts and the locked Fig.3 case independently.
 from __future__ import annotations
 import argparse,csv,hashlib,json,shutil
 from pathlib import Path
-CURRENT=tuple(range(1,8))+("S07",)
+CURRENT=tuple(range(1,7))+("S07",)
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def rows(path):
     with path.open(encoding="utf-8-sig",newline="") as f:return list(csv.DictReader(f))
@@ -28,8 +28,8 @@ def validate_data(root):
     for name in ["figS07_aggregation_summary.csv","figS07_lolo_effects.csv","figS07_internal_configuration.csv"]:
         assert (d/name).is_file()
 def reproduce(n,root,output=None):
-    if n not in CURRENT:raise ValueError("Current figures: 01–07 and S07. Former Fig08 is superseded by Table 6 and Methods 2.6.")
-    manifest=json.loads((root/"figures/manifest_v6.json").read_text(encoding="utf-8"))
+    if n not in CURRENT:raise ValueError("Current figures: 01–06 and S07. Former Fig07 is merged into Fig06(c); Fig08 is superseded by Table 6 and Methods 2.6.")
+    manifest=json.loads((root/"figures/manifest_v7_1.json").read_text(encoding="utf-8"))
     key="FigS07" if n=="S07" else f"Fig{n:02d}"
     target=output or root/"figures/reproduced"
     target.mkdir(parents=True,exist_ok=True)

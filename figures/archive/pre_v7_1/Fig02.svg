@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="84.11mm" viewBox="0 0 1600 756">
 <title>Editable scientific figure</title><desc>All labels, lines and markers are editable SVG objects.</desc>
 <style>text{font-family:Arial,Helvetica,sans-serif;fill:#172235}.axis{stroke:#172235;stroke-width:2;fill:none}.grid{stroke:#D8DEE4;stroke-width:1}.ref{stroke:#AEB7C0;stroke-width:2;stroke-dasharray:8 7}.thin{stroke-width:2;fill:none}</style>
@@ -37,8 +38,8 @@
 <tspan x="447" dy="0">prediction</tspan>
 <tspan x="447" dy="21">boundary</tspan>
 </text>
-<text x="120" y="420" font-size="26.0" font-weight="700" text-anchor="start" fill="#172235">Input X ∈ ℝ⁴×⁵</text>
-<text x="495" y="420" font-size="26.0" font-weight="700" text-anchor="start" fill="#172235">Targets Y ∈ ℝ⁶×²</text>
+<text x="120" y="420" font-size="25" font-weight="700" text-anchor="start" fill="#172235">Input X ∈ ℝ⁴×⁵</text>
+<text x="495" y="420" font-size="25" font-weight="700" text-anchor="start" fill="#172235">Targets Y ∈ ℝ⁶×²</text>
 <text x="120" y="451" font-size="21" font-weight="400" text-anchor="start" fill="#667483"><tspan x="120" dy="0">local x/y, speed, acceleration</tspan><tspan x="120" dy="25">relative heading</tspan></text>
 <text x="495" y="451" font-size="21" font-weight="400" text-anchor="start" fill="#667483">future 2-D positions</text>
 <text x="850" y="115" font-size="21" font-weight="400" text-anchor="start" fill="#667483">Complete logs are assigned before stride-1 windows are extracted.</text>
@@ -72,7 +73,7 @@
 <text x="83" y="515" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Experimental role isolation</text>
 <circle cx="372" cy="620" r="30" fill="#FFFFFF" stroke="#667483" stroke-width="4"/>
 <text x="372" y="570" font-size="23" font-weight="700" text-anchor="middle" fill="#667483">Train</text>
-<text x="372" y="668" font-size="21.84" font-weight="400" text-anchor="middle" fill="#172235">
+<text x="372" y="668" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">
 <tspan x="372" dy="0">model fitting /</tspan>
 <tspan x="372" dy="21">normalization</tspan>
 </text>
@@ -102,5 +103,5 @@
 </text>
 <line x1="1085" y1="545" x2="1085" y2="715" stroke="#D9534F" stroke-width="3" stroke-dasharray="10 8"/>
 <text x="1085" y="535" font-size="21" font-weight="400" text-anchor="middle" fill="#D9534F">development frozen</text>
-<text x="800" y="745" font-size="21.84" font-weight="700" text-anchor="middle" fill="#172235">Held-out Test: 7 logs · 93 scenes · 2,901 windows</text>
+<text x="800" y="745" font-size="21" font-weight="700" text-anchor="middle" fill="#172235">Held-out Test: 7 logs · 93 scenes · 2,901 windows</text>
 </svg>

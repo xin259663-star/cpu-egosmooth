@@ -55,7 +55,7 @@ python scripts/reproduce_publication_tables.py --root .
 pytest -q
 ```
 
-Current publication assets are Fig.1–Fig.7 + Fig.S07. The figure command validates saved selection counts and locked case identifiers, then exports the reviewed SVG/PNG artwork byte-for-byte. It does not rerun training, reconstruct trajectories, or recompute map crops. Table 5 (timing-definition sensitivity) and Table 6 (kinematic controls) are exported from unchanged full-precision CSVs. Former Fig.8 is superseded by Table 6 + Methods 2.6 equations and retained only as archival artwork. See docs/FIGURES.md and figures/manifest_v6.json for exact mapping and hashes.
+Current publication assets are Fig.1–Fig.6 + Fig.S07. The figure command validates saved selection counts and locked case identifiers, then exports the reviewed SVG/PNG artwork byte-for-byte. It does not rerun training, reconstruct trajectories, or recompute map crops. Table 5 (timing-definition sensitivity) and Table 6 (kinematic controls) are exported from unchanged full-precision CSVs. Former Fig.7 selection-rule sensitivity is incorporated into Fig.6(c), and the previous seven-figure artwork is archived in figures/archive/pre_v7_1/. Former Fig.8 is superseded by Table 6 + Methods 2.6 equations and retained only as archival artwork. See docs/FIGURES.md and figures/manifest_v7_1.json for exact mapping and hashes.
 
 ## Figure 3 qualitative cases
 

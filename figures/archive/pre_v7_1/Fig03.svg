@@ -1,16 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="111.25mm" viewBox="0 0 1600 1000">
 <title>Editable scientific figure</title><desc>All labels, lines and markers are editable SVG objects.</desc>
 <style>text{font-family:Arial,Helvetica,sans-serif;fill:#172235}.axis{stroke:#172235;stroke-width:2;fill:none}.grid{stroke:#D8DEE4;stroke-width:1}.ref{stroke:#AEB7C0;stroke-width:2;stroke-dasharray:8 7}.thin{stroke-width:2;fill:none}</style>
 <rect width="100%" height="100%" fill="white"/>
 <defs><filter id="mapContrast" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncR type="linear" slope="1.12" intercept="-0.12"/><feFuncG type="linear" slope="1.12" intercept="-0.12"/><feFuncB type="linear" slope="1.12" intercept="-0.12"/></feComponentTransfer></filter></defs>
 <text x="35" y="55" font-size="25" font-weight="700" text-anchor="start" fill="#172235">(a)</text>
-<text x="83" y="55" font-size="26.312" font-weight="700" text-anchor="start" fill="#172235">
+<text x="83" y="55" font-size="25.3" font-weight="700" text-anchor="start" fill="#172235">
 <tspan x="83" dy="0">Typical Fixed SG geometry</tspan>
 <tspan x="83" dy="27.500000000000004">reduction</tspan>
 </text>
-<text x="83" y="111" font-size="24.024" font-weight="400" text-anchor="start" fill="#667483" font-style="italic">median ΔShape case</text>
+<text x="83" y="111" font-size="23.1" font-weight="400" text-anchor="start" fill="#667483" font-style="italic">median ΔShape case</text>
 <text x="83" y="143" font-size="23.1" font-weight="700" text-anchor="start" fill="#172235">Fixed SG − Raw</text>
-<text x="83" y="175" font-size="24.024" font-weight="400" text-anchor="start" fill="#172235">
+<text x="83" y="175" font-size="23.1" font-weight="400" text-anchor="start" fill="#172235">
 <tspan x="83" dy="0">ΔADE −5.6 mm</tspan>
 <tspan x="83" dy="26.400000000000002">ΔFDE +12.8 mm</tspan>
 <tspan x="83" dy="26.400000000000002">ΔShape −0.32 m s⁻³</tspan>
@@ -48,13 +49,13 @@
 <text x="545.0" y="477" font-size="21" font-weight="400" text-anchor="middle" fill="#172235">Lateral (m)</text>
 <text x="360" y="262.5" font-size="21" font-weight="400" text-anchor="middle" fill="#172235" transform="rotate(-90 360 262.5)">Longitudinal (m)</text>
 <text x="815" y="55" font-size="25" font-weight="700" text-anchor="start" fill="#172235">(b)</text>
-<text x="863" y="55" font-size="26.312" font-weight="700" text-anchor="start" fill="#172235">
+<text x="863" y="55" font-size="25.3" font-weight="700" text-anchor="start" fill="#172235">
 <tspan x="863" dy="0">Near-preserved ADE/FDE,</tspan>
 <tspan x="863" dy="27.500000000000004">geometry altered</tspan>
 </text>
-<text x="863" y="111" font-size="24.024" font-weight="400" text-anchor="start" fill="#667483" font-style="italic">small ΔADE/FDE</text>
+<text x="863" y="111" font-size="23.1" font-weight="400" text-anchor="start" fill="#667483" font-style="italic">small ΔADE/FDE</text>
 <text x="863" y="143" font-size="23.1" font-weight="700" text-anchor="start" fill="#172235">Fixed SG − Raw</text>
-<text x="863" y="175" font-size="24.024" font-weight="400" text-anchor="start" fill="#172235">
+<text x="863" y="175" font-size="23.1" font-weight="400" text-anchor="start" fill="#172235">
 <tspan x="863" dy="0">ΔADE +0.0 mm</tspan>
 <tspan x="863" dy="26.400000000000002">ΔFDE −1.5 mm</tspan>
 <tspan x="863" dy="26.400000000000002">ΔShape −0.75 m s⁻³</tspan>
@@ -112,7 +113,7 @@
 </text>
 <text x="83" y="579" font-size="23.1" font-weight="400" text-anchor="start" fill="#667483" font-style="italic">positive-tail case</text>
 <text x="83" y="611" font-size="23.1" font-weight="700" text-anchor="start" fill="#172235">Fixed SG − Raw</text>
-<text x="83" y="643" font-size="24.024" font-weight="400" text-anchor="start" fill="#172235">
+<text x="83" y="643" font-size="23.1" font-weight="400" text-anchor="start" fill="#172235">
 <tspan x="83" dy="0">ΔADE +8.3 mm</tspan>
 <tspan x="83" dy="26.400000000000002">ΔFDE +17.4 mm</tspan>
 <tspan x="83" dy="26.400000000000002">ΔShape −0.81 m s⁻³</tspan>
@@ -156,7 +157,7 @@
 </text>
 <text x="863" y="591" font-size="23.1" font-weight="400" text-anchor="start" fill="#667483" font-style="italic">development-selected case</text>
 <text x="863" y="623" font-size="23.1" font-weight="700" text-anchor="start" fill="#172235">Selected − Fixed SG</text>
-<text x="863" y="655" font-size="24.024" font-weight="400" text-anchor="start" fill="#172235">
+<text x="863" y="655" font-size="23.1" font-weight="400" text-anchor="start" fill="#172235">
 <tspan x="863" dy="0">ΔADE −0.3 mm</tspan>
 <tspan x="863" dy="26.400000000000002">ΔFDE +7.2 mm</tspan>
 <tspan x="863" dy="26.400000000000002">ΔShape −0.07 m s⁻³</tspan>

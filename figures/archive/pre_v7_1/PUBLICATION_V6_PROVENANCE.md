@@ -1,6 +1,4 @@
-# Historical publication v6 provenance — superseded
-
-This record describes the historical v6 release only, not the current manuscript or reproduction output. The current six-figure release is documented in `docs/PUBLICATION_V7_1_PROVENANCE.md` and `figures/manifest_v7_1.json`. The original v6 manifest and artwork are preserved in `figures/archive/pre_v7_1/`.
+# Publication v6 provenance
 
 This release changes publication mapping and exports only. Current figures are Fig01–Fig07 and FigS07. Table 5 replaces the former timing-definition figure panel; Table 6 and Methods 2.6 replace former Fig08. No experiment, predictor output, scientific metric, or Supplement S1 identifier is changed.
 
