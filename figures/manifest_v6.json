@@ -1,0 +1,193 @@
+{
+  "version": "manuscript-v6",
+  "publication_width_mm": 178,
+  "export_semantics": "byte-identical locked-artwork export; not raw-data experiment reproduction",
+  "figures": {
+    "Fig01": {
+      "mapping": "workflow",
+      "assets": [
+        {
+          "path": "figures/Fig01.png",
+          "sha256": "c9651bd4d499155f0c06bcaf2ff347a0be524d28a0e26483f86abd9dfdb45a17",
+          "bytes": 998810
+        },
+        {
+          "path": "figures/Fig01.svg",
+          "sha256": "20fd62f29c86cb5b72d74de046b7d14892192fdfd63f943c30093cc23984f500",
+          "bytes": 5085
+        }
+      ]
+    },
+    "Fig02": {
+      "mapping": "data protocol",
+      "assets": [
+        {
+          "path": "figures/Fig02.png",
+          "sha256": "d3781c9beafaf8393a40f3bda4edfa47d01a24961630bf3f69b2f9d20be1eea1",
+          "bytes": 1230750
+        },
+        {
+          "path": "figures/Fig02.svg",
+          "sha256": "d2382b28eb63981c9246c6d3e95c873c4b36450ed54964cfa7fb2777dd0dbc4c",
+          "bytes": 10363
+        }
+      ]
+    },
+    "Fig03": {
+      "mapping": "qualitative cases",
+      "assets": [
+        {
+          "path": "figures/Fig03.png",
+          "sha256": "8f1660f6600b30bf19f5a45c68520cd710ebb08df8e9dba421cb0b0ecfb236ba",
+          "bytes": 1921106
+        },
+        {
+          "path": "figures/Fig03.svg",
+          "sha256": "fcc326c99167ba47ddb29ca42b2fc5bf135cdc73924abef1f3c38091c3d737a6",
+          "bytes": 69196
+        }
+      ],
+      "source_data": [
+        {
+          "path": "results/figure_data/fig3_selected_cases.csv",
+          "sha256": "8af34dceeac38a95b417be957e9256e5e836ff7c6e49ae504c1cef5416ceb088",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/provenance/Fig03_case_selection.csv",
+          "sha256": "8af34dceeac38a95b417be957e9256e5e836ff7c6e49ae504c1cef5416ceb088",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/provenance/Fig03_debug_keys.csv",
+          "sha256": "6f21e7aafbd7ad8397da949463d19e72e267870c00758acdedbb859517d09864",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/provenance/fig3_selection_summary.json",
+          "sha256": "02401ad7d6da90b08d6ad7ff330f9479a9b4655f85e21838b10bd66634c7f054",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        }
+      ]
+    },
+    "Fig04": {
+      "mapping": "paired effects / absolute means",
+      "assets": [
+        {
+          "path": "figures/Fig04.png",
+          "sha256": "014a1aff1ab8f258e37aa137de25c34904f3cff92dbfcaadd8e1bd372cbf9614",
+          "bytes": 854836
+        },
+        {
+          "path": "figures/Fig04.svg",
+          "sha256": "66ac9927f0038b4f3cef455a99a8917a6e0f7a1b2b699f1647cc28f196dd2e5e",
+          "bytes": 35843
+        }
+      ]
+    },
+    "Fig05": {
+      "mapping": "local error / boundary",
+      "assets": [
+        {
+          "path": "figures/Fig05.png",
+          "sha256": "64ea1db0202f14b767c7e02039aa7e26e0319ce3a814675b2b1ae56c350988a2",
+          "bytes": 1042699
+        },
+        {
+          "path": "figures/Fig05.svg",
+          "sha256": "dedc6445c8c3ac71f5e5c4b87efd026d75dd950019538b57e16ccfb6a4d1b99b",
+          "bytes": 14072
+        }
+      ]
+    },
+    "Fig06": {
+      "mapping": "predictor dependence / composition",
+      "assets": [
+        {
+          "path": "figures/Fig06.png",
+          "sha256": "033d084b265eb0a6de6657e6be292e987063e013ed87f8e27692220f94599419",
+          "bytes": 987780
+        },
+        {
+          "path": "figures/Fig06.svg",
+          "sha256": "4d6505505a72b36f4a7b47f30faa1f5380f0eab8724eb972cbc256e604210a14",
+          "bytes": 15968
+        }
+      ]
+    },
+    "Fig07": {
+      "mapping": "selection-rule sensitivity",
+      "assets": [
+        {
+          "path": "figures/Fig07.png",
+          "sha256": "63cf62e4db8235ed649fe277ddf82ab71b8ea1e6c7ab5e8c7155f7263bec71e7",
+          "bytes": 773986
+        },
+        {
+          "path": "figures/Fig07.svg",
+          "sha256": "de8bae374d710183ae61f55ab0dc3dca78b55e58137a570e546eec36f8de8855",
+          "bytes": 5436
+        }
+      ],
+      "source_data": [
+        {
+          "path": "results/figure_data/fig07_selection_sensitivity.csv",
+          "sha256": "51c91a204d20d6370179b5475635ffcb8b1467ac71d3f1229135ec17e3b95f5f",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        }
+      ]
+    },
+    "FigS07": {
+      "mapping": "supplementary diagnostics",
+      "assets": [
+        {
+          "path": "figures/FigS07_Diagnostics.png",
+          "sha256": "a1ca62fe0b55ed6af9ce9a51d38ea2c01422100ddb8560b3a7b8269ee11639f8",
+          "bytes": 170392
+        },
+        {
+          "path": "figures/FigS07_Diagnostics.svg",
+          "sha256": "c0d7ab0a738e24e80ef3c2f137065afbf3f982f2a26776875a426597147ebc62",
+          "bytes": 7847
+        }
+      ],
+      "source_data": [
+        {
+          "path": "results/figure_data/figS07_aggregation_summary.csv",
+          "sha256": "3277cbeffd5a89aef65078bab2325a4b77dbdb64a840d5474f7edc3085999022",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/figure_data/figS07_lolo_effects.csv",
+          "sha256": "eca0408f08fd05dfb7588edd4404092603291355bd64a3c010eb96aed4f4b6d1",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/figure_data/figS07_internal_configuration.csv",
+          "sha256": "82a9c73422713f43e0b9d56fc2ca6638d0e0f0de869374fe26046bd56c263275",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        }
+      ]
+    }
+  },
+  "tables": {
+    "Table05": {
+      "mapping": "timing-definition sensitivity",
+      "source": "results/figure_data/fig07_timestamp_sensitivity.csv",
+      "display_data": "results/tables/Table05_timing_sensitivity.csv",
+      "source_sha256": "953036003135e2d76b84b88eb1eb3b89733379a757bda0d93b5102ae7a26f9f8",
+      "hash_normalization": "UTF-8 bytes with LF line endings"
+    },
+    "Table06": {
+      "mapping": "kinematic controls",
+      "source": "results/figure_data/fig08_kinematic_controls.csv",
+      "display_data": "results/tables/Table06_kinematic_controls.csv",
+      "source_sha256": "8f98b103c541b4f57ba7c0d0686560653ca012c65c2dbb15f05537afae169a2b",
+      "hash_normalization": "UTF-8 bytes with LF line endings"
+    }
+  },
+  "superseded": {
+    "Fig08": "superseded by Table 6 + Methods 2.6 equations",
+    "previous_numbered_PDFs": "archival exports; current assets are locked SVG/PNG"
+  }
+}

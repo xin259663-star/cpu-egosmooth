@@ -5,12 +5,13 @@ CPU EgoSmooth provides code and reproducibility materials for accuracy-constrain
 
 ```bash
 python scripts/reproduce_tables.py --results-root results
-python scripts/reproduce_figures.py --fig all
+python scripts/reproduce_figures.py --fig all --root .
+python scripts/reproduce_publication_tables.py --root .
 ```
 
 ## Paper
 
-**Multidimensional Audit of Short-Horizon Open-Loop Ego-Trajectory Post-Processing under Accuracy-Constrained Selection**
+**Multidimensional Auditing of Short-Horizon Ego-Trajectory Post-Processing**
 
 Kexin Zhu ([ORCID](https://orcid.org/0009-0004-7456-9491)), Xu Xu ([ORCID](https://orcid.org/0000-0003-3602-1391))
 
@@ -49,11 +50,12 @@ The study uses the publicly available nuScenes trainval release, which must be o
 
 ```bash
 python scripts/reproduce_tables.py --results-root results
-python scripts/reproduce_figures.py --fig all
+python scripts/reproduce_figures.py --fig all --root .
+python scripts/reproduce_publication_tables.py --root .
 pytest -q
 ```
 
-Figures 4-8 and the processed-result tables are regenerated from the included CSV files. Figure 3 requires the corresponding saved trajectory outputs and a local nuScenes installation; without them its script exits with an explanatory message.
+Current publication assets are Fig.1–Fig.7 + Fig.S07. The figure command validates saved selection counts and locked case identifiers, then exports the reviewed SVG/PNG artwork byte-for-byte. It does not rerun training, reconstruct trajectories, or recompute map crops. Table 5 (timing-definition sensitivity) and Table 6 (kinematic controls) are exported from unchanged full-precision CSVs. Former Fig.8 is superseded by Table 6 + Methods 2.6 equations and retained only as archival artwork. See docs/FIGURES.md and figures/manifest_v6.json for exact mapping and hashes.
 
 ## Figure 3 qualitative cases
 
@@ -75,7 +77,7 @@ See `docs/FIGURE3_PROVENANCE.md`.
 
 ## Reproducibility levels
 
-- **Level 1, processed results to figures/tables:** Verified.
+- **Level 1, publication exports and processed-result tables:** Locked-artwork export and Table 5/6 formatting are checked. Figure artwork is exported from reviewed SVG/PNG; this path does not claim fresh data-driven reconstruction of every panel.
 - **Level 2, saved predictions to metrics/results:** Verified using the original saved predictions. These prediction files are not included in this repository.
 - **Level 3, raw nuScenes through held-out evaluation:** Partially documented. This level requires the original nuScenes data and additional environment setup. The scientific protocol and configurations are documented, but the full raw-data-to-evaluation pipeline has not been validated as a self-contained fresh-machine workflow.
 

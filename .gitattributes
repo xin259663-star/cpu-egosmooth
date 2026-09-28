@@ -4,3 +4,4 @@
 *.pdf binary
 *.npz binary
 *.parquet binary
+figures/*.svg -text

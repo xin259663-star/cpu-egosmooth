@@ -1,64 +1,50 @@
+"""Validate saved summaries and export locked v6 SVG/PNG; no experiments rerun.
 
+This is frozen-artwork export, not regeneration of trajectories from raw data.
+Source checks validate displayed counts and the locked Fig.3 case independently.
+"""
 from __future__ import annotations
-import argparse
+import argparse,csv,hashlib,json,shutil
 from pathlib import Path
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-
-def _save(fig, root, n):
-    out = root / "figures/reproduced"
-    out.mkdir(parents=True, exist_ok=True)
-    fig.tight_layout()
-    fig.savefig(out / f"Fig{n:02d}.png", dpi=220)
-    fig.savefig(out / f"Fig{n:02d}.pdf")
-    plt.close(fig)
-
-def reproduce(n, root):
-    d = root / "results/figure_data"
-    if n == 4:
-        f = pd.read_csv(d / "fig04_aux_geometry_effects.csv")
-        f = f[f.metric.isin(["mean_geometric_acceleration", "integrated_squared_acceleration", "mean_abs_curvature"])]
-        p = f.pivot(index="metric_label", columns="comparison", values="mean_paired_difference")
-        label_map={"Integrated squared acceleration":"Integrated squared\nacceleration","Mean absolute curvature":"Mean absolute\ncurvature","Mean geometric acceleration":"Mean geometric\nacceleration"}; p.index=[label_map.get(x,x) for x in p.index]
-        ax = p.plot.bar(figsize=(9.5, 4.8), color=["#4778a8", "#d17a3f", "#6b9f78"]); ax.axhline(0, color="black", lw=.8); ax.set_xlabel(""); ax.set_ylabel("Mean paired difference"); ax.set_title("Auxiliary sampled-geometry effects"); ax.tick_params(axis="x", rotation=0); ax.legend(fontsize=7, loc="lower right")
-        _save(ax.figure, root, n)
-    elif n == 5:
-        f = pd.read_csv(d / "fig05_threshold_summary.csv")
-        fig, ax = plt.subplots(figsize=(8, 4.5))
-        for (comp, metric), g in f.groupby(["comparison", "metric"]):
-            ax.plot(g.threshold_mm, 100*g.exceed_rate, marker="o", label=f"{comp}; {metric}")
-        ax.set(xlabel="Descriptive threshold (mm)", ylabel="Positive-change rate (%)", title="Local paired-error threshold sensitivity"); ax.legend(fontsize=7)
-        _save(fig, root, n)
-    elif n == 6:
-        f = pd.read_csv(d / "fig06_case_metrics.csv")
-        g = f[f.metric.isin(["ade", "fde"])].copy(); g["estimate_mm"] = 1000*g.estimate
-        p = g.groupby(["label", "comparison"], as_index=False).estimate_mm.mean().pivot(index="label", columns="comparison", values="estimate_mm")
-        labels={"accelerating":"Accelerating","decelerating":"Decelerating","high":"High speed","high_history_curvature":"High hist. curvature","stationary_or_very_low":"Very low speed","straight":"Straight","turning":"Turning"}; p.index=[labels.get(x,x) for x in p.index]
-        ax = p.plot.bar(figsize=(9.5, 4.8), color=["#4778a8", "#d17a3f"]); ax.axhline(0, color="black", lw=.8); ax.set_xlabel(""); ax.set_ylabel("Mean paired difference (mm)"); ax.set_title("Deterministically selected qualitative-case effects"); ax.tick_params(axis="x", rotation=25); ax.legend(fontsize=7)
-        _save(ax.figure, root, n)
-    elif n == 7:
-        f = pd.read_csv(d / "fig07_timestamp_sensitivity.csv")
-        fig, ax = plt.subplots(figsize=(8, 4.5))
-        for comp, g in f.groupby("comparison"):
-            ax.bar(np.arange(len(g)) + (0 if "Fixed" in comp else .35), g.relative_reduction_percent, width=.35, label=comp)
-        ax.set_xticks([.175, 1.175], ["Nominal grid", "Exact timestamps"]); ax.set_ylabel("Shape reduction (%)"); ax.set_title("Shape-definition sensitivity"); ax.legend(fontsize=8)
-        _save(fig, root, n)
-    elif n == 8:
-        f = pd.read_csv(d / "fig08_kinematic_controls.csv"); f=f[f.strategy=="Raw"]
-        neural=f[f.method_type=="neural"].copy(); controls=f[f.method_type=="kinematic baseline"].copy()
-        fig, axes = plt.subplots(1,3,figsize=(12.5,4.2)); specs=[("ADE","ADE (m)"),("FDE","FDE (m)"),("history_aware_mean_geometric_jerk","Shape (m s$^{-3}$)")]
-        x1=np.arange(len(controls)); x2=np.arange(len(neural))+len(controls)+1
-        for ax,(col,label) in zip(axes,specs):
-            ax.scatter(x1,controls[col],marker="D",s=55,color="#4778a8",label="Kinematic control"); ax.scatter(x2,neural[col],s=45,color="#d17a3f",label="Neural Raw")
-            ax.set_xticks(np.r_[x1,x2]); ax.set_xticklabels(list(controls.method)+["Neural\nmean" if x=="Neural overall" else ("Pos-Tr." if x=="PositionalTransformer" else x) for x in neural.method],rotation=45,ha="right",fontsize=7); ax.set_ylabel(label); ax.grid(axis="y",alpha=.2)
-        axes[0].legend(fontsize=7); fig.suptitle("Kinematic controls and the Shape interpretation boundary")
-        _save(fig, root, n)
-    else:
-        raise ValueError("Processed-data regeneration is implemented for Figures 4-8")
-
+CURRENT=tuple(range(1,8))+("S07",)
+def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+def rows(path):
+    with path.open(encoding="utf-8-sig",newline="") as f:return list(csv.DictReader(f))
+def validate_data(root):
+    d=root/"results/figure_data"
+    data=rows(d/"fig07_selection_sensitivity.csv")
+    for eps,near,retained in [(0,3,50),(.001,6,40),(.005,6,35)]:
+        block=[r for r in data if float(r["epsilon"])==eps]
+        assert len(block)==50
+        assert sum(r["near_tie"].lower()=="true" for r in block)==near
+        assert sum(r["same_as_epsilon0"].lower()=="true" for r in block)==retained
+    cases=rows(d/"fig3_selected_cases.csv")
+    case=next(r for r in cases if r["panel"]=="b")
+    assert case["scene_token"]=="b0b26c1e5a1140e69598422f12ae1dc0"
+    assert case["sample_token"]=="53a3b6ba49af484d9d0bab0ffb9dea01"
+    assert case["log_token"]=="7a0fde44c3504eaeb18f9ad83bed65bc"
+    assert case["window_index"]=="19"
+    assert all(r["run_id"]=="P2B_042_log_primary_PositionalTransformer_s1" and r["seed"]=="1" for r in cases)
+    for name in ["figS07_aggregation_summary.csv","figS07_lolo_effects.csv","figS07_internal_configuration.csv"]:
+        assert (d/name).is_file()
+def reproduce(n,root,output=None):
+    if n not in CURRENT:raise ValueError("Current figures: 01–07 and S07. Former Fig08 is superseded by Table 6 and Methods 2.6.")
+    manifest=json.loads((root/"figures/manifest_v6.json").read_text(encoding="utf-8"))
+    key="FigS07" if n=="S07" else f"Fig{n:02d}"
+    target=output or root/"figures/reproduced"
+    target.mkdir(parents=True,exist_ok=True)
+    for asset in manifest["figures"][key]["assets"]:
+        source=root/asset["path"]
+        assert sha(source)==asset["sha256"],f"Locked asset mismatch: {source.name}"
+        dest=target/source.name
+        if dest.resolve()==source.resolve():raise ValueError("Output must differ from locked source directory")
+        shutil.copyfile(source,dest)
+        assert sha(dest)==asset["sha256"]
+    print(f"{key}: locked SVG/PNG exported; source-data checks passed")
 def main():
-    p=argparse.ArgumentParser(); p.add_argument("--fig", default="all"); p.add_argument("--root", type=Path, default=Path(".")); a=p.parse_args()
-    nums=range(4,9) if a.fig=="all" else [int(a.fig)]
-    for n in nums: reproduce(n,a.root)
-if __name__ == "__main__": main()
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--fig",default="all");p.add_argument("--root",type=Path,default=Path("."));p.add_argument("--output",type=Path)
+    a=p.parse_args();root=a.root.resolve();validate_data(root)
+    nums=CURRENT if a.fig=="all" else ("S07",) if a.fig.upper()=="S07" else (int(a.fig),)
+    for n in nums:reproduce(n,root,a.output)
+if __name__=="__main__":main()

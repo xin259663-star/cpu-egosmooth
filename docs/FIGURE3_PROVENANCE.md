@@ -21,7 +21,7 @@ The reference run was selected automatically from eligible formal runs whose sel
 | Panel | Role | Scene token | Sample token | Window | Selection rule |
 | --- | --- | --- | --- | ---: | --- |
 | (a) | Typical geometry reduction | `36e3167610cc48eabcaad06a72479ac7` | `e7eb475f0434413fa8f207a2fc113a06` | 9 | Negative Fixed-minus-Raw Shape change closest to the negative-change median, with accuracy-change tie-break |
-| (b) | Accuracy preserved, geometry altered | `64a3a2d22172406c848f2a92275808ba` | `1f60f2715ba14d4c85a64f2aca576862` | 3 | Small absolute ADE/FDE change, then most negative non-outer-fence Shape change |
+| (b) | Accuracy preserved, geometry altered | `b0b26c1e5a1140e69598422f12ae1dc0` | `53a3b6ba49af484d9d0bab0ffb9dea01` | 19 | Small absolute ADE/FDE change, then maximum visible Raw-Fixed separation within the frozen candidate set |
 | (c) | Local error increase | `634e7fbfe29c4a72b1ceb692b1d2ab44` | `6c91a4e361c94bd7b976f7a971cd03d3` | 12 | Positive-tail Fixed-minus-Raw error severity nearest one, preferring negative Shape change |
 | (d) | Selected differs from Fixed SG | `696a45dbd11346b794fdce43fa0a1770` | `0d45f0bedc6d455ea5a28cb4939c910d` | 13 | Selected-minus-Fixed sign pattern (-,+,-), then robust distance to the all-window median effect vector |
 
@@ -30,7 +30,7 @@ The reference run was selected automatically from eligible formal runs whose sel
 | Panel | Raw ADE | Fixed SG ADE | QReg-L1 ADE | Raw FDE | Fixed SG FDE | QReg-L1 FDE | Raw Shape | Fixed SG Shape | QReg-L1 Shape |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | (a) | 0.334987 | 0.329416 | 0.326012 | 0.797630 | 0.810424 | 0.797630 | 0.644348 | 0.320664 | 0.265214 |
-| (b) | 0.551906 | 0.551659 | 0.549259 | 1.483071 | 1.485804 | 1.483071 | 1.211305 | 0.344179 | 0.344683 |
+| (b) | 0.585492 | 0.585498 | 0.569719 | 0.933209 | 0.931667 | 0.933209 | 2.582402 | 1.836151 | 1.913252 |
 | (c) | 0.317455 | 0.325753 | 0.323080 | 0.730106 | 0.747476 | 0.730106 | 1.040881 | 0.226565 | 0.393409 |
 | (d) | 0.468194 | 0.468415 | 0.468161 | 0.564947 | 0.557741 | 0.564947 | 1.333180 | 1.229188 | 1.159827 |
 

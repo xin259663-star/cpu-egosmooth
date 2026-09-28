@@ -18,6 +18,7 @@
     "map_transform": "global = anchor_translation + R(anchor_yaw) @ local"
   },
   "map_source": {
+    "archive": "not distributed; user-provided nuScenes v1.0-trainval metadata is required",
     "asset_type": "official nuScenes semantic-prior raster",
     "resolution_m_per_pixel": 0.1,
     "expansion_lane_layers_available": false,
@@ -96,7 +97,7 @@
       "negative_candidate_count": 2705
     },
     "panel_b": {
-      "criterion": "Small Fixed-minus-Raw ADE/FDE change with the most negative non-outer-fence Shape change.",
+      "criterion": "Small Fixed-minus-Raw ADE/FDE change with maximum visible Raw-vs-Fixed trajectory separation; negative non-outer-fence Shape change required.",
       "quantile_used": 0.1,
       "abs_delta_ADE_threshold": 0.00026525860734999407,
       "abs_delta_FDE_threshold": 0.0029581855198454257,
@@ -149,17 +150,17 @@
     {
       "panel": "b",
       "run_id": "P2B_042_log_primary_PositionalTransformer_s1",
-      "scene_token": "64a3a2d22172406c848f2a92275808ba",
-      "sample_token": "1f60f2715ba14d4c85a64f2aca576862",
-      "window_index": 3,
-      "log_token": "69271ec7af1f446ca16820ac46d2047a",
+      "scene_token": "b0b26c1e5a1140e69598422f12ae1dc0",
+      "sample_token": "53a3b6ba49af484d9d0bab0ffb9dea01",
+      "window_index": 19,
+      "log_token": "7a0fde44c3504eaeb18f9ad83bed65bc",
       "map_location": "boston-seaport",
       "map_token": "36092f0b03a857c6a3403e25b4b7aab3",
-      "ego_global_x": 1309.0194887480113,
-      "ego_global_y": 1044.601674288407,
-      "ego_global_yaw": 2.4666797173872093,
-      "ego_pose_token": "ce4a3259e0324cac9f9ae8460ffce7d3",
-      "lidar_top_sample_data_token": "ce4a3259e0324cac9f9ae8460ffce7d3"
+      "ego_global_x": 2109.9020714115222,
+      "ego_global_y": 874.704177726346,
+      "ego_global_yaw": 0.06231619778428521,
+      "ego_pose_token": "28d3e56d5658423ba40cac423a5d8f18",
+      "lidar_top_sample_data_token": "28d3e56d5658423ba40cac423a5d8f18"
     },
     {
       "panel": "c",
@@ -198,7 +199,8 @@
     "longitudinal_min": -12.354376792907715,
     "longitudinal_max": 26.890262603759766
   },
-  "metric_QA": "ADE/FDE recomputed from frozen trajectories and matched parquet within 1e-5; Shape uses authoritative parquet values.",
+  "map_crop_files": [],
   "third_party_map_assets_included": false,
-  "trajectory_npz_included": false
+  "trajectory_npz_included": false,
+  "metric_QA": "ADE/FDE recomputed from frozen trajectories and matched parquet within 1e-5; Shape uses authoritative parquet values."
 }
