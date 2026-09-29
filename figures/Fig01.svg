@@ -99,30 +99,97 @@
 <line x1="1080" y1="143" x2="1080" y2="299" stroke="#D9534F" stroke-width="2" stroke-dasharray="7 6"/>
 <text x="1080" y="315" font-size="19" font-weight="400" text-anchor="middle" fill="#D9534F">development frozen</text>
 <text x="35" y="360" font-size="22" font-weight="700" text-anchor="start" fill="#172235">Analysis map</text>
-<polyline points="130.000,416.000 140.000,412.000 150.000,408.000 160.000,403.000 170.000,399.000 182.000,393.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="130.000,401.000 140.000,399.000 150.000,401.000 160.000,394.000 170.000,396.000 182.000,387.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="395.000,418.000 403.000,416.000 410.000,406.000 417.000,393.000 424.000,389.000 431.000,398.000 438.000,409.000 447.000,414.000 457.000,416.000 468.000,417.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="670" y="392" width="7" height="26" rx="0" fill="none" stroke="#667483" stroke-width="1.5" opacity="1"/>
-<rect x="683" y="392" width="7" height="26" rx="0" fill="none" stroke="#667483" stroke-width="1.5" opacity="1"/>
-<rect x="696" y="392" width="7" height="26" rx="0" fill="none" stroke="#667483" stroke-width="1.5" opacity="1"/>
-<rect x="709" y="392" width="7" height="26" rx="0" fill="none" stroke="#667483" stroke-width="1.5" opacity="1"/>
-<rect x="722" y="392" width="7" height="26" rx="0" fill="none" stroke="#667483" stroke-width="1.5" opacity="1"/>
-<line x1="945" y1="402" x2="965" y2="402" stroke="#667483" stroke-width="2"/>
-<polyline points="965.000,402.000 978.000,389.000 995.000,389.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="965.000,402.000 978.000,402.000 995.000,402.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="965.000,402.000 978.000,416.000 995.000,416.000" fill="none" stroke="#667483" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<line x1="1207" y1="391" x2="1273" y2="391" stroke="#667483" stroke-width="1.5"/>
-<line x1="1210" y1="386" x2="1210" y2="396" stroke="#667483" stroke-width="1.5"/>
-<line x1="1225" y1="386" x2="1225" y2="396" stroke="#667483" stroke-width="1.5"/>
-<line x1="1240" y1="386" x2="1240" y2="396" stroke="#667483" stroke-width="1.5"/>
-<line x1="1255" y1="386" x2="1255" y2="396" stroke="#667483" stroke-width="1.5"/>
-<line x1="1270" y1="386" x2="1270" y2="396" stroke="#667483" stroke-width="1.5"/>
-<line x1="1207" y1="414" x2="1273" y2="414" stroke="#667483" stroke-width="1.5"/>
-<line x1="1210" y1="409" x2="1210" y2="419" stroke="#667483" stroke-width="1.5"/>
-<line x1="1221" y1="409" x2="1221" y2="419" stroke="#667483" stroke-width="1.5"/>
-<line x1="1239" y1="409" x2="1239" y2="419" stroke="#667483" stroke-width="1.5"/>
-<line x1="1250" y1="409" x2="1250" y2="419" stroke="#667483" stroke-width="1.5"/>
-<line x1="1270" y1="409" x2="1270" y2="419" stroke="#667483" stroke-width="1.5"/>
+<svg x="132.471910112" y="375.471910112" color="#667483" data-rq="RQ1" data-tabler-icon="chart-line"
+  xmlns="http://www.w3.org/2000/svg"
+  width="55.056179775"
+  height="55.056179775"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4 19l16 0" />
+  <path d="M4 15l4 -6l4 2l4 -5l4 4" />
+</svg>
+
+<svg x="402.471910112" y="375.471910112" color="#667483" data-rq="RQ2" data-tabler-icon="chart-scatter"
+  xmlns="http://www.w3.org/2000/svg"
+  width="55.056179775"
+  height="55.056179775"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v18h18" />
+  <path d="M8 15.015v.015" />
+  <path d="M16 16.015v.015" />
+  <path d="M8 7.03v.015" />
+  <path d="M12 11.03v.015" />
+  <path d="M19 11.03v.015" />
+</svg>
+
+<svg x="672.471910112" y="375.471910112" color="#667483" data-rq="RQ3a" data-tabler-icon="layout-grid"
+  xmlns="http://www.w3.org/2000/svg"
+  width="55.056179775"
+  height="55.056179775"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+  <path d="M14 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+  <path d="M4 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+  <path d="M14 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+</svg>
+
+<svg x="942.471910112" y="375.471910112" color="#667483" data-rq="RQ3b" data-tabler-icon="adjustments-horizontal"
+  xmlns="http://www.w3.org/2000/svg"
+  width="55.056179775"
+  height="55.056179775"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 6a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+  <path d="M4 6l8 0" />
+  <path d="M16 6l4 0" />
+  <path d="M6 12a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+  <path d="M4 12l2 0" />
+  <path d="M10 12l10 0" />
+  <path d="M15 18a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+  <path d="M4 18l11 0" />
+  <path d="M19 18l1 0" />
+</svg>
+
+<svg x="1212.471910112" y="375.471910112" color="#667483" data-rq="RQ4" data-tabler-icon="timeline"
+  xmlns="http://www.w3.org/2000/svg"
+  width="55.056179775"
+  height="55.056179775"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4 16l6 -7l5 5l5 -6" />
+  <path d="M14 14a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M9 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M3 16a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M19 8a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+</svg>
+
 <text x="160" y="456" font-size="20" font-weight="700" text-anchor="middle" fill="#172235">RQ1</text>
 <text x="160" y="489" font-size="20" font-weight="400" text-anchor="middle" fill="#172235">Accuracy ↔ geometry</text>
 <text x="430" y="456" font-size="20" font-weight="700" text-anchor="middle" fill="#172235">RQ2</text>

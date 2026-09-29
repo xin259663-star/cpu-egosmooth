@@ -32,3 +32,5 @@ Fig.3 uses the unchanged locked reference run and four cases in `docs/FIGURE3_PR
 Official nuScenes semantic-prior map context is visualization-only. Underlying nuScenes datasets, original maps and prediction NPZ files are not redistributed. Frozen map-context artwork remains subject to the dataset provider's terms.
 
 Former v6 Fig.7 is merged into Fig.6(c), not deleted as scientific evidence. Historical v6 artwork is in figures/archive/pre_v7_1/. The Fig.6(a) matrix uses signed, column-specific intensity; colours do not independently identify strategies. Numeric units differ by column.
+
+Fig1 icon-only patch v7.2: five original Tabler Outline SVGs replace the prior schematic symbols. Original paths are unchanged. Icon provenance and MIT notice are recorded in docs/FIG1_ICON_SOURCES.md and figures/icon_sources/tabler/. Only Fig1 artwork/embedded image changes; protocol, text, other figures and scientific sources remain unchanged. The current manifest filename remains figures/manifest_v7_1.json and its internal version identifies this patch.

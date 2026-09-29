@@ -1,0 +1,51 @@
+{
+  "upstream_commit": "74929e50416e2b7c0abb8368cdc74bdcb2560ab6",
+  "icons": [
+    {
+      "rq": "RQ1",
+      "icon": "chart-line",
+      "official_page": "https://tabler.io/icons/icon/chart-line",
+      "official_source": "https://raw.githubusercontent.com/tabler/tabler-icons/74929e50416e2b7c0abb8368cdc74bdcb2560ab6/icons/outline/chart-line.svg",
+      "filename": "icon_sources/tabler/chart-line.svg",
+      "sha256": "0a2ec43a92e585dfc29e515cedaf1fc656c466bab5a6b9e0aa0a56f0c384f88a",
+      "path_modified": false
+    },
+    {
+      "rq": "RQ2",
+      "icon": "chart-scatter",
+      "official_page": "https://tabler.io/icons/icon/chart-scatter",
+      "official_source": "https://raw.githubusercontent.com/tabler/tabler-icons/74929e50416e2b7c0abb8368cdc74bdcb2560ab6/icons/outline/chart-scatter.svg",
+      "filename": "icon_sources/tabler/chart-scatter.svg",
+      "sha256": "ba397932da7ad50d65233871d80f12c5084825bdf4b8db39eccd6b70bca5e8ae",
+      "path_modified": false
+    },
+    {
+      "rq": "RQ3a",
+      "icon": "layout-grid",
+      "official_page": "https://tabler.io/icons/icon/layout-grid",
+      "official_source": "https://raw.githubusercontent.com/tabler/tabler-icons/74929e50416e2b7c0abb8368cdc74bdcb2560ab6/icons/outline/layout-grid.svg",
+      "filename": "icon_sources/tabler/layout-grid.svg",
+      "sha256": "234f17d3e6212587c7a97a4fb1a68f824adf13365a9ac330dbae42e624488794",
+      "path_modified": false
+    },
+    {
+      "rq": "RQ3b",
+      "icon": "adjustments-horizontal",
+      "official_page": "https://tabler.io/icons/icon/adjustments-horizontal",
+      "official_source": "https://raw.githubusercontent.com/tabler/tabler-icons/74929e50416e2b7c0abb8368cdc74bdcb2560ab6/icons/outline/adjustments-horizontal.svg",
+      "filename": "icon_sources/tabler/adjustments-horizontal.svg",
+      "sha256": "66b3be63d0ae4f75c6707ac802ef2bad9eb5f9c0af9ab77c7a1f9c7f1694a178",
+      "path_modified": false
+    },
+    {
+      "rq": "RQ4",
+      "icon": "timeline",
+      "official_page": "https://tabler.io/icons/icon/timeline",
+      "official_source": "https://raw.githubusercontent.com/tabler/tabler-icons/74929e50416e2b7c0abb8368cdc74bdcb2560ab6/icons/outline/timeline.svg",
+      "filename": "icon_sources/tabler/timeline.svg",
+      "sha256": "b72fd22a6b3d5e814874a7527b807d767d89647539d0d6578e34be2c05632f0f",
+      "path_modified": false
+    }
+  ],
+  "license_sha256": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db"
+}

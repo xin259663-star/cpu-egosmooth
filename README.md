@@ -94,3 +94,5 @@ The repository software is released under the BSD 3-Clause License; see `LICENSE
 ## Acknowledgements and third-party data
 
 The experiments use nuScenes. Dataset access and use remain governed by the provider's applicable terms. No affiliation with or endorsement by the dataset provider is implied.
+
+Fig.1 Analysis map icons use original Tabler Icons Outline SVGs (MIT), with unmodified paths. See docs/FIG1_ICON_SOURCES.md for individual sources and figures/icon_sources/tabler/LICENSE for the required notice.

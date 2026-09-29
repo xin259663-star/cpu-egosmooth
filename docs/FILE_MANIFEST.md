@@ -23,3 +23,5 @@ No author-manuscript DOCX/PDF, raw nuScenes archives, original map files, predic
 
 - `figures/archive/pre_v7_1/`: superseded seven-figure v6 artwork and original manifest.
 - `figures/Fig01_Protocol.drawio`: editable protocol diagram. SVG is the publication source for corresponding PNG.
+
+Fig1 icon-only patch v7.2: five original Tabler Outline SVGs replace the prior schematic symbols. Original paths are unchanged. Icon provenance and MIT notice are recorded in docs/FIG1_ICON_SOURCES.md and figures/icon_sources/tabler/. Only Fig1 artwork/embedded image changes; protocol, text, other figures and scientific sources remain unchanged. The current manifest filename remains figures/manifest_v7_1.json and its internal version identifies this patch.

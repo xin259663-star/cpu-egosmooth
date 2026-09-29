@@ -1,5 +1,5 @@
 {
-  "version": "manuscript-v7.2-icon-only-patch",
+  "version": "manuscript-v7.1",
   "publication_width_mm": 178,
   "export_semantics": "byte-identical locked-artwork export; not raw-data experiment reproduction",
   "figures": {
@@ -8,13 +8,13 @@
       "assets": [
         {
           "path": "figures/Fig01.png",
-          "sha256": "4539e13e12955870d181a9de4e5583ad36bb231297b81e44609af121108a784c",
-          "bytes": 751877
+          "sha256": "6834510dc3a9b1a3b958a3a99a4592323ff945154d5797a7679202b669c6d501",
+          "bytes": 757897
         },
         {
           "path": "figures/Fig01.svg",
-          "sha256": "e958805487ba0a107663d24f8cc5d63177f95d6425a6c736d0d88ab680f543c5",
-          "bytes": 15161
+          "sha256": "0496fa399b4855bc00b4c7bcb0fa519eb3f83f4cc5d50145d4127a141a41bfe7",
+          "bytes": 14973
         }
       ]
     },
@@ -189,52 +189,7 @@
   },
   "editable_diagram": {
     "path": "figures/Fig01_Protocol.drawio",
-    "sha256": "429c38aae344bb11a66739eefac505e9b3c6924e80149d3a8aed864a9988d550",
+    "sha256": "d4ee5750131864794cdf10b8e8c97a01cfa820af1d19a0b6259fe2b70d292679",
     "note": "Editable geometry; publication PNG rendered from matching SVG, not draw.io CLI."
-  },
-  "patch_scope": "Only five Fig01 Analysis map symbols replaced. All manuscript text, other figures and scientific sources unchanged.",
-  "Fig01_icon_sources": {
-    "library": "Tabler Icons Outline",
-    "official_repository": "tabler/tabler-icons",
-    "upstream_commit": "74929e50416e2b7c0abb8368cdc74bdcb2560ab6",
-    "viewBox": "0 0 24 24",
-    "stroke_width": 2,
-    "viewport_mm": 7,
-    "path_modified": false,
-    "sources": [
-      {
-        "rq": "RQ1",
-        "name": "chart-line",
-        "path": "figures/icon_sources/tabler/chart-line.svg",
-        "sha256": "0a2ec43a92e585dfc29e515cedaf1fc656c466bab5a6b9e0aa0a56f0c384f88a"
-      },
-      {
-        "rq": "RQ2",
-        "name": "chart-scatter",
-        "path": "figures/icon_sources/tabler/chart-scatter.svg",
-        "sha256": "ba397932da7ad50d65233871d80f12c5084825bdf4b8db39eccd6b70bca5e8ae"
-      },
-      {
-        "rq": "RQ3a",
-        "name": "layout-grid",
-        "path": "figures/icon_sources/tabler/layout-grid.svg",
-        "sha256": "234f17d3e6212587c7a97a4fb1a68f824adf13365a9ac330dbae42e624488794"
-      },
-      {
-        "rq": "RQ3b",
-        "name": "adjustments-horizontal",
-        "path": "figures/icon_sources/tabler/adjustments-horizontal.svg",
-        "sha256": "66b3be63d0ae4f75c6707ac802ef2bad9eb5f9c0af9ab77c7a1f9c7f1694a178"
-      },
-      {
-        "rq": "RQ4",
-        "name": "timeline",
-        "path": "figures/icon_sources/tabler/timeline.svg",
-        "sha256": "b72fd22a6b3d5e814874a7527b807d767d89647539d0d6578e34be2c05632f0f"
-      }
-    ],
-    "license_path": "figures/icon_sources/tabler/LICENSE",
-    "license_sha256": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db",
-    "source_notes": "docs/FIG1_ICON_SOURCES.md"
   }
 }
