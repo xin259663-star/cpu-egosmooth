@@ -1,0 +1,7 @@
+configuration,train_logs,validation_a_logs,validation_b_logs,test_logs,predictors,seeds,comparison,shape_effect
+Primary,49,6,6,7,"MLP;GRU;LSTM;TemporalCNN;PositionalTransformer","0-9","Fixed SG(5,2) - Raw",-0.8310773852927689
+Primary,49,6,6,7,"MLP;GRU;LSTM;TemporalCNN;PositionalTransformer","0-9","Validation-B-selected - Fixed SG(5,2)",-0.038255325978069035
+IC1,50,6,6,6,"MLP;GRU;TemporalCNN","0-2","Fixed SG(5,2) - Raw",-1.059686
+IC1,50,6,6,6,"MLP;GRU;TemporalCNN","0-2","Validation-B-selected - Fixed SG(5,2)",0.050739
+IC2,48,7,6,7,"MLP;GRU;TemporalCNN","0-2","Fixed SG(5,2) - Raw",-0.892481
+IC2,48,7,6,7,"MLP;GRU;TemporalCNN","0-2","Validation-B-selected - Fixed SG(5,2)",0.029076

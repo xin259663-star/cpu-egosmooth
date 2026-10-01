@@ -1,0 +1,10 @@
+metric,comparison,mean_delta,positive_rate,negative_log_count,log_count
+max_abs_curvature,Fixed SG minus Raw,-0.03811109967749742,0.22461512071701187,7,7
+max_abs_curvature,Selected minus Fixed SG,-0.005386323726405083,0.36251125691496205,6,7
+max_abs_curvature,Selected minus Raw,-0.04349742340390251,0.2615378017925297,7,7
+max_lateral_acceleration_proxy,Fixed SG minus Raw,-0.04816624322303223,0.20311334105236073,7,7
+max_lateral_acceleration_proxy,Selected minus Fixed SG,0.017703109295756508,0.39300999185213775,0,7
+max_lateral_acceleration_proxy,Selected minus Raw,-0.03046313392727571,0.2622067841674171,6,7
+boundary_heading_discontinuity,Fixed SG minus Raw,-0.02180311529316656,0.3908540177433111,7,7
+boundary_heading_discontinuity,Selected minus Fixed SG,0.013085351118155486,0.4124836239262131,0,7
+boundary_heading_discontinuity,Selected minus Raw,-0.008717764175011071,0.12312169730860877,7,7

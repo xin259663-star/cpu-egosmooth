@@ -1,26 +1,15 @@
+# Reproducibility scope for the CEP release
 
-# Reproducibility
+## Current publication artwork
 
-## Level 1: processed results to tables and figures
+`python scripts/reproduce_figures.py --fig all --root .` verifies source-record and locked-artwork hashes in `figures/manifest_cep.json`, then copies byte-identical Fig01–Fig06 and FigS07–FigS08 SVG/PNG files to `figures/reproduced/`. This is a checked publication-artwork export. It does **not** recompute all panels from raw nuScenes data. Figure 3 map crops and S07 layout are frozen artwork.
 
-**Status: Verified.** A clean Python 3.11 environment reproduces the processed-result tables and Figures 4-8 without nuScenes or project-specific paths.
+## Processed results and diagnostic definitions
 
-```bash
-python scripts/reproduce_tables.py --results-root results
-python scripts/reproduce_figures.py --fig all
-pytest -q
-```
+`analysis/diagnostics.py` documents post-hoc output-level descriptor calculations on separately held frozen prediction arrays. Compact recorded sources for Table 5, Table 6, S07 and S08 are included. Original complete prediction arrays and licensed nuScenes assets are not redistributed. No controller-in-the-loop or closed-loop vehicle experiment is represented.
 
-## Level 2: saved predictions to metrics/results
+## Full pipeline
 
-**Status: Verified using the original saved predictions.** The reported metrics, including ADE and FDE, were recomputed from those predictions. Complete prediction files are not included in this repository.
+The `configs/`, `src/egosmooth/` and training/evaluation scripts retain scientific definitions and role isolation. A fresh raw-nuScenes-to-final-figure run requires separately licensed data, saved predictions or model retraining, and environment setup; it has not been validated here as a self-contained fresh-machine workflow. Test data are not used for training, checkpoint selection, or post-processing candidate selection.
 
-## Level 3: raw nuScenes through final held-out evaluation
-
-**Status: Partially documented.** This level requires official nuScenes data, log-exclusive preprocessing, normalization from Training only, predictor training, Validation-A checkpoint selection, Raw prediction, Validation-B post-processing selection, and one final held-out Test evaluation. The scientific definitions and configurations are included, but full end-to-end reproduction from raw nuScenes data requires additional environment setup and has not been validated as a self-contained fresh-machine workflow.
-
-Test is never used for training, checkpoint selection, candidate selection, or hyperparameter selection.
-
-## Figure 3
-
-The repository does not include the trajectory NPZ or raw nuScenes map assets. Without the corresponding saved trajectories, `scripts/figures/fig03_real_bev.py` prints the required inputs and exits cleanly. With the trajectory NPZ, it can generate a trajectory-only rendering; the official BEV background additionally requires a local nuScenes installation.
+Previous IET-era reproduced Fig.7/Fig.8 files are archived in `figures/archive/pre_cep/reproduced/`, not emitted by the current figure command.

@@ -1,5 +1,7 @@
 # Publication v7.1 provenance
 
+**Historical pre-CEP record only.** References below to a “current” six-figure IET release refer to the archived v7.1 state. The current CEP release is mapped in `docs/FIGURES.md` and `figures/manifest_cep.json`; the v7.1 manifest is in `figures/archive/pre_cep/manifest_v7_1.json`.
+
 Current main figures: Fig01–Fig06. Former Fig07 selection-rule sensitivity is now Fig06(c); Fig08 is superseded by Table 6 and Methods 2.6 equations. Table 5/6 and Supplement S1/S07 retain all recorded values and identifiers. No experiments, scientific source files, case selection, trajectories or native equations changed.
 
 Fig01 keeps its protocol, with scientific mini-symbols denoting analysis dimensions. These are schematics, not measured trajectories, distributions, predictor effects or timestamps. Fig05(a) frequency bars and (b) conditional median/P95 ranges are unchanged; (c) uses three mini bar plots with zero baselines and the recorded values. Raw endpoint shift is zero by definition and omitted. Fig06 shortens the sign/scaling key and enlarges panel (c) text by 9%; axes and point coordinates are unchanged. Fig02/Fig03/Fig04/S07 are byte-identical to the accepted v7 assets.

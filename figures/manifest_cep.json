@@ -1,0 +1,244 @@
+{
+  "release": "CEP pre-controller submission patch",
+  "publication_width_mm": 178,
+  "current_main_figures": [
+    "Fig01",
+    "Fig02",
+    "Fig03",
+    "Fig04",
+    "Fig05",
+    "Fig06"
+  ],
+  "current_supplementary_figures": [
+    "FigS07",
+    "FigS08"
+  ],
+  "export_semantics": "locked publication artwork; not raw-data-to-figure reconstruction",
+  "figures": {
+    "Fig01": {
+      "mapping": "pre-controller verification workflow",
+      "assets": [
+        {
+          "path": "figures/Fig01.svg",
+          "sha256": "cac3cecd9fdfb3c6a3908bbbe412447eefbec6b9882ed432ebff177a80da653b",
+          "bytes": 5851
+        },
+        {
+          "path": "figures/Fig01.png",
+          "sha256": "95f1c209e8a25c4eb505392b9568d73cb56f3671ad28166289bcd411becbb64c",
+          "bytes": 224926
+        }
+      ]
+    },
+    "Fig02": {
+      "mapping": "data construction and role isolation",
+      "assets": [
+        {
+          "path": "figures/Fig02.svg",
+          "sha256": "a97f063e190d150ff19c2a12b5c6545c1d7f5ecf5c4b8eef7e45d97ae3b154c8",
+          "bytes": 10334
+        },
+        {
+          "path": "figures/Fig02.png",
+          "sha256": "17b1d6aee8721a4a279524f91cb32441a59ce300520fbd7a8d17a0f211ade8a1",
+          "bytes": 409754
+        }
+      ]
+    },
+    "Fig03": {
+      "mapping": "qualitative held-out trajectory cases",
+      "assets": [
+        {
+          "path": "figures/Fig03.svg",
+          "sha256": "59e3fd390ee6c702323b8d6dac3e794a6e3d3f8f05a0b8c7a2e983f361358415",
+          "bytes": 72709
+        },
+        {
+          "path": "figures/Fig03.png",
+          "sha256": "e35f1b4dcfae7b5cdc94b28058b96fb643b064aae106522ba449249293c48059",
+          "bytes": 491255
+        }
+      ]
+    },
+    "Fig04": {
+      "mapping": "paired effects and absolute means",
+      "assets": [
+        {
+          "path": "figures/Fig04.svg",
+          "sha256": "113ffc4caf608c35ed8450946054c4748557f1fbddddba8b1267d8de574626ae",
+          "bytes": 36003
+        },
+        {
+          "path": "figures/Fig04.png",
+          "sha256": "f23b5bf67623a7f11cb7573dc2e1e5dfb1dee7fbffdebc5cef0ffdd1eb993151",
+          "bytes": 593649
+        }
+      ]
+    },
+    "Fig05": {
+      "mapping": "local degradation and interface consequences",
+      "assets": [
+        {
+          "path": "figures/Fig05.svg",
+          "sha256": "8349eaada35db8a77745f0d156ea27c13554c66ece6b6f28cb089e74483935c1",
+          "bytes": 13869
+        },
+        {
+          "path": "figures/Fig05.png",
+          "sha256": "bc621b8e0adfcfa01e88972c528be9daa95b3f0431af74526e249429327186d1",
+          "bytes": 387607
+        }
+      ]
+    },
+    "Fig06": {
+      "mapping": "candidate composition and decision robustness",
+      "assets": [
+        {
+          "path": "figures/Fig06.svg",
+          "sha256": "8bf24043b438ebec3e2d8a5a864feb76e8397782eba9bbd132d23fbd0279d4bd",
+          "bytes": 9157
+        },
+        {
+          "path": "figures/Fig06.png",
+          "sha256": "381661bb0a71f933fd7054be8c44ddd80113ab387de3c2fa17b2c570fec555c5",
+          "bytes": 226236
+        }
+      ]
+    },
+    "FigS07": {
+      "mapping": "supplementary sensitivity diagnostics",
+      "assets": [
+        {
+          "path": "figures/FigS07_Diagnostics.svg",
+          "sha256": "d281c1d8167545f44e1dcc8432b7e8950dd1a4fa28ff76080bed3c56dd72fa90",
+          "bytes": 13161
+        },
+        {
+          "path": "figures/FigS07_Diagnostics.png",
+          "sha256": "df79a97e62a68db5807d82d88bb9c2614ed05a52a9efbb2d525b8d24295af7ba",
+          "bytes": 343959
+        }
+      ]
+    },
+    "FigS08": {
+      "mapping": "predictor-stratified paired effects",
+      "assets": [
+        {
+          "path": "figures/FigS08_PredictorEffects.svg",
+          "sha256": "a0aca847bd9b5e109f175fd0f950f18de4786ed7903daf28ac1f4da569536f08",
+          "bytes": 7142
+        },
+        {
+          "path": "figures/FigS08_PredictorEffects.png",
+          "sha256": "950656ff430e2687e50ba7cc7a7bfb7af24d27839d8f10a497703268ffeccc9d",
+          "bytes": 284245
+        }
+      ]
+    }
+  },
+  "source_assets": [
+    {
+      "path": "figures/Fig01_CEP.drawio",
+      "sha256": "1911e1398cd3f69bc0bc2734f07fad1e8babb12550e4ba2b127fecd469d0b822",
+      "bytes": 11667
+    },
+    {
+      "path": "figures/Fig03_separation_source.json",
+      "sha256": "b9c8f5b453f4edda2bb819300e9819f9d6dd8ada6edc9e26554f034bcf22fb5e",
+      "bytes": 1135
+    },
+    {
+      "path": "figures/recorded_values.json",
+      "sha256": "d9bbcd27d7220ad8a3d972e511412ae05a9d2dd223a02cc059076e9d83129c3d",
+      "bytes": 1243
+    },
+    {
+      "path": "figures/FigS07_source_manifest.json",
+      "sha256": "58478dde6d415a1c78185b4bf53d5881b6bf1736dc094d0ddb9a4981801388ba",
+      "bytes": 341
+    },
+    {
+      "path": "analysis/Table05_source.csv",
+      "sha256": "8c76522946ee08a8db216fda20be29a68162fb655d96ecf503f2fa280d72c4ac",
+      "bytes": 142
+    },
+    {
+      "path": "analysis/Table06_source.csv",
+      "sha256": "cd8b542446e5c3a196881fa803e342bff390b73977ec74c520f70ec711581ac5",
+      "bytes": 216
+    },
+    {
+      "path": "analysis/new_descriptor_summary.csv",
+      "sha256": "a23b25b9a752115bccd5d8685a1223ffb280fbe83139ca6931924d72238aa17d",
+      "bytes": 1072
+    },
+    {
+      "path": "analysis/new_descriptor_paired.csv",
+      "sha256": "ad739d1fa2b6d2aa739da8a8ed436ff6b7dc661b001b125e2117c078a582955a",
+      "bytes": 901
+    },
+    {
+      "path": "analysis/new_descriptor_run_summary.csv",
+      "sha256": "07736c1f05cde6c765e337fbf530af233d534b83762dacc1e42b4e336f1ae095",
+      "bytes": 60740
+    },
+    {
+      "path": "analysis/input_sha256.json",
+      "sha256": "72b09302a268e8af3e2c8ebbdccad5e6eacbd1da0ea00150d2856f6350dffbbb",
+      "bytes": 23490
+    },
+    {
+      "path": "analysis/analysis_QA.json",
+      "sha256": "cadf4f6134e9b8f663e9e774e9dbf31fcefbefb788bf191c50b4c3be4678f85c",
+      "bytes": 5841
+    },
+    {
+      "path": "analysis/diagnostics.py",
+      "sha256": "1ed9753a0098aa2cab084f295dab8f1472a0f2bb74a463a66ebee876b8fc1889",
+      "bytes": 6697
+    },
+    {
+      "path": "analysis/figS07_aggregation_summary.csv",
+      "sha256": "3277cbeffd5a89aef65078bab2325a4b77dbdb64a840d5474f7edc3085999022",
+      "bytes": 1056
+    },
+    {
+      "path": "analysis/figS07_lolo_effects.csv",
+      "sha256": "eca0408f08fd05dfb7588edd4404092603291355bd64a3c010eb96aed4f4b6d1",
+      "bytes": 10277
+    },
+    {
+      "path": "analysis/figS07_internal_configuration.csv",
+      "sha256": "82a9c73422713f43e0b9d56fc2ca6638d0e0f0de869374fe26046bd56c263275",
+      "bytes": 686
+    },
+    {
+      "path": "results/figure_data/fig3_selected_cases.csv",
+      "sha256": "8af34dceeac38a95b417be957e9256e5e836ff7c6e49ae504c1cef5416ceb088",
+      "bytes": 2894
+    },
+    {
+      "path": "results/figure_data/fig07_selection_sensitivity.csv",
+      "sha256": "51c91a204d20d6370179b5475635ffcb8b1467ac71d3f1229135ec17e3b95f5f",
+      "bytes": 19980
+    },
+    {
+      "path": "results/figure_data/figS07_aggregation_summary.csv",
+      "sha256": "3277cbeffd5a89aef65078bab2325a4b77dbdb64a840d5474f7edc3085999022",
+      "bytes": 1056
+    },
+    {
+      "path": "results/figure_data/figS07_lolo_effects.csv",
+      "sha256": "eca0408f08fd05dfb7588edd4404092603291355bd64a3c010eb96aed4f4b6d1",
+      "bytes": 10277
+    },
+    {
+      "path": "results/figure_data/figS07_internal_configuration.csv",
+      "sha256": "82a9c73422713f43e0b9d56fc2ca6638d0e0f0de869374fe26046bd56c263275",
+      "bytes": 686
+    }
+  ],
+  "source_manuscript_sha256": "4879872d2024c8d6eb88ee179104da094a7662a5bdde5c2e8a262460cf779d37",
+  "source_supplement_sha256": "b22787f9af6fbb8736c27ed3bea4335b94404498ff0a8c480c599f5e411d0bca",
+  "notes": "Manuscript files are not included in this anonymous overlay. The two hashes are local release identifiers only."
+}

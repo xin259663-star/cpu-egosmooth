@@ -1,7 +1,7 @@
 
 cff-version: 1.2.0
 message: "Please cite the associated paper and this software release."
-title: "Accuracy-Constrained Evaluation of Geometric Effects in Short-Horizon Open-Loop Ego-Trajectory Post-Processing"
+title: "Control-Oriented Evaluation of Post-Processing Effects in Short-Horizon Ego-Trajectory Prediction"
 type: software
 authors:
   - family-names: "Zhu"

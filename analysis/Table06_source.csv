@@ -1,0 +1,5 @@
+﻿Control,ADE (m),FDE (m),Shape (m s⁻³)
+Neural Raw,0.8019,1.7214,1.878
+Constant velocity (CV),1.2467,2.6035,0.275
+Constant acceleration (CA),1.8183,4.0561,0
+Constant turn-rate/velocity (CTRV),1.0786,2.3398,0.436

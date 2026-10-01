@@ -1,5 +1,7 @@
 # Fig.1 icon sources
 
+**Historical pre-CEP artwork only.** The current CEP Fig.1 is a different workflow and does not use these five RQ icons. This record and the licensed source files are retained for provenance; see `docs/FIGURES.md` for current figure mapping.
+
 Tabler Icons official repository, immutable upstream commit `74929e50416e2b7c0abb8368cdc74bdcb2560ab6`. All five are Outline icons. Original SVG files are retained byte-for-byte. MIT license and copyright notice: `icon_sources/tabler/LICENSE`.
 
 | RQ | Tabler icon name | Official page | SVG file | Path modified |

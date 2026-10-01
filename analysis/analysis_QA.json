@@ -1,0 +1,203 @@
+{
+  "runs": 50,
+  "windows_per_run": 2901,
+  "run_windows": 145050,
+  "logs": 7,
+  "all_identifier_checks": "PASS",
+  "published_means_rounding_check": "PASS",
+  "existing_metrics_recomputed": {
+    "Raw": {
+      "ADE": 0.8019032841465917,
+      "FDE": 1.721444619774923,
+      "Shape": 1.878068294165992,
+      "boundary_speed_mismatch": 0.38137953476344977,
+      "boundary_acceleration_mismatch": 0.8437910243434376,
+      "endpoint_shift": 0.0
+    },
+    "Fixed SG": {
+      "ADE": 0.8008107254773039,
+      "FDE": 1.7200928196499918,
+      "Shape": 1.0469909088732234,
+      "boundary_speed_mismatch": 0.38056498288300844,
+      "boundary_acceleration_mismatch": 0.8091527597386502,
+      "endpoint_shift": 0.021127876737680865
+    },
+    "Selected": {
+      "ADE": 0.7994129141816799,
+      "FDE": 1.7210198665531506,
+      "Shape": 1.0087355828951543,
+      "boundary_speed_mismatch": 0.3790578052854032,
+      "boundary_acceleration_mismatch": 0.7771129755450887,
+      "endpoint_shift": 0.004435890701406266
+    }
+  },
+  "dt_seconds": 0.5,
+  "minimum_segment_numerical_validity_m": 0.05,
+  "constraint_violation_frequency": "NOT ESTIMATED: no vehicle-specific physical limits",
+  "new_summary": [
+    {
+      "metric": "max_abs_curvature",
+      "unit": "m^-1",
+      "strategy": "Raw",
+      "valid_pairs": 116595,
+      "total_pairs": 145050,
+      "mean": 0.09937517624269457,
+      "median": 0.0044111087948673165,
+      "p95": 0.2527172781890001
+    },
+    {
+      "metric": "max_abs_curvature",
+      "unit": "m^-1",
+      "strategy": "Fixed SG",
+      "valid_pairs": 116595,
+      "total_pairs": 145050,
+      "mean": 0.06126407656519713,
+      "median": 0.0035241253750789058,
+      "p95": 0.1817808212585278
+    },
+    {
+      "metric": "max_abs_curvature",
+      "unit": "m^-1",
+      "strategy": "Selected",
+      "valid_pairs": 116595,
+      "total_pairs": 145050,
+      "mean": 0.05587775283879204,
+      "median": 0.0035922279312438853,
+      "p95": 0.15389739349389764
+    },
+    {
+      "metric": "max_lateral_acceleration_proxy",
+      "unit": "m s^-2",
+      "strategy": "Raw",
+      "valid_pairs": 116595,
+      "total_pairs": 145050,
+      "mean": 0.29829062416284075,
+      "median": 0.13558666683520576,
+      "p95": 1.2580873509484007
+    },
+    {
+      "metric": "max_lateral_acceleration_proxy",
+      "unit": "m s^-2",
+      "strategy": "Fixed SG",
+      "valid_pairs": 116595,
+      "total_pairs": 145050,
+      "mean": 0.25012438093980854,
+      "median": 0.09697467109096702,
+      "p95": 1.1549153101345895
+    },
+    {
+      "metric": "max_lateral_acceleration_proxy",
+      "unit": "m s^-2",
+      "strategy": "Selected",
+      "valid_pairs": 116595,
+      "total_pairs": 145050,
+      "mean": 0.267827490235565,
+      "median": 0.09928358649405913,
+      "p95": 1.25892084585661
+    },
+    {
+      "metric": "boundary_heading_discontinuity",
+      "unit": "degree",
+      "strategy": "Raw",
+      "valid_pairs": 113733,
+      "total_pairs": 145050,
+      "mean": 2.108494403515913,
+      "median": 0.418338397916202,
+      "p95": 7.226695887554635
+    },
+    {
+      "metric": "boundary_heading_discontinuity",
+      "unit": "degree",
+      "strategy": "Fixed SG",
+      "valid_pairs": 113733,
+      "total_pairs": 145050,
+      "mean": 2.0866912882227466,
+      "median": 0.4154498738144172,
+      "p95": 7.060848624996894
+    },
+    {
+      "metric": "boundary_heading_discontinuity",
+      "unit": "degree",
+      "strategy": "Selected",
+      "valid_pairs": 113733,
+      "total_pairs": 145050,
+      "mean": 2.099776639340902,
+      "median": 0.4179860413356076,
+      "p95": 7.153193005603115
+    }
+  ],
+  "paired_summary": [
+    {
+      "metric": "max_abs_curvature",
+      "comparison": "Fixed SG minus Raw",
+      "mean_delta": -0.03811109967749742,
+      "positive_rate": 0.22461512071701187,
+      "negative_log_count": 7,
+      "log_count": 7
+    },
+    {
+      "metric": "max_abs_curvature",
+      "comparison": "Selected minus Fixed SG",
+      "mean_delta": -0.005386323726405083,
+      "positive_rate": 0.36251125691496205,
+      "negative_log_count": 6,
+      "log_count": 7
+    },
+    {
+      "metric": "max_abs_curvature",
+      "comparison": "Selected minus Raw",
+      "mean_delta": -0.04349742340390251,
+      "positive_rate": 0.2615378017925297,
+      "negative_log_count": 7,
+      "log_count": 7
+    },
+    {
+      "metric": "max_lateral_acceleration_proxy",
+      "comparison": "Fixed SG minus Raw",
+      "mean_delta": -0.04816624322303223,
+      "positive_rate": 0.20311334105236073,
+      "negative_log_count": 7,
+      "log_count": 7
+    },
+    {
+      "metric": "max_lateral_acceleration_proxy",
+      "comparison": "Selected minus Fixed SG",
+      "mean_delta": 0.017703109295756508,
+      "positive_rate": 0.39300999185213775,
+      "negative_log_count": 0,
+      "log_count": 7
+    },
+    {
+      "metric": "max_lateral_acceleration_proxy",
+      "comparison": "Selected minus Raw",
+      "mean_delta": -0.03046313392727571,
+      "positive_rate": 0.2622067841674171,
+      "negative_log_count": 6,
+      "log_count": 7
+    },
+    {
+      "metric": "boundary_heading_discontinuity",
+      "comparison": "Fixed SG minus Raw",
+      "mean_delta": -0.02180311529316656,
+      "positive_rate": 0.3908540177433111,
+      "negative_log_count": 7,
+      "log_count": 7
+    },
+    {
+      "metric": "boundary_heading_discontinuity",
+      "comparison": "Selected minus Fixed SG",
+      "mean_delta": 0.013085351118155486,
+      "positive_rate": 0.4124836239262131,
+      "negative_log_count": 0,
+      "log_count": 7
+    },
+    {
+      "metric": "boundary_heading_discontinuity",
+      "comparison": "Selected minus Raw",
+      "mean_delta": -0.008717764175011071,
+      "positive_rate": 0.12312169730860877,
+      "negative_log_count": 7,
+      "log_count": 7
+    }
+  ]
+}

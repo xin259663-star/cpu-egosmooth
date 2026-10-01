@@ -1,7 +1,7 @@
-# Figures
+# Current CEP publication figures
 
-Current manuscript assets: Fig01–Fig07 PNG/SVG and FigS07_Diagnostics PNG/SVG. Exact hashes and manuscript mapping are in `manifest_v6.json`.
+The current manuscript has six main figures, `Fig01`–`Fig06`. The supplement has `FigS07_Diagnostics` and `FigS08_PredictorEffects`. Each current figure is supplied as SVG and PNG. The source-of-truth mapping and SHA-256 hashes are in `manifest_cep.json`.
 
-`reproduced/` contains verified byte-identical artwork exports, not a rerun of the experiments. Table 5 and Table 6 are exported by `scripts/reproduce_publication_tables.py`, not as numbered figures.
+`Fig01_CEP.drawio` is the editable source for the current workflow. The files in `archive/pre_cep/`, including the old Fig.1 diagram, old manifest, and previously reproduced Fig.7/Fig.8 outputs, are historical and are not current CEP publication artwork.
 
-Former Fig08 is superseded by Table 6 + Methods 2.6 equations. All earlier numbered PDFs are archival rather than current exports; see `archive/pre_v6/`. Old scientific source filenames are retained for provenance and explicitly mapped in `docs/FIGURES.md`.
+Run `python scripts/reproduce_figures.py --fig all --root .` from the repository root to verify saved source records and export byte-identical SVG/PNG files to `figures/reproduced/`. This is a locked-artwork export, not a reconstruction of every panel from raw nuScenes data.

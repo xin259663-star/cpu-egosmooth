@@ -71,7 +71,7 @@
 <polygon points="1330,90 1338,106 1322,106" fill="#667483" stroke="#667483" stroke-width="2"/>
 <text x="1348" y="105" font-size="20" font-weight="400" text-anchor="start" fill="#172235">P95</text>
 <text x="35" y="645" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(c)</text>
-<text x="83" y="645" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Boundary and endpoint consequences</text>
+<text x="83" y="645" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Boundary consistency and endpoint consequences</text>
 <text x="295" y="706" font-size="23" font-weight="400" text-anchor="middle" fill="#172235">Boundary speed mismatch</text>
 <text x="295" y="742" font-size="22" font-weight="400" text-anchor="middle" fill="#172235">m s⁻¹</text>
 <line x1="120" y1="788" x2="120" y2="978" stroke="#667483" stroke-width="1.4"/>
