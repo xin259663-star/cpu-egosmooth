@@ -1,6 +1,6 @@
 # Publication v7.1 provenance
 
-**Historical pre-CEP record only.** References below to a “current” six-figure IET release refer to the archived v7.1 state. The current CEP release is mapped in `docs/FIGURES.md` and `figures/manifest_cep.json`; the v7.1 manifest is in `figures/archive/pre_cep/manifest_v7_1.json`.
+**Historical journal-specific record only.** References below to a “current” six-figure release refer to the archived v7.1 state. The current anonymous-review release is mapped in `docs/FIGURES.md` and the root `manifest_current.json`; the historical manifest is retained under `figures/archive/`.
 
 Current main figures: Fig01–Fig06. Former Fig07 selection-rule sensitivity is now Fig06(c); Fig08 is superseded by Table 6 and Methods 2.6 equations. Table 5/6 and Supplement S1/S07 retain all recorded values and identifiers. No experiments, scientific source files, case selection, trajectories or native equations changed.
 

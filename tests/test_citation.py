@@ -9,8 +9,8 @@ def test_citation_cff_has_required_software_fields():
     assert citation["type"] == "software"
     assert citation["version"] == "1.0.1"
     assert citation["title"] == (
-        "Control-Oriented Evaluation of Post-Processing Effects in Short-Horizon "
-        "Ego-Trajectory Prediction"
+        "Measurement and Verification of Post-Processing Effects in Short-Horizon "
+        "Ego-Trajectory Prediction for Autonomous Driving"
     )
     assert citation["authors"] == [
         {
