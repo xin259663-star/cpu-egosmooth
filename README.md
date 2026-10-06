@@ -1,24 +1,50 @@
-# Pre-controller trajectory post-processing verification
+# Anonymous manuscript reproduction repository
 
-This anonymous repository supports a pre-controller, output-level evaluation of short-horizon ego-trajectory post-processing on nuScenes. It does not demonstrate controller-in-the-loop performance, vehicle safety, comfort, or deployment feasibility.
+**Paper:** Measurement and Verification of Post-Processing Effects in Short-Horizon Ego-Trajectory Prediction for Autonomous Driving
 
-## Current publication mapping
+**Status:** Anonymous manuscript reproduction repository
 
-- Fig.1: pre-controller verification workflow
-- Fig.2: data construction and role isolation
-- Fig.3: qualitative held-out trajectory cases and pointwise separation insets
-- Fig.4: paired effects and absolute means
-- Fig.5: local degradation and interface consequences
-- Fig.6: candidate composition and decision robustness
-- Supplementary Fig.S07: aggregation, leave-one-log-out and configuration sensitivity
-- Supplementary Fig.S08: predictor-stratified paired effects
-- Table 5: timing-definition sensitivity (`analysis/Table05_source.csv`)
-- Table 6: kinematic controls (`analysis/Table06_source.csv`)
+This repository contains the frozen scientific sources, provenance records, and locked publication artwork for anonymous review. The current main figures are `figures/Fig01_final.svg` through `figures/Fig06_final.svg`; Supplementary Figures S07 and S08 are also in `figures/`. The publication SVGs are locked artwork. The reproduction command validates their hashes and the frozen scientific-source hashes, then exports exact copies. It does not retrain models, recompute results, or reselect qualitative cases.
 
-The current figure files and SHA-256 hashes are listed in `figures/manifest_cep.json`. Older IET and pre-CEP figure files, if retained outside this overlay, are superseded and must not be described as current manuscript artwork.
+## Current manuscript mapping
 
-## Reproduction level
+| Item | Content |
+| --- | --- |
+| Fig. 1 | Development and held-out Test workflow |
+| Fig. 2 | Ego-window construction, log-exclusive split, and role isolation |
+| Fig. 3 | Four deterministic held-out trajectory cases |
+| Fig. 4 | Paired post-processing effects |
+| Fig. 5 | Local paired-error and boundary/endpoint effects |
+| Fig. 6 | Selected-candidate composition and rule sensitivity |
+| Table 5 | Timing-definition sensitivity (`analysis/Table05_source.csv`) |
+| Table 6 | Kinematic controls (`analysis/Table06_source.csv`) |
+| Fig. S07 | Supplementary sensitivity diagnostics |
+| Fig. S08 | Predictor-stratified paired effects |
 
-`python scripts/reproduce_figures.py --fig all --root .` validates the locked source records and exports byte-identical publication SVG/PNG files to `figures/reproduced/`. This is a locked-artwork export. It does not retrain predictors, rebuild nuScenes map crops, or regenerate all panels from raw nuScenes data. `analysis/diagnostics.py` documents the post-hoc calculations on separately held frozen prediction arrays; those arrays and licensed nuScenes source files are not redistributed here.
+## Reproduction
 
-Four Figure 3 case tokens and window indices are in `results/figure_data/fig3_selected_cases.csv`; the deterministic selection protocol is described in the supplementary material. Figure 3 inset source separations are in `figures/Fig03_separation_source.json`. S07 source CSVs and S08 recorded values are included. This CEP publication overlay adds no signed manuscript file or author metadata. The separately identifiable source repository has historical citation metadata; the anonymous review mirror must be checked independently for identity filtering after every refresh.
+```bash
+python scripts/reproduce_figures.py --root . --fig all --output reproduced_figures
+python scripts/reproduce_publication_tables.py --root .
+pytest -q
+```
+
+The held-out cases and deterministic selection rules are documented in `results/provenance/`. The frozen Fig. 3(b) case is scene `b0b26c1e5a1140e69598422f12ae1dc0`, sample `53a3b6ba49af484d9d0bab0ffb9dea01`, log `7a0fde44c3504eaeb18f9ad83bed65bc`, window `19`.
+
+Map context is used only for qualitative visualization and is not provided to predictors, post-processing, candidate selection, or quantitative evaluation. The licensed raw dataset is not redistributed.
+
+`manifest_current.json` identifies the current output set and records SHA-256 hashes for Fig. 1-Fig. 6, Fig. S07, Fig. S08, Table 5, Table 6, and frozen scientific sources. Superseded publication manifests and artwork are retained only under `figures/archive/` and are not current outputs.
+
+## Repository structure
+
+- `src/`: scientific implementation
+- `scripts/`: reproduction and validation entry points
+- `configs/`: frozen experimental configuration
+- `analysis/`: audited supplementary analyses and table sources
+- `results/`: processed summaries, tables, and provenance
+- `figures/`: current locked publication artwork
+- `figures/archive/`: superseded artwork and manifests
+
+## Scientific scope
+
+The study evaluates short-horizon open-loop ego-trajectory post-processing. It separates displacement accuracy, sampled-path geometry, local paired effects, and selection sensitivity. It does not claim improved safety, comfort, physical jerk, closed-loop behavior, or complete autonomous-driving performance.

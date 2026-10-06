@@ -1,0 +1,240 @@
+{
+  "version": "manuscript-v7.3-upper-node-unification",
+  "publication_width_mm": 178,
+  "export_semantics": "byte-identical locked-artwork export; not raw-data experiment reproduction",
+  "figures": {
+    "Fig01": {
+      "mapping": "study protocol and analysis map",
+      "assets": [
+        {
+          "path": "figures/Fig01.png",
+          "sha256": "7070d562094c70e49c4f728df69aefb31a65841d0d09149ee76452ebdd41ab45",
+          "bytes": 784676
+        },
+        {
+          "path": "figures/Fig01.svg",
+          "sha256": "488625c6055f1147d40d20ea06f44fd351a1236e26a5f1074f7cbe7d330416df",
+          "bytes": 15961
+        }
+      ]
+    },
+    "Fig02": {
+      "mapping": "data construction and role isolation",
+      "assets": [
+        {
+          "path": "figures/Fig02.png",
+          "sha256": "ee93e9b7a0e6ba7252967879e1fece0a2f3933436e2102425b94dd8a319ccbcb",
+          "bytes": 1237554
+        },
+        {
+          "path": "figures/Fig02.svg",
+          "sha256": "e8e699e02ce2580fa7e8aa69e9dc842e0f2f559bbb72e9a267a05a47503fc23b",
+          "bytes": 10334
+        }
+      ]
+    },
+    "Fig03": {
+      "mapping": "qualitative trajectory cases",
+      "assets": [
+        {
+          "path": "figures/Fig03.png",
+          "sha256": "a379891b187c462fd96ac2ff25f005a699068c48f56f42764796b5ad9fd3bc51",
+          "bytes": 1937233
+        },
+        {
+          "path": "figures/Fig03.svg",
+          "sha256": "36647d3a3b8344e9e4e992b08f6e935834dc0032ba94f74cc5175a95c0e677fc",
+          "bytes": 69173
+        }
+      ],
+      "source_data": [
+        {
+          "path": "results/figure_data/fig3_selected_cases.csv",
+          "sha256": "8af34dceeac38a95b417be957e9256e5e836ff7c6e49ae504c1cef5416ceb088",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/provenance/Fig03_case_selection.csv",
+          "sha256": "8af34dceeac38a95b417be957e9256e5e836ff7c6e49ae504c1cef5416ceb088",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/provenance/Fig03_debug_keys.csv",
+          "sha256": "6f21e7aafbd7ad8397da949463d19e72e267870c00758acdedbb859517d09864",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/provenance/fig3_selection_summary.json",
+          "sha256": "02401ad7d6da90b08d6ad7ff330f9479a9b4655f85e21838b10bd66634c7f054",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        }
+      ]
+    },
+    "Fig04": {
+      "mapping": "primary paired effects and absolute means",
+      "assets": [
+        {
+          "path": "figures/Fig04.png",
+          "sha256": "014a1aff1ab8f258e37aa137de25c34904f3cff92dbfcaadd8e1bd372cbf9614",
+          "bytes": 854836
+        },
+        {
+          "path": "figures/Fig04.svg",
+          "sha256": "66ac9927f0038b4f3cef455a99a8917a6e0f7a1b2b699f1647cc28f196dd2e5e",
+          "bytes": 35843
+        }
+      ]
+    },
+    "Fig05": {
+      "mapping": "local-error frequencies, tails and boundary consequences",
+      "assets": [
+        {
+          "path": "figures/Fig05.png",
+          "sha256": "21150a1fe62ee9590dbfff560fd3fc113205977fd5f6e58d9fb8c1fa393c0575",
+          "bytes": 1181903
+        },
+        {
+          "path": "figures/Fig05.svg",
+          "sha256": "4af1635fe2ea7db88687b30fa6fb4ab8a6acc11aed8df19a08d401b4c565dc5a",
+          "bytes": 13857
+        }
+      ]
+    },
+    "Fig06": {
+      "mapping": "predictor dependence, composition and selection-rule sensitivity",
+      "assets": [
+        {
+          "path": "figures/Fig06.png",
+          "sha256": "01028339cac6948563c1a96f28f083ab71155a9d234415643d286bcde7f0e14b",
+          "bytes": 1475217
+        },
+        {
+          "path": "figures/Fig06.svg",
+          "sha256": "d0fd3f91eb4e6bfb2c93d6620a59a99986d715b837c4f39f846c100d80a1822e",
+          "bytes": 17378
+        }
+      ],
+      "source_data": [
+        {
+          "path": "results/figure_data/fig07_selection_sensitivity.csv",
+          "sha256": "51c91a204d20d6370179b5475635ffcb8b1467ac71d3f1229135ec17e3b95f5f",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/summary/formal_runs_summary.csv",
+          "sha256": "e5204a4d3d76856750097bb89d94b6fb967f7a8154e219dc73f18b54d7b94ce9",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        }
+      ]
+    },
+    "FigS07": {
+      "mapping": "supplementary diagnostics",
+      "assets": [
+        {
+          "path": "figures/FigS07_Diagnostics.png",
+          "sha256": "a1ca62fe0b55ed6af9ce9a51d38ea2c01422100ddb8560b3a7b8269ee11639f8",
+          "bytes": 170392
+        },
+        {
+          "path": "figures/FigS07_Diagnostics.svg",
+          "sha256": "c0d7ab0a738e24e80ef3c2f137065afbf3f982f2a26776875a426597147ebc62",
+          "bytes": 7847
+        }
+      ],
+      "source_data": [
+        {
+          "path": "results/figure_data/figS07_aggregation_summary.csv",
+          "sha256": "3277cbeffd5a89aef65078bab2325a4b77dbdb64a840d5474f7edc3085999022",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/figure_data/figS07_lolo_effects.csv",
+          "sha256": "eca0408f08fd05dfb7588edd4404092603291355bd64a3c010eb96aed4f4b6d1",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        },
+        {
+          "path": "results/figure_data/figS07_internal_configuration.csv",
+          "sha256": "82a9c73422713f43e0b9d56fc2ca6638d0e0f0de869374fe26046bd56c263275",
+          "hash_normalization": "UTF-8 bytes with LF line endings"
+        }
+      ]
+    }
+  },
+  "tables": {
+    "Table05": {
+      "mapping": "timing-definition sensitivity",
+      "source": "results/figure_data/fig07_timestamp_sensitivity.csv",
+      "display_data": "results/tables/Table05_timing_sensitivity.csv",
+      "source_sha256": "953036003135e2d76b84b88eb1eb3b89733379a757bda0d93b5102ae7a26f9f8",
+      "hash_normalization": "UTF-8 bytes with LF line endings"
+    },
+    "Table06": {
+      "mapping": "kinematic controls",
+      "source": "results/figure_data/fig08_kinematic_controls.csv",
+      "display_data": "results/tables/Table06_kinematic_controls.csv",
+      "source_sha256": "8f98b103c541b4f57ba7c0d0686560653ca012c65c2dbb15f05537afae169a2b",
+      "hash_normalization": "UTF-8 bytes with LF line endings"
+    }
+  },
+  "superseded": {
+    "Fig08": "superseded by Table 6 + Methods 2.6 equations",
+    "previous_numbered_PDFs": "archival exports; current assets are locked SVG/PNG",
+    "Fig07": "v6 selection-rule sensitivity merged into Fig06(c); not a current output"
+  },
+  "release_status": "Publication artwork accepted locally; anonymous mirror acceptance is recorded separately.",
+  "changes_from_v7": {
+    "Fig01": "scientific analysis-dimension schematics, not measured results",
+    "Fig05": "three zero-baseline mini bar plots for boundary and endpoint summaries",
+    "Fig06": "shorter sign/scaling key; sensitivity text enlarged 9%, no coordinate changes"
+  },
+  "editable_diagram": {
+    "path": "figures/Fig01_Protocol.drawio",
+    "sha256": "4c3ca9023ad748c1aa3db08bda2182521d0771b2054f7c7a9999e58965ee6a1e",
+    "note": "Editable geometry; publication PNG rendered from matching SVG, not draw.io CLI."
+  },
+  "patch_scope": "Only Fig01 upper schematic: split, 50-run square matrix, 13-candidate array with explicit feasibility/ranking, final evaluation block. Lower Analysis map, captions, other figures and scientific sources unchanged.",
+  "Fig01_icon_sources": {
+    "library": "Tabler Icons Outline",
+    "official_repository": "tabler/tabler-icons",
+    "upstream_commit": "74929e50416e2b7c0abb8368cdc74bdcb2560ab6",
+    "viewBox": "0 0 24 24",
+    "stroke_width": 2,
+    "viewport_mm": 7,
+    "path_modified": false,
+    "sources": [
+      {
+        "rq": "RQ1",
+        "name": "chart-line",
+        "path": "figures/icon_sources/tabler/chart-line.svg",
+        "sha256": "0a2ec43a92e585dfc29e515cedaf1fc656c466bab5a6b9e0aa0a56f0c384f88a"
+      },
+      {
+        "rq": "RQ2",
+        "name": "chart-scatter",
+        "path": "figures/icon_sources/tabler/chart-scatter.svg",
+        "sha256": "ba397932da7ad50d65233871d80f12c5084825bdf4b8db39eccd6b70bca5e8ae"
+      },
+      {
+        "rq": "RQ3a",
+        "name": "layout-grid",
+        "path": "figures/icon_sources/tabler/layout-grid.svg",
+        "sha256": "234f17d3e6212587c7a97a4fb1a68f824adf13365a9ac330dbae42e624488794"
+      },
+      {
+        "rq": "RQ3b",
+        "name": "adjustments-horizontal",
+        "path": "figures/icon_sources/tabler/adjustments-horizontal.svg",
+        "sha256": "66b3be63d0ae4f75c6707ac802ef2bad9eb5f9c0af9ab77c7a1f9c7f1694a178"
+      },
+      {
+        "rq": "RQ4",
+        "name": "timeline",
+        "path": "figures/icon_sources/tabler/timeline.svg",
+        "sha256": "b72fd22a6b3d5e814874a7527b807d767d89647539d0d6578e34be2c05632f0f"
+      }
+    ],
+    "license_path": "figures/icon_sources/tabler/LICENSE",
+    "license_sha256": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db",
+    "source_notes": "docs/FIG1_ICON_SOURCES.md"
+  }
+}

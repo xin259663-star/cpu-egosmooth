@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="178mm" height="80mm" viewBox="0 0 1780 800" role="img" aria-labelledby="fig1title fig1desc" version="1.1" id="svg202">
+  <title id="fig1title">Development-time candidate selection and held-out output evaluation</title>
+  <desc id="fig1desc">Two-stage scientific workflow. Development data are used to train and select predictor checkpoints with Validation-A, followed by Validation-B comparison of thirteen predefined trajectory candidates against Raw using a feasibility gate and ranking rule. Development choices are frozen before held-out Test evaluation. Output-level accuracy, geometry, boundary consistency, and local paired-error changes are characterized, followed by downstream application testing.</desc>
+  <defs id="defs3">
+    <style id="style1">
+      .base{font-family:Arial,Helvetica,"Liberation Sans",sans-serif;fill:#1E2A32}
+      .stage{font-size:37px;font-weight:600}
+      .module{font-size:31px;font-weight:700}
+      .body{font-size:27px;font-weight:400}
+      .bold{font-size:27px;font-weight:650}
+      .math{font-family:"Cambria Math","STIX Two Math","DejaVu Sans",serif;font-size:29px;fill:#1E2A32}
+      .secondary{fill:#1E2A32}
+      .outer{fill:#fff;stroke:#667780;stroke-width:1.4}
+      .card{fill:#fff;stroke:#7A8991;stroke-width:1.4}
+      .rule{stroke:#9AA6AD;stroke-width:1.2}
+      .flow{fill:none;stroke:#41515B;stroke-width:2;marker-end:url(#flowHead)}
+      .transferBlue{fill:none;stroke:#285F96;stroke-width:1.4;stroke-dasharray:6 5;marker-end:url(#blueHead)}
+      .transferOrange{fill:none;stroke:#B75A16;stroke-width:1.4;stroke-dasharray:6 5;marker-end:url(#orangeHead)}
+      .history{fill:none;stroke:#66747E;stroke-width:2.1}
+      .raw{fill:none;stroke:#687680;stroke-width:2.6}
+      .sg{fill:none;stroke:#2E6EB5;stroke-width:2.6}
+      .qreg{fill:none;stroke:#23806F;stroke-width:2.6}
+      .selected{fill:none;stroke:#C86318;stroke-width:2.8}
+      .blueText{fill:#2E6EB5}
+      .greenText{fill:#23806F}
+      .orangeText{fill:#B8510A}
+    </style>
+    <marker id="flowHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#41515B" id="path1"/>
+    </marker>
+    <marker id="blueHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#285F96" id="path2"/>
+    </marker>
+    <marker id="orangeHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#B75A16" id="path3"/>
+    </marker>
+  </defs>
+  <rect width="1780" height="800" fill="#fff" id="rect3"/>
+  <!-- Development and selection: a small margin remains beneath every module. -->
+  <rect class="outer" rx="2" x="10" y="9" width="1760" height="348" id="rect4"/>
+  <text class="base stage" x="27" y="47" id="text4">(a) Development and selection</text>
+  <text class="base body secondary" x="600" y="47" id="text5">development data</text>
+  <rect class="card" rx="2" x="20" y="63" width="330" height="279" id="rect5"/>
+  <text class="base module" x="185" y="103" text-anchor="middle" id="text6">Observed history</text>
+  <line class="rule" x1="40" y1="121" x2="330" y2="121" id="line6"/>
+  <text class="base body" x="185" y="158" text-anchor="middle" id="text7">4 ego states</text>
+  <path class="history" d="M68 249L134 226L200 210L266 199" id="path7"/>
+  <g fill="#fff" stroke="#66747E" stroke-width="2.2" id="g10">
+    <circle cx="68" cy="249" r="6" id="circle7"/>
+    <circle cx="134" cy="226" r="6" id="circle8"/>
+    <circle cx="200" cy="210" r="6" id="circle9"/>
+    <circle cx="266" cy="199" r="6" id="circle10"/>
+  </g>
+  <svg id="formula_1" x="58.00" y="266.72" width="46.29" height="21" viewBox="0 -442 1432.7 650" aria-label="q_{-3}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g17">
+      <g data-mml-node="math" id="g16">
+        <g data-mml-node="msub" id="g15">
+          <g data-mml-node="mi" id="g11">
+            <path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" id="path10"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(479,-150) scale(0.707)" data-mjx-texclass="ORD" id="g14">
+            <g data-mml-node="mo" id="g12">
+              <path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z" id="path11"/>
+            </g>
+            <g data-mml-node="mn" transform="translate(778,0)" id="g13">
+              <path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" id="path12"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_2" x="124.00" y="243.72" width="46.29" height="21" viewBox="0 -442 1432.7 650" aria-label="q_{-2}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g24">
+      <g data-mml-node="math" id="g23">
+        <g data-mml-node="msub" id="g22">
+          <g data-mml-node="mi" id="g18">
+            <path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" id="path17"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(479,-150) scale(0.707)" data-mjx-texclass="ORD" id="g21">
+            <g data-mml-node="mo" id="g19">
+              <path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z" id="path18"/>
+            </g>
+            <g data-mml-node="mn" transform="translate(778,0)" id="g20">
+              <path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="path19"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_3" x="190.00" y="227.72" width="46.29" height="21" viewBox="0 -442 1432.7 650" aria-label="q_{-1}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g31">
+      <g data-mml-node="math" id="g30">
+        <g data-mml-node="msub" id="g29">
+          <g data-mml-node="mi" id="g25">
+            <path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" id="path24"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(479,-150) scale(0.707)" data-mjx-texclass="ORD" id="g28">
+            <g data-mml-node="mo" id="g26">
+              <path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z" id="path25"/>
+            </g>
+            <g data-mml-node="mn" transform="translate(778,0)" id="g27">
+              <path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="path26"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_4" x="258.00" y="216.41" width="29.14" height="21" viewBox="0 -442 882.6 636" aria-label="q_{0}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g37">
+      <g data-mml-node="math" id="g36">
+        <g data-mml-node="msub" id="g35">
+          <g data-mml-node="mi" id="g32">
+            <path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" id="path31"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(479,-150) scale(0.707)" data-mjx-texclass="ORD" id="g34">
+            <g data-mml-node="mn" id="g33">
+              <path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="path32"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_9" x="128.70" y="297.09" width="112.60" height="24" viewBox="0 -841.7 4136.8 881.7" aria-label="X\in\mathbb{R}^{4\times5}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g48">
+      <g data-mml-node="math" id="g47">
+        <g data-mml-node="mi" id="g38">
+          <path data-c="1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z" id="path37"/>
+        </g>
+        <g data-mml-node="mo" transform="translate(1129.8,0)" id="g39">
+          <path data-c="2208" d="M84 250Q84 372 166 450T360 539Q361 539 377 539T419 540T469 540H568Q583 532 583 520Q583 511 570 501L466 500Q355 499 329 494Q280 482 242 458T183 409T147 354T129 306T124 272V270H568Q583 262 583 250T568 230H124V228Q124 207 134 177T167 112T231 48T328 7Q355 1 466 0H570Q583 -10 583 -20Q583 -32 568 -40H471Q464 -40 446 -40T417 -41Q262 -41 172 45Q84 127 84 250Z" id="path38"/>
+        </g>
+        <g data-mml-node="msup" transform="translate(2074.6,0)" id="g46">
+          <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" id="g41">
+            <g data-mml-node="mi" id="g40">
+              <path data-c="211D" d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z" id="path39"/>
+            </g>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(755,363) scale(0.707)" data-mjx-texclass="ORD" id="g45">
+            <g data-mml-node="mn" id="g42">
+              <path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="path41"/>
+            </g>
+            <g data-mml-node="mo" transform="translate(500,0)" id="g43">
+              <path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="path42"/>
+            </g>
+            <g data-mml-node="mn" transform="translate(1278,0)" id="g44">
+              <path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" id="path43"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <path class="flow" d="M351 204H367" id="path48"/>
+  <rect class="card" rx="2" x="370" y="63" width="360" height="279" id="rect48"/>
+  <text class="base module" x="550" y="103" text-anchor="middle" id="text48">Predictor development</text>
+  <line class="rule" x1="390" y1="121" x2="710" y2="121" id="line48"/>
+  <text class="base body" x="550" y="158" text-anchor="middle" id="text49">5 families × 10 seeds</text>
+  <text class="base bold" x="550" y="236" text-anchor="middle" style="font-weight:600" id="text50">Validation-A checkpoint</text>
+  <line x1="399" y1="278" x2="701" y2="278" stroke="#596771" stroke-width="1.8" id="line50"/>
+  <g fill="#fff" stroke="#596771" stroke-width="1.8" id="g51">
+    <circle cx="399" cy="278" r="5" id="circle50"/>
+    <circle cx="701" cy="278" r="5" id="circle51"/>
+  </g>
+  <circle cx="550" cy="278" r="7" fill="#2E6EB5" stroke="#24547F" stroke-width="1.5" id="circle52"/>
+  <svg id="formula_11" x="381.90" y="292.56" width="34.19" height="22" viewBox="0 -443 921.6 593" aria-label="v_{1}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g57">
+      <g data-mml-node="math" id="g56">
+        <g data-mml-node="msub" id="g55">
+          <g data-mml-node="mi" id="g52">
+            <path data-c="1D463" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z" id="path52"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(518,-150) scale(0.707)" data-mjx-texclass="ORD" id="g54">
+            <g data-mml-node="mn" id="g53">
+              <path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="path53"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_12" x="535.58" y="287.34" width="28.85" height="22" viewBox="0 -691.8 921.6 702.8" aria-label="v^{*}" version="1.1">
+    <g stroke="#2E6EB5" fill="#2E6EB5" stroke-width="0" transform="scale(1,-1)" id="g63">
+      <g data-mml-node="math" id="g62">
+        <g data-mml-node="msup" id="g61">
+          <g data-mml-node="mi" id="g58">
+            <path data-c="1D463" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z" id="path57"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(518,363) scale(0.707)" data-mjx-texclass="ORD" id="g60">
+            <g data-mml-node="mo" id="g59">
+              <path data-c="2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z" id="path58"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_13" x="678.80" y="292.56" width="44.39" height="22" viewBox="0 -443 1196.6 593" aria-label="v_{K}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g69">
+      <g data-mml-node="math" id="g68">
+        <g data-mml-node="msub" id="g67">
+          <g data-mml-node="mi" id="g64">
+            <path data-c="1D463" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z" id="path63"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(518,-150) scale(0.707)" data-mjx-texclass="ORD" id="g66">
+            <g data-mml-node="mi" id="g65">
+              <path data-c="1D43E" d="M285 628Q285 635 228 637Q205 637 198 638T191 647Q191 649 193 661Q199 681 203 682Q205 683 214 683H219Q260 681 355 681Q389 681 418 681T463 682T483 682Q500 682 500 674Q500 669 497 660Q496 658 496 654T495 648T493 644T490 641T486 639T479 638T470 637T456 637Q416 636 405 634T387 623L306 305Q307 305 490 449T678 597Q692 611 692 620Q692 635 667 637Q651 637 651 648Q651 650 654 662T659 677Q662 682 676 682Q680 682 711 681T791 680Q814 680 839 681T869 682Q889 682 889 672Q889 650 881 642Q878 637 862 637Q787 632 726 586Q710 576 656 534T556 455L509 418L518 396Q527 374 546 329T581 244Q656 67 661 61Q663 59 666 57Q680 47 717 46H738Q744 38 744 37T741 19Q737 6 731 0H720Q680 3 625 3Q503 3 488 0H478Q472 6 472 9T474 27Q478 40 480 43T491 46H494Q544 46 544 71Q544 75 517 141T485 216L427 354L359 301L291 248L268 155Q245 63 245 58Q245 51 253 49T303 46H334Q340 37 340 35Q340 19 333 5Q328 0 317 0Q314 0 280 1T180 2Q118 2 85 2T49 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Z" id="path64"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <path class="flow" d="M731 204H747" id="path69"/>
+  <rect class="card" rx="2" x="750" y="63" width="520" height="279" id="rect69"/>
+  <text class="base module" x="1010" y="103" text-anchor="middle" id="text69">Candidate transformations</text>
+  <line class="rule" x1="770" y1="121" x2="1250" y2="121" id="line69"/>
+  <text class="base body" x="1010" y="158" text-anchor="middle" id="text70">13 candidates</text>
+  <text class="base body" x="840" y="210" text-anchor="middle" id="text71">Raw</text>
+  <text class="base body" x="960" y="210" text-anchor="middle" id="text72">MA</text>
+  <text class="base body" x="840" y="254" text-anchor="middle" id="text73">Exp</text>
+  <text class="base body" x="960" y="254" text-anchor="middle" id="text74">Lap</text>
+  <text class="base body blueText" x="840" y="298" text-anchor="middle" id="text75">SG</text>
+  <text class="base body" x="960" y="298" text-anchor="middle" id="text76">QReg</text>
+  <line class="rule" x1="1045" y1="180" x2="1045" y2="318" id="line76"/>
+  <path class="raw" d="M1075 214L1100 202L1124 208L1150 196L1178 202" id="path76"/>
+  <text class="base body" x="1192" y="210" id="text77">Raw</text>
+  <path class="sg" d="M1075 258C1098 246 1122 242 1148 240C1160 239 1170 236 1178 232" id="path77"/>
+  <text class="base body blueText" x="1192" y="254" id="text78">SG</text>
+  <path class="qreg" d="M1075 302C1098 292 1122 285 1148 281C1160 279 1170 276 1178 272" id="path78"/>
+  <text class="base body greenText" x="1192" y="298" id="text79">QReg</text>
+  <path class="flow" d="M1271 204H1287" id="path79"/>
+  <rect class="card" rx="2" x="1290" y="63" width="470" height="279" id="rect79"/>
+  <text class="base module" x="1525" y="103" text-anchor="middle" id="text80">Validation-B selection</text>
+  <line class="rule" x1="1310" y1="121" x2="1740" y2="121" id="line80"/>
+  <text class="base bold" x="1320" y="158" style="font-weight:600" id="text81">Feasibility vs. Raw</text>
+  <svg id="formula_16" x="1320.00" y="192.56" width="125.24" height="22" viewBox="0 -716 4861.6 854" aria-label="\Delta\mathrm{ADE}\leq 0" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g89">
+      <g data-mml-node="math" id="g88">
+        <g data-mml-node="mi" id="g81">
+          <path data-c="394" d="M51 0Q46 4 46 7Q46 9 215 357T388 709Q391 716 416 716Q439 716 444 709Q447 705 616 357T786 7Q786 4 781 0H51ZM507 344L384 596L137 92L383 91H630Q630 93 507 344Z" id="path81"/>
+        </g>
+        <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(833,0)" id="g85">
+          <g data-mml-node="mi" id="g84">
+            <path data-c="41" d="M255 0Q240 3 140 3Q48 3 39 0H32V46H47Q119 49 139 88Q140 91 192 245T295 553T348 708Q351 716 366 716H376Q396 715 400 709Q402 707 508 390L617 67Q624 54 636 51T687 46H717V0H708Q699 3 581 3Q458 3 437 0H427V46H440Q510 46 510 64Q510 66 486 138L462 209H229L209 150Q189 91 189 85Q189 72 209 59T259 46H264V0H255ZM447 255L345 557L244 256Q244 255 345 255H447Z" id="path82"/>
+            <path data-c="44" d="M130 622Q123 629 119 631T103 634T60 637H27V683H228Q399 682 419 682T461 676Q504 667 546 641T626 573T685 470T708 336Q708 210 634 116T442 3Q429 1 228 0H27V46H60Q102 47 111 49T130 61V622ZM593 338Q593 439 571 501T493 602Q439 637 355 637H322H294Q238 637 234 628Q231 624 231 344Q231 62 232 59Q233 49 248 48T339 46H350Q456 46 515 95Q561 133 577 191T593 338Z" transform="translate(750,0)" id="path83"/>
+            <path data-c="45" d="M128 619Q121 626 117 628T101 631T58 634H25V680H597V676Q599 670 611 560T625 444V440H585V444Q584 447 582 465Q578 500 570 526T553 571T528 601T498 619T457 629T411 633T353 634Q266 634 251 633T233 622Q233 622 233 621Q232 619 232 497V376H286Q359 378 377 385Q413 401 416 469Q416 471 416 473V493H456V213H416V233Q415 268 408 288T383 317T349 328T297 330Q290 330 286 330H232V196V114Q232 57 237 52Q243 47 289 47H340H391Q428 47 452 50T505 62T552 92T584 146Q594 172 599 200T607 247T612 270V273H652V270Q651 267 632 137T610 3V0H25V46H58Q100 47 109 49T128 61V619Z" transform="translate(1514,0)" id="path84"/>
+          </g>
+        </g>
+        <g data-mml-node="mo" transform="translate(3305.8,0)" id="g86">
+          <path data-c="2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z" id="path85"/>
+        </g>
+        <g data-mml-node="mn" transform="translate(4361.6,0)" id="g87">
+          <path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="path86"/>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_17" x="1460.00" y="192.56" width="122.74" height="22" viewBox="0 -716 4764.6 854" aria-label="\Delta\mathrm{FDE}\leq 0" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g97">
+      <g data-mml-node="math" id="g96">
+        <g data-mml-node="mi" id="g90">
+          <path data-c="394" d="M51 0Q46 4 46 7Q46 9 215 357T388 709Q391 716 416 716Q439 716 444 709Q447 705 616 357T786 7Q786 4 781 0H51ZM507 344L384 596L137 92L383 91H630Q630 93 507 344Z" id="path89"/>
+        </g>
+        <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(833,0)" id="g93">
+          <g data-mml-node="mi" id="g92">
+            <path data-c="46" d="M128 619Q121 626 117 628T101 631T58 634H25V680H582V676Q584 670 596 560T610 444V440H570V444Q563 493 561 501Q555 538 543 563T516 601T477 622T431 631T374 633H334H286Q252 633 244 631T233 621Q232 619 232 490V363H284Q287 363 303 363T327 364T349 367T372 373T389 385Q407 403 410 459V480H450V200H410V221Q407 276 389 296Q381 303 371 307T348 313T327 316T303 317T284 317H232V189L233 61Q240 54 245 52T270 48T333 46H360V0H348Q324 3 182 3Q51 3 36 0H25V46H58Q100 47 109 49T128 61V619Z" id="path90"/>
+            <path data-c="44" d="M130 622Q123 629 119 631T103 634T60 637H27V683H228Q399 682 419 682T461 676Q504 667 546 641T626 573T685 470T708 336Q708 210 634 116T442 3Q429 1 228 0H27V46H60Q102 47 111 49T130 61V622ZM593 338Q593 439 571 501T493 602Q439 637 355 637H322H294Q238 637 234 628Q231 624 231 344Q231 62 232 59Q233 49 248 48T339 46H350Q456 46 515 95Q561 133 577 191T593 338Z" transform="translate(653,0)" id="path91"/>
+            <path data-c="45" d="M128 619Q121 626 117 628T101 631T58 634H25V680H597V676Q599 670 611 560T625 444V440H585V444Q584 447 582 465Q578 500 570 526T553 571T528 601T498 619T457 629T411 633T353 634Q266 634 251 633T233 622Q233 622 233 621Q232 619 232 497V376H286Q359 378 377 385Q413 401 416 469Q416 471 416 473V493H456V213H416V233Q415 268 408 288T383 317T349 328T297 330Q290 330 286 330H232V196V114Q232 57 237 52Q243 47 289 47H340H391Q428 47 452 50T505 62T552 92T584 146Q594 172 599 200T607 247T612 270V273H652V270Q651 267 632 137T610 3V0H25V46H58Q100 47 109 49T128 61V619Z" transform="translate(1417,0)" id="path92"/>
+          </g>
+        </g>
+        <g data-mml-node="mo" transform="translate(3208.8,0)" id="g94">
+          <path data-c="2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z" id="path93"/>
+        </g>
+        <g data-mml-node="mn" transform="translate(4264.6,0)" id="g95">
+          <path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="path94"/>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <text class="base body" x="1320" y="244" id="text97">Raw remains eligible</text>
+  <text class="base bold" x="1590" y="158" style="font-weight:600" id="text98">Selected</text>
+  <svg id="formula_18" x="1698.00" y="152.34" width="27.22" height="22" viewBox="0 -691.8 869.6 702.8" aria-label="c^{*}" version="1.1">
+    <g stroke="#B8510A" fill="#B8510A" stroke-width="0" transform="scale(1,-1)" id="g103">
+      <g data-mml-node="math" id="g102">
+        <g data-mml-node="msup" id="g101">
+          <g data-mml-node="mi" id="g98">
+            <path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z" id="path98"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(466,363) scale(0.707)" data-mjx-texclass="ORD" id="g100">
+            <g data-mml-node="mo" id="g99">
+              <path data-c="2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z" id="path99"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <g transform="translate(1658,204) scale(0.90) translate(-1668,-204)" id="g104">
+    <path class="selected" d="M1600 220C1630 207 1657 198 1682 194C1705 190 1720 189 1737 183" id="path103"/>
+    <path d="M1600 220l6-6 6 6-6 6Z M1676 194l6-6 6 6-6 6Z M1731 183l6-6 6 6-6 6Z" fill="#fff" stroke="#C86318" stroke-width="2" id="path104"/>
+  </g>
+  <line class="rule" x1="1310" y1="274" x2="1740" y2="274" id="line104"/>
+  <text class="base body" x="1340" y="304" id="text104">Shape → ADE → FDE → order</text>
+  <!-- Separate frozen predictor and frozen candidate transfers; no Test-time tuning. -->
+  <path class="transferBlue" d="M550 343V438" style="marker-end:none" id="path105"/>
+  <path class="transferOrange" d="M1548 343V382H1010V438" style="marker-end:none" id="path106"/>
+  <text class="base body secondary" x="780" y="404" text-anchor="middle" id="text106">Frozen before held-out Test</text>
+  <svg id="formula_14" x="520.00" y="368.31" width="27.86" height="22" viewBox="0 -705 905.6 715" aria-label="\theta^{*}" version="1.1">
+    <g stroke="#285F96" fill="#285F96" stroke-width="0" transform="scale(1,-1)" id="g112">
+      <g data-mml-node="math" id="g111">
+        <g data-mml-node="msup" id="g110">
+          <g data-mml-node="mi" id="g107">
+            <path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z" id="path107"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(502,363) scale(0.707)" data-mjx-texclass="ORD" id="g109">
+            <g data-mml-node="mo" id="g108">
+              <path data-c="2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z" id="path108"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_15" x="1025.00" y="399.34" width="27.22" height="22" viewBox="0 -691.8 869.6 702.8" aria-label="c^{*}" version="1.1">
+    <g stroke="#B75A16" fill="#B75A16" stroke-width="0" transform="scale(1,-1)" id="g118">
+      <g data-mml-node="math" id="g117">
+        <g data-mml-node="msup" id="g116">
+          <g data-mml-node="mi" id="g113">
+            <path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z" id="path112"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(466,363) scale(0.707)" data-mjx-texclass="ORD" id="g115">
+            <g data-mml-node="mo" id="g114">
+              <path data-c="2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z" id="path113"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <!-- Held-out Test data and output-level characterization. -->
+  <rect class="outer" rx="2" x="10" y="438" width="1760" height="350" id="rect118"/>
+  <text class="base stage" x="27" y="475" id="text118">(b) Held-out evaluation</text>
+  <text class="base body secondary" x="610" y="475" id="text119">held-out Test data</text>
+  <path class="transferBlue" d="M550 454V486" id="path119"/>
+  <path class="transferOrange" d="M1010 454V486" id="path120"/>
+  <rect class="card" rx="2" x="20" y="491" width="330" height="278" id="rect120"/>
+  <text class="base module" x="185" y="531" text-anchor="middle" id="text120">Held-out history</text>
+  <line class="rule" x1="40" y1="550" x2="330" y2="550" id="line120"/>
+  <path class="history" d="M68 616L134 595L200 579L266 570" id="path121"/>
+  <g fill="#fff" stroke="#66747E" stroke-width="2.2" id="g124">
+    <circle cx="68" cy="616" r="6" id="circle121"/>
+    <circle cx="134" cy="595" r="6" id="circle122"/>
+    <circle cx="200" cy="579" r="6" id="circle123"/>
+    <circle cx="266" cy="570" r="6" id="circle124"/>
+  </g>
+  <svg id="formula_5" x="58.00" y="633.72" width="46.29" height="21" viewBox="0 -442 1432.7 650" aria-label="q_{-3}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g131">
+      <g data-mml-node="math" id="g130">
+        <g data-mml-node="msub" id="g129">
+          <g data-mml-node="mi" id="g125">
+            <path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" id="path124"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(479,-150) scale(0.707)" data-mjx-texclass="ORD" id="g128">
+            <g data-mml-node="mo" id="g126">
+              <path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z" id="path125"/>
+            </g>
+            <g data-mml-node="mn" transform="translate(778,0)" id="g127">
+              <path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" id="path126"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_6" x="124.00" y="612.72" width="46.29" height="21" viewBox="0 -442 1432.7 650" aria-label="q_{-2}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g138">
+      <g data-mml-node="math" id="g137">
+        <g data-mml-node="msub" id="g136">
+          <g data-mml-node="mi" id="g132">
+            <path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" id="path131"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(479,-150) scale(0.707)" data-mjx-texclass="ORD" id="g135">
+            <g data-mml-node="mo" id="g133">
+              <path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z" id="path132"/>
+            </g>
+            <g data-mml-node="mn" transform="translate(778,0)" id="g134">
+              <path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="path133"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_7" x="190.00" y="596.72" width="46.29" height="21" viewBox="0 -442 1432.7 650" aria-label="q_{-1}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g145">
+      <g data-mml-node="math" id="g144">
+        <g data-mml-node="msub" id="g143">
+          <g data-mml-node="mi" id="g139">
+            <path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" id="path138"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(479,-150) scale(0.707)" data-mjx-texclass="ORD" id="g142">
+            <g data-mml-node="mo" id="g140">
+              <path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z" id="path139"/>
+            </g>
+            <g data-mml-node="mn" transform="translate(778,0)" id="g141">
+              <path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="path140"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_8" x="258.00" y="587.41" width="29.14" height="21" viewBox="0 -442 882.6 636" aria-label="q_{0}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g151">
+      <g data-mml-node="math" id="g150">
+        <g data-mml-node="msub" id="g149">
+          <g data-mml-node="mi" id="g146">
+            <path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" id="path145"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(479,-150) scale(0.707)" data-mjx-texclass="ORD" id="g148">
+            <g data-mml-node="mn" id="g147">
+              <path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="path146"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <svg id="formula_10" x="128.70" y="667.09" width="112.60" height="24" viewBox="0 -841.7 4136.8 881.7" aria-label="X\in\mathbb{R}^{4\times5}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g162">
+      <g data-mml-node="math" id="g161">
+        <g data-mml-node="mi" id="g152">
+          <path data-c="1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z" id="path151"/>
+        </g>
+        <g data-mml-node="mo" transform="translate(1129.8,0)" id="g153">
+          <path data-c="2208" d="M84 250Q84 372 166 450T360 539Q361 539 377 539T419 540T469 540H568Q583 532 583 520Q583 511 570 501L466 500Q355 499 329 494Q280 482 242 458T183 409T147 354T129 306T124 272V270H568Q583 262 583 250T568 230H124V228Q124 207 134 177T167 112T231 48T328 7Q355 1 466 0H570Q583 -10 583 -20Q583 -32 568 -40H471Q464 -40 446 -40T417 -41Q262 -41 172 45Q84 127 84 250Z" id="path152"/>
+        </g>
+        <g data-mml-node="msup" transform="translate(2074.6,0)" id="g160">
+          <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" id="g155">
+            <g data-mml-node="mi" id="g154">
+              <path data-c="211D" d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z" id="path153"/>
+            </g>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(755,363) scale(0.707)" data-mjx-texclass="ORD" id="g159">
+            <g data-mml-node="mn" id="g156">
+              <path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="path155"/>
+            </g>
+            <g data-mml-node="mo" transform="translate(500,0)" id="g157">
+              <path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="path156"/>
+            </g>
+            <g data-mml-node="mn" transform="translate(1278,0)" id="g158">
+              <path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" id="path157"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <path class="flow" d="M351 630H367" id="path162"/>
+  <rect class="card" rx="2" x="370" y="491" width="360" height="278" id="rect162"/>
+  <text class="base module" x="550" y="531" text-anchor="middle" id="text162">Frozen predictor</text>
+  <line class="rule" x1="390" y1="550" x2="710" y2="550" id="line162"/>
+  <text class="base body" x="550" y="588" text-anchor="middle" id="text163">Train-fitted normalization</text>
+  <svg id="formula_19" x="383.00" y="645.00" width="28.69" height="23" viewBox="0 -683 852 683" aria-label="X" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g165">
+      <g data-mml-node="math" id="g164">
+        <g data-mml-node="mi" id="g163">
+          <path data-c="1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z" id="path163"/>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <path class="flow" d="M413 658H460" id="path165"/>
+  <rect x="468" y="615" width="150" height="79" fill="#F5F8FA" stroke="#9AABB6" stroke-width="1.4" id="rect165"/>
+  <svg id="formula_20" x="523.67" y="642.53" width="38.67" height="29" viewBox="0 -705 1213.3 910" aria-label="f_{\theta^{*}}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g174">
+      <g data-mml-node="math" id="g173">
+        <g data-mml-node="msub" id="g172">
+          <g data-mml-node="mi" id="g166">
+            <path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z" id="path166"/>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(523,-150) scale(0.707)" data-mjx-texclass="ORD" id="g171">
+            <g data-mml-node="msup" id="g170">
+              <g data-mml-node="mi" id="g167">
+                <path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z" id="path167"/>
+              </g>
+              <g data-mml-node="TeXAtom" transform="translate(502,289) scale(0.707)" data-mjx-texclass="ORD" id="g169">
+                <g data-mml-node="mo" id="g168">
+                  <path data-c="2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z" id="path168"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <path class="flow" d="M627 658H662" id="path174"/>
+  <svg id="formula_21" x="674.00" y="645.54" width="43.78" height="26" viewBox="0 -1051 2048.5 1216.6" aria-label="\hat{Y}_{\mathrm{Raw}}" version="1.1">
+    <g stroke="#1E2A32" fill="#1E2A32" stroke-width="0" transform="scale(1,-1)" id="g185">
+      <g data-mml-node="math" id="g184">
+        <g data-mml-node="msub" id="g183">
+          <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" id="g178">
+            <g data-mml-node="mover" id="g177">
+              <g data-mml-node="mi" id="g175">
+                <path data-c="1D44C" d="M66 637Q54 637 49 637T39 638T32 641T30 647T33 664T42 682Q44 683 56 683Q104 680 165 680Q288 680 306 683H316Q322 677 322 674T320 656Q316 643 310 637H298Q242 637 242 624Q242 619 292 477T343 333L346 336Q350 340 358 349T379 373T411 410T454 461Q546 568 561 587T577 618Q577 634 545 637Q528 637 528 647Q528 649 530 661Q533 676 535 679T549 683Q551 683 578 682T657 680Q684 680 713 681T746 682Q763 682 763 673Q763 669 760 657T755 643Q753 637 734 637Q662 632 617 587Q608 578 477 424L348 273L322 169Q295 62 295 57Q295 46 363 46Q379 46 384 45T390 35Q390 33 388 23Q384 6 382 4T366 1Q361 1 324 1T232 2Q170 2 138 2T102 1Q84 1 84 9Q84 14 87 24Q88 27 89 30T90 35T91 39T93 42T96 44T101 45T107 45T116 46T129 46Q168 47 180 50T198 63Q201 68 227 171L252 274L129 623Q128 624 127 625T125 627T122 629T118 631T113 633T105 634T96 635T83 636T66 637Z" id="path175"/>
+              </g>
+              <g data-mml-node="mo" transform="translate(427,257) translate(-250 0)" id="g176">
+                <path data-c="5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z" id="path176"/>
+              </g>
+            </g>
+          </g>
+          <g data-mml-node="TeXAtom" transform="translate(614,-150) scale(0.707)" data-mjx-texclass="ORD" id="g182">
+            <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" id="g181">
+              <g data-mml-node="mi" id="g180">
+                <path data-c="52" d="M130 622Q123 629 119 631T103 634T60 637H27V683H202H236H300Q376 683 417 677T500 648Q595 600 609 517Q610 512 610 501Q610 468 594 439T556 392T511 361T472 343L456 338Q459 335 467 332Q497 316 516 298T545 254T559 211T568 155T578 94Q588 46 602 31T640 16H645Q660 16 674 32T692 87Q692 98 696 101T712 105T728 103T732 90Q732 59 716 27T672 -16Q656 -22 630 -22Q481 -16 458 90Q456 101 456 163T449 246Q430 304 373 320L363 322L297 323H231V192L232 61Q238 51 249 49T301 46H334V0H323Q302 3 181 3Q59 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM491 499V509Q491 527 490 539T481 570T462 601T424 623T362 636Q360 636 340 636T304 637H283Q238 637 234 628Q231 624 231 492V360H289Q390 360 434 378T489 456Q491 467 491 499Z" id="path178"/>
+                <path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(736,0)" id="path179"/>
+                <path data-c="77" d="M90 368Q84 378 76 380T40 385H18V431H24L43 430Q62 430 84 429T116 428Q206 428 221 431H229V385H215Q177 383 177 368Q177 367 221 239L265 113L339 328L333 345Q323 374 316 379Q308 384 278 385H258V431H264Q270 428 348 428Q439 428 454 431H461V385H452Q404 385 404 369Q404 366 418 324T449 234T481 143L496 100L537 219Q579 341 579 347Q579 363 564 373T530 385H522V431H529Q541 428 624 428Q692 428 698 431H703V385H697Q696 385 691 385T682 384Q635 377 619 334L559 161Q546 124 528 71Q508 12 503 1T487 -11H479Q460 -11 456 -4Q455 -3 407 133L361 267Q359 263 266 -4Q261 -11 243 -11H238Q225 -11 220 -3L90 368Z" transform="translate(1236,0)" id="path180"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <path class="flow" d="M731 630H747" id="path185"/>
+  <rect class="card" rx="2" x="750" y="491" width="520" height="278" id="rect185"/>
+  <text class="base module" x="1010" y="531" text-anchor="middle" id="text185">Compared outputs</text>
+  <line class="rule" x1="770" y1="550" x2="1250" y2="550" id="line185"/>
+  <path class="raw" d="M784 673L830 647L876 627L922 613L968 607L1014 610L1060 619" id="path186"/>
+  <circle cx="784" cy="673" r="5" fill="#fff" stroke="#687680" stroke-width="2" id="circle186"/>
+  <circle cx="1060" cy="619" r="5" fill="#fff" stroke="#687680" stroke-width="2" id="circle187"/>
+  <path class="sg" d="M784 674L830 651L876 637L922 629L968 624L1014 623L1060 626" id="path187"/>
+  <g fill="#fff" stroke="#2E6EB5" stroke-width="2" id="g190">
+    <rect x="778" y="668" width="12" height="12" id="rect187"/>
+    <rect x="870" y="631" width="12" height="12" id="rect188"/>
+    <rect x="962" y="618" width="12" height="12" id="rect189"/>
+    <rect x="1054" y="620" width="12" height="12" id="rect190"/>
+  </g>
+  <path class="selected" d="M784 675L830 655L876 643L922 637L968 633L1014 632L1060 634" id="path190"/>
+  <g fill="#fff" stroke="#C86318" stroke-width="2" id="g194">
+    <path d="M784 668l7 7-7 7-7-7Z" id="path191"/>
+    <path d="M876 636l7 7-7 7-7-7Z" id="path192"/>
+    <path d="M968 626l7 7-7 7-7-7Z" id="path193"/>
+    <path d="M1060 627l7 7-7 7-7-7Z" id="path194"/>
+  </g>
+  <line class="raw" x1="1094" y1="584" x2="1125" y2="584" id="line194"/>
+  <text class="base body" x="1139" y="593" id="text194">Raw</text>
+  <line class="sg" x1="1094" y1="626" x2="1125" y2="626" id="line195"/>
+  <rect x="1104" y="620" width="12" height="12" fill="#fff" stroke="#2E6EB5" stroke-width="2" id="rect195"/>
+  <text class="base body blueText" x="1139" y="635" id="text195">Fixed SG</text>
+  <line class="selected" x1="1094" y1="668" x2="1125" y2="668" id="line196"/>
+  <path d="M1110 661l7 7-7 7-7-7Z" fill="#fff" stroke="#C86318" stroke-width="2" id="path196"/>
+  <text class="base body orangeText" x="1139" y="677" id="text196">Selected</text>
+  <path class="flow" d="M1271 630H1287" id="path197"/>
+  <rect class="card" rx="2" x="1290" y="491" width="470" height="278" id="rect197"/>
+  <text class="base module" x="1525" y="531" text-anchor="middle" id="text197">Output-level verification</text>
+  <line class="rule" x1="1310" y1="550" x2="1740" y2="550" id="line197"/>
+  <text class="base body" x="1322" y="580" id="text198">Accuracy (ADE/FDE)</text>
+  <text class="base body" x="1322" y="620" id="text199">Geometry (Shape)</text>
+  <text class="base body" x="1322" y="660" id="text200">Boundary consistency</text>
+  <text class="base body" x="1322" y="700" id="text201">Local paired-error changes</text>
+  <line class="rule" x1="1310" y1="720" x2="1740" y2="720" id="line201"/>
+  <text class="base body" x="1525" y="752" text-anchor="middle" id="text202">Controller testing (outside this study)</text>
+</svg>

@@ -1,0 +1,214 @@
+{
+  "release_status": "staged-anonymous-review",
+  "paper_title": "Measurement and Verification of Post-Processing Effects in Short-Horizon Ego-Trajectory Prediction for Autonomous Driving",
+  "manuscript_scope": {
+    "main_figures": [
+      "Fig01",
+      "Fig02",
+      "Fig03",
+      "Fig04",
+      "Fig05",
+      "Fig06"
+    ],
+    "supplementary_figures": [
+      "FigS07",
+      "FigS08"
+    ],
+    "tables": [
+      "Table01",
+      "Table02",
+      "Table03",
+      "Table04A",
+      "Table04B",
+      "Table05",
+      "Table06"
+    ]
+  },
+  "figures": {
+    "Fig01": {
+      "path": "figures/Fig01_final.svg",
+      "sha256": "914e5e104a09c1619ddb7951d44c54711b2a6f2377f91924720683546d8aceef",
+      "viewBox": "0 0 1780 800",
+      "width": "178mm",
+      "height": "80mm",
+      "font_families": [
+        "Arial,Helvetica,",
+        "Cambria Math"
+      ],
+      "text_elements": 39,
+      "embedded_raster_count": 0
+    },
+    "Fig02": {
+      "path": "figures/Fig02_final.svg",
+      "sha256": "33784f8cf6f24988d4a88ffa42bb5c26ab5695a090721c87fdf58dcfb11aa645",
+      "viewBox": "0 0 421.465783 154.318076",
+      "width": "178mm",
+      "height": "65.174mm",
+      "font_families": [
+        "Arial",
+        "STIXGeneral"
+      ],
+      "text_elements": 45,
+      "embedded_raster_count": 0
+    },
+    "Fig03": {
+      "path": "figures/Fig03_final.svg",
+      "sha256": "09667bd1a694523f9c7f19787fed3e6378cfa701f7ea9c0eeb8bc162823463be",
+      "viewBox": "0 0 504.566929 464.88189",
+      "width": "178mm",
+      "height": "164.000mm",
+      "font_families": [
+        "Arial"
+      ],
+      "text_elements": 103,
+      "embedded_raster_count": 4
+    },
+    "Fig04": {
+      "path": "figures/Fig04_final.svg",
+      "sha256": "dd2b2879a828a0037c4cde11a9c967b83f9df8f74a395dff409f1e4556b0d250",
+      "viewBox": "0 0 504.566929 133.228346",
+      "width": "178mm",
+      "height": "47.000mm",
+      "font_families": [
+        "Arial",
+        "DejaVu Sans"
+      ],
+      "text_elements": 23,
+      "embedded_raster_count": 0
+    },
+    "Fig05": {
+      "path": "figures/Fig05_final.svg",
+      "sha256": "4104ec128ee20cc75d6859b79ef78e66cb4abceaeaed9231b11fcce14919672c",
+      "viewBox": "0 0 478.733469 255.069266",
+      "width": "178mm",
+      "height": "94.838mm",
+      "font_families": [
+        "Arial"
+      ],
+      "text_elements": 56,
+      "embedded_raster_count": 0
+    },
+    "Fig06": {
+      "path": "figures/Fig06_final.svg",
+      "sha256": "bf156712cf34746eccee5beda9293a85fd73322ec0cff15e215dd5832670900f",
+      "viewBox": "0 0 487.050596 222.933266",
+      "width": "178mm",
+      "height": "81.474mm",
+      "font_families": [
+        "Arial"
+      ],
+      "text_elements": 32,
+      "embedded_raster_count": 0
+    }
+  },
+  "supplementary_figures": {
+    "FigS07": {
+      "svg_sha256": "d281c1d8167545f44e1dcc8432b7e8950dd1a4fa28ff76080bed3c56dd72fa90",
+      "png_sha256": "df79a97e62a68db5807d82d88bb9c2614ed05a52a9efbb2d525b8d24295af7ba"
+    },
+    "FigS08": {
+      "svg_sha256": "a0aca847bd9b5e109f175fd0f950f18de4786ed7903daf28ac1f4da569536f08",
+      "png_sha256": "950656ff430e2687e50ba7cc7a7bfb7af24d27839d8f10a497703268ffeccc9d"
+    }
+  },
+  "figure_3_panel_b": {
+    "scene": "b0b26c1e5a1140e69598422f12ae1dc0",
+    "sample": "53a3b6ba49af484d9d0bab0ffb9dea01",
+    "log": "7a0fde44c3504eaeb18f9ad83bed65bc",
+    "window": 19
+  },
+  "figure_3_s1_source_trace": {
+    "fig3_selection_summary.json": {
+      "original_sha256": "8f57ad6e3c3e3a0c191dcb82a5562e05d8e2468faf062d4ae2afeb9fa67e3eb2",
+      "anonymous_sha256": "7f732efb71df2ae2309512c7fd7e4915182f0b9edfb777ba75682cb57f832f62",
+      "neutralization": "local paths only"
+    },
+    "Fig03_case_selection.csv": {
+      "original_sha256": "4c0add5872ff498cb8343f503e449c864ac8144a5b116efdb2be0d94f434fa71",
+      "anonymous_sha256": "4c0add5872ff498cb8343f503e449c864ac8144a5b116efdb2be0d94f434fa71",
+      "neutralization": "none"
+    },
+    "build_fig03_v6.py": {
+      "original_sha256": "7566c2a98ed122767c4e6bd51b477de9d48cf78093cffd0ce374d7af4facb1ce",
+      "anonymous_sha256": "734c0d5b0bd23b7cab16faa3c0147401c0c7fc12121e42545f18a9e1ba77d34c",
+      "neutralization": "local paths only"
+    }
+  },
+  "scientific_source_hashes": {
+    "analysis/Table05_source.csv": "8c76522946ee08a8db216fda20be29a68162fb655d96ecf503f2fa280d72c4ac",
+    "analysis/Table06_source.csv": "cd8b542446e5c3a196881fa803e342bff390b73977ec74c520f70ec711581ac5",
+    "analysis/analysis_QA.json": "cadf4f6134e9b8f663e9e774e9dbf31fcefbefb788bf191c50b4c3be4678f85c",
+    "analysis/figS07_aggregation_summary.csv": "3277cbeffd5a89aef65078bab2325a4b77dbdb64a840d5474f7edc3085999022",
+    "analysis/figS07_internal_configuration.csv": "82a9c73422713f43e0b9d56fc2ca6638d0e0f0de869374fe26046bd56c263275",
+    "analysis/figS07_lolo_effects.csv": "eca0408f08fd05dfb7588edd4404092603291355bd64a3c010eb96aed4f4b6d1",
+    "analysis/input_sha256.json": "72b09302a268e8af3e2c8ebbdccad5e6eacbd1da0ea00150d2856f6350dffbbb",
+    "analysis/new_descriptor_paired.csv": "ad739d1fa2b6d2aa739da8a8ed436ff6b7dc661b001b125e2117c078a582955a",
+    "analysis/new_descriptor_run_summary.csv": "07736c1f05cde6c765e337fbf530af233d534b83762dacc1e42b4e336f1ae095",
+    "analysis/new_descriptor_summary.csv": "a23b25b9a752115bccd5d8685a1223ffb280fbe83139ca6931924d72238aa17d",
+    "configs/experiment/protocol.yaml": "b7ec91548f3bf6ceba09e4407f754cd3298279aac501c657468a844c711c0406",
+    "configs/experiment/training_config_v1.json": "b668e87d7c164bd73dbb8f6fa521a42be0f7fbfe040e21e09c1a86115d49cd63",
+    "configs/postprocessing/smoother_pool_v1.json": "38a3acd8a381afdbdde38a76df88dd1b2f8382be619614ef637d5ba976e09365",
+    "configs/predictors/model_architectures_v1.json": "cbf46d9832fa2b4d1272ff15043ab925473ce908e0cd3f87d2e5cac7a839aa1d",
+    "figures/Fig03_separation_source.json": "b9c8f5b453f4edda2bb819300e9819f9d6dd8ada6edc9e26554f034bcf22fb5e",
+    "figures/FigS07_source_manifest.json": "58478dde6d415a1c78185b4bf53d5881b6bf1736dc094d0ddb9a4981801388ba",
+    "figures/recorded_values.json": "d9bbcd27d7220ad8a3d972e511412ae05a9d2dd223a02cc059076e9d83129c3d",
+    "results/figure_data/fig01_workflow.csv": "f2a86a7bc96d0d40f7976db12c8d7164b7477d18660e81d5a5a3ddde7f30d56f",
+    "results/figure_data/fig02_log_effects.csv": "481cee4be9b6efcd60c1f223e8bb44afc46df78f8259bd59148f59398ffb7799",
+    "results/figure_data/fig04_aux_geometry_effects.csv": "4575a943ecc180220124f5a68900c37479c5aa851f1220d895074bc77137cf5f",
+    "results/figure_data/fig04_e3_strategy_summary.csv": "e46d7ffaa73460056ab989cd9157c847bfee25bf3594ff3aa52819846555e758",
+    "results/figure_data/fig05_threshold_summary.csv": "492f5f8a40fce19c4be71f2a16267b5efc54600c4992b7e44e1fafdbbe5e7db0",
+    "results/figure_data/fig06_case_metrics.csv": "4dc4d07411ffa225dc91b4c1e403e36ab23dc00b478151f7a4236364caa8dbaf",
+    "results/figure_data/fig07_selection_sensitivity.csv": "51c91a204d20d6370179b5475635ffcb8b1467ac71d3f1229135ec17e3b95f5f",
+    "results/figure_data/fig07_timestamp_sensitivity.csv": "953036003135e2d76b84b88eb1eb3b89733379a757bda0d93b5102ae7a26f9f8",
+    "results/figure_data/fig08_kinematic_controls.csv": "8f98b103c541b4f57ba7c0d0686560653ca012c65c2dbb15f05537afae169a2b",
+    "results/figure_data/fig3_selected_cases.csv": "8af34dceeac38a95b417be957e9256e5e836ff7c6e49ae504c1cef5416ceb088",
+    "results/figure_data/figS07_aggregation_summary.csv": "3277cbeffd5a89aef65078bab2325a4b77dbdb64a840d5474f7edc3085999022",
+    "results/figure_data/figS07_internal_configuration.csv": "82a9c73422713f43e0b9d56fc2ca6638d0e0f0de869374fe26046bd56c263275",
+    "results/figure_data/figS07_lolo_effects.csv": "eca0408f08fd05dfb7588edd4404092603291355bd64a3c010eb96aed4f4b6d1",
+    "results/provenance/Fig03_case_selection.csv": "8af34dceeac38a95b417be957e9256e5e836ff7c6e49ae504c1cef5416ceb088",
+    "results/provenance/Fig03_debug_keys.csv": "6f21e7aafbd7ad8397da949463d19e72e267870c00758acdedbb859517d09864",
+    "results/provenance/fig3_selection_summary.json": "02401ad7d6da90b08d6ad7ff330f9479a9b4655f85e21838b10bd66634c7f054",
+    "results/provenance/test_window_index.csv": "e5fff4a1caceb2754edd3c72bddbaf95d478d27a46232c053e9e58a1c95df415",
+    "results/summary/formal_runs_summary.csv": "e5204a4d3d76856750097bb89d94b6fb967f7a8154e219dc73f18b54d7b94ce9",
+    "results/tables/Table05_timing_sensitivity.csv": "00a35433e420574f216183a2ae3d56cdb2ea4d42651a8b130df73c5cfde3acdf",
+    "results/tables/Table06_kinematic_controls.csv": "3d3f910ed97aa8b5a831f0ecb48d0c9c6f6a8fcd572aa1312f1b1216cc2cfd2e",
+    "results/tables/primary_paired_effects.csv": "deed65c07f6fda5ef12965e89917b542e7e383c765b3fa58a39503e484517bac",
+    "results/tables/primary_strategy_means.csv": "bae66e5ad52c871130cddf78e09898a7f3c0fd272f2124009a95c766cc260657",
+    "results/tables/reproduced/formal_paired_effects.csv": "950060af63fc0b74a2fc64b5cb5e2a3d4149551894c2a2c466021eb12c86236f",
+    "results/tables/reproduced/formal_strategy_means.csv": "cb95b5872f1d68fc31ab53d594127a645a8c9614194ad81c67a4029b35483e67"
+  },
+  "table_source_hashes": {
+    "analysis/Table05_source.csv": "8c76522946ee08a8db216fda20be29a68162fb655d96ecf503f2fa280d72c4ac",
+    "analysis/Table06_source.csv": "cd8b542446e5c3a196881fa803e342bff390b73977ec74c520f70ec711581ac5",
+    "results/tables/Table05_timing_sensitivity.csv": "00a35433e420574f216183a2ae3d56cdb2ea4d42651a8b130df73c5cfde3acdf",
+    "results/tables/Table06_kinematic_controls.csv": "3d3f910ed97aa8b5a831f0ecb48d0c9c6f6a8fcd572aa1312f1b1216cc2cfd2e"
+  },
+  "split_definitions": {
+    "total": {
+      "logs": 68,
+      "scenes": 850,
+      "windows": 26499
+    },
+    "Train": {
+      "logs": 49,
+      "scenes": 597,
+      "windows": 18623
+    },
+    "Validation-A": {
+      "logs": 6,
+      "scenes": 80,
+      "windows": 2489
+    },
+    "Validation-B": {
+      "logs": 6,
+      "scenes": 80,
+      "windows": 2486
+    },
+    "held-out Test": {
+      "logs": 7,
+      "scenes": 93,
+      "windows": 2901
+    }
+  },
+  "reproduction_note": "The publication SVGs are locked artwork. Reproduction exports these assets after validating source hashes; it does not retrain models or replot them."
+}

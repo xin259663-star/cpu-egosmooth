@@ -16,7 +16,7 @@ Shape is the paper-facing name for the implementation metric `history_aware_mean
 - `results/figure_data/figS07_lolo_effects.csv` contains all leave-one-log-out effects; panel (b) uses rows where `metric=history_aware_mean_jerk` for the Fixed-SG-minus-Raw and Selected-minus-Fixed contrasts.
 - `results/figure_data/figS07_internal_configuration.csv` records the Primary, IC1, and IC2 Shape effects and frozen configuration definitions used in panel (c).
 
-The locked publication files are `figures/FigS07_Diagnostics.png` and `figures/FigS07_Diagnostics.svg`. Their current CEP hashes are recorded in `figures/manifest_cep.json`.
+The current locked publication files are `figures/FigS07_Diagnostics.png` and `figures/FigS07_Diagnostics.svg`; their authoritative hashes are recorded in the root `manifest_current.json`.
 
 ## Reproduction path
 
@@ -26,4 +26,4 @@ Run:
 python scripts/reproduce_figures.py --fig S07 --root .
 ```
 
-This validates the saved source records and writes byte-identical locked SVG/PNG exports to `figures/reproduced/`. It does not recompute the experiments or regenerate a new S07 layout. The locked publication SVG and PNG remain the submission assets, with current hashes in `figures/manifest_cep.json`.
+This validates the saved source records and writes byte-identical locked SVG/PNG exports. It does not recompute the experiments or regenerate a new S07 layout. The locked publication SVG and PNG remain the submission assets, with hashes recorded in `manifest_current.json`.

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178mm" height="100.12mm" viewBox="0 0 1600 900">
+<title>Editable scientific figure</title><desc>All labels, lines and markers are editable SVG objects.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172235}.axis{stroke:#172235;stroke-width:2;fill:none}.grid{stroke:#D8DEE4;stroke-width:1}.ref{stroke:#AEB7C0;stroke-width:2;stroke-dasharray:8 7}.thin{stroke-width:2;fill:none}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="35" y="55" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(a)</text>
+<text x="83" y="55" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Aggregation summary</text>
+<text x="35" y="555" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(b)</text>
+<text x="83" y="555" font-size="24" font-weight="700" text-anchor="start" fill="#172235">LOLO sign stability of ΔShape</text>
+<text x="890" y="555" font-size="26" font-weight="700" text-anchor="start" fill="#172235">(c)</text>
+<text x="938" y="555" font-size="24" font-weight="700" text-anchor="start" fill="#172235">Internal-configuration direction</text>
+<line x1="70" y1="130" x2="1510" y2="130" stroke="#172235" stroke-width="2"/>
+<line x1="70" y1="205" x2="1510" y2="205" stroke="#667483" stroke-width="1.5"/>
+<text x="80" y="180" font-size="20" font-weight="700" text-anchor="start" fill="#172235">Contrast / aggregation</text>
+<text x="720" y="180" font-size="20" font-weight="700" text-anchor="start" fill="#172235">ΔADE (mm)</text>
+<text x="990" y="180" font-size="20" font-weight="700" text-anchor="start" fill="#172235">ΔFDE (mm)</text>
+<text x="1270" y="180" font-size="20" font-weight="700" text-anchor="start" fill="#172235">ΔShape (m s⁻³)</text>
+<text x="80" y="270" font-size="20" font-weight="400" text-anchor="start" fill="#172235">Fixed − Raw · window</text>
+<text x="720" y="270" font-size="20" font-weight="400" text-anchor="start" fill="#172235">−1.093</text>
+<text x="990" y="270" font-size="20" font-weight="400" text-anchor="start" fill="#172235">−1.352</text>
+<text x="1270" y="270" font-size="20" font-weight="400" text-anchor="start" fill="#172235">−0.831</text>
+<text x="80" y="340" font-size="20" font-weight="400" text-anchor="start" fill="#172235">Fixed − Raw · log-equal</text>
+<text x="720" y="340" font-size="20" font-weight="400" text-anchor="start" fill="#172235">−1.327</text>
+<text x="990" y="340" font-size="20" font-weight="400" text-anchor="start" fill="#172235">−1.329</text>
+<text x="1270" y="340" font-size="20" font-weight="400" text-anchor="start" fill="#172235">−0.942</text>
+<text x="80" y="410" font-size="20" font-weight="400" text-anchor="start" fill="#172235">Selected − Fixed · window</text>
+<text x="720" y="410" font-size="20" font-weight="400" text-anchor="start" fill="#172235">−1.398</text>
+<text x="990" y="410" font-size="20" font-weight="400" text-anchor="start" fill="#172235">+0.927</text>
+<text x="1270" y="410" font-size="20" font-weight="400" text-anchor="start" fill="#172235">−0.038</text>
+<text x="80" y="480" font-size="20" font-weight="400" text-anchor="start" fill="#172235">Selected − Fixed · log-equal</text>
+<text x="720" y="480" font-size="20" font-weight="400" text-anchor="start" fill="#172235">−1.704</text>
+<text x="990" y="480" font-size="20" font-weight="400" text-anchor="start" fill="#172235">+0.842</text>
+<text x="1270" y="480" font-size="20" font-weight="400" text-anchor="start" fill="#172235">−0.034</text>
+<text x="360" y="650" font-size="19" font-weight="400" text-anchor="middle" fill="#172235">L1</text>
+<text x="428" y="650" font-size="19" font-weight="400" text-anchor="middle" fill="#172235">L2</text>
+<text x="496" y="650" font-size="19" font-weight="400" text-anchor="middle" fill="#172235">L3</text>
+<text x="564" y="650" font-size="19" font-weight="400" text-anchor="middle" fill="#172235">L4</text>
+<text x="632" y="650" font-size="19" font-weight="400" text-anchor="middle" fill="#172235">L5</text>
+<text x="700" y="650" font-size="19" font-weight="400" text-anchor="middle" fill="#172235">L6</text>
+<text x="768" y="650" font-size="19" font-weight="400" text-anchor="middle" fill="#172235">L7</text>
+<text x="310" y="727" font-size="20" font-weight="400" text-anchor="end" fill="#172235">Fixed − Raw</text>
+<text x="360" y="720" font-size="25" font-weight="700" text-anchor="middle" fill="#2F7FB3">−</text>
+<text x="428" y="720" font-size="25" font-weight="700" text-anchor="middle" fill="#2F7FB3">−</text>
+<text x="496" y="720" font-size="25" font-weight="700" text-anchor="middle" fill="#2F7FB3">−</text>
+<text x="564" y="720" font-size="25" font-weight="700" text-anchor="middle" fill="#2F7FB3">−</text>
+<text x="632" y="720" font-size="25" font-weight="700" text-anchor="middle" fill="#2F7FB3">−</text>
+<text x="700" y="720" font-size="25" font-weight="700" text-anchor="middle" fill="#2F7FB3">−</text>
+<text x="768" y="720" font-size="25" font-weight="700" text-anchor="middle" fill="#2F7FB3">−</text>
+<text x="310" y="817" font-size="20" font-weight="400" text-anchor="end" fill="#172235">Selected − Fixed</text>
+<text x="360" y="810" font-size="25" font-weight="700" text-anchor="middle" fill="#E89429">−</text>
+<text x="428" y="810" font-size="25" font-weight="700" text-anchor="middle" fill="#E89429">−</text>
+<text x="496" y="810" font-size="25" font-weight="700" text-anchor="middle" fill="#E89429">−</text>
+<text x="564" y="810" font-size="25" font-weight="700" text-anchor="middle" fill="#E89429">−</text>
+<text x="632" y="810" font-size="25" font-weight="700" text-anchor="middle" fill="#E89429">−</text>
+<text x="700" y="810" font-size="25" font-weight="700" text-anchor="middle" fill="#E89429">−</text>
+<text x="768" y="810" font-size="25" font-weight="700" text-anchor="middle" fill="#E89429">−</text>
+<text x="450" y="875" font-size="17" font-weight="400" text-anchor="middle" fill="#667483">Each column omits one held-out Test log.</text>
+<text x="930" y="650" font-size="19" font-weight="700" text-anchor="start" fill="#172235">Comparison</text>
+<text x="1210" y="650" font-size="19" font-weight="700" text-anchor="middle" fill="#172235">Primary</text>
+<text x="1330" y="650" font-size="19" font-weight="700" text-anchor="middle" fill="#172235">IC1</text>
+<text x="1450" y="650" font-size="19" font-weight="700" text-anchor="middle" fill="#172235">IC2</text>
+<text x="1120" y="737" font-size="19" font-weight="400" text-anchor="end" fill="#172235">Fixed − Raw</text>
+<text x="1210" y="730" font-size="18" font-weight="700" text-anchor="middle" fill="#2F7FB3">
+<tspan x="1210" dy="0">−</tspan>
+<tspan x="1210" dy="20.7">−0.831</tspan>
+</text>
+<text x="1330" y="730" font-size="18" font-weight="700" text-anchor="middle" fill="#2F7FB3">
+<tspan x="1330" dy="0">−</tspan>
+<tspan x="1330" dy="20.7">−1.060</tspan>
+</text>
+<text x="1450" y="730" font-size="18" font-weight="700" text-anchor="middle" fill="#2F7FB3">
+<tspan x="1450" dy="0">−</tspan>
+<tspan x="1450" dy="20.7">−0.892</tspan>
+</text>
+<text x="1120" y="857" font-size="19" font-weight="400" text-anchor="end" fill="#172235">Selected − Fixed</text>
+<text x="1210" y="850" font-size="18" font-weight="700" text-anchor="middle" fill="#E89429">
+<tspan x="1210" dy="0">−</tspan>
+<tspan x="1210" dy="20.7">−0.038</tspan>
+</text>
+<text x="1330" y="850" font-size="18" font-weight="700" text-anchor="middle" fill="#E89429">
+<tspan x="1330" dy="0">+</tspan>
+<tspan x="1330" dy="20.7">+0.051</tspan>
+</text>
+<text x="1450" y="850" font-size="18" font-weight="700" text-anchor="middle" fill="#E89429">
+<tspan x="1450" dy="0">+</tspan>
+<tspan x="1450" dy="20.7">+0.029</tspan>
+</text>
+</svg>

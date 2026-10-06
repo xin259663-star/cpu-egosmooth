@@ -10,6 +10,8 @@ Fig06(a) numbers retain column-specific units. Blue denotes negative and orange 
 
 Publication PNGs come from matching SVG sources. Fig01 also includes an editable draw.io source; no native draw.io CLI export is claimed. Reproduction validates saved case/count records and exports locked SVG/PNG byte-for-byte; it does not independently rebuild the study from raw nuScenes or regenerate every panel from CSV. S07 retains its locked artwork and three unchanged source CSVs.
 
-The current manifest is figures/manifest_v7_1.json. Actual previous v6 current assets are recoverably preserved in figures/archive/pre_v7_1/. Anonymous-mirror acceptance must separately compare public API assets against this manifest and scan identity-filtered metadata. A successful source push alone is not mirror acceptance or submission-system signoff.
+This document records a superseded publication version. Its final manifest and artwork are retained under `figures/archive/superseded_v7_3/`; the current anonymous-review output is defined by the root `manifest_current.json`. Anonymous-mirror acceptance must separately compare public assets against the current manifest and scan identity-filtered metadata.
 
-Fig1 icon-only patch v7.2: five original Tabler Outline SVGs replace the prior schematic symbols. Original paths are unchanged. Icon provenance and MIT notice are recorded in docs/FIG1_ICON_SOURCES.md and figures/icon_sources/tabler/. Only Fig1 artwork/embedded image changes; protocol, text, other figures and scientific sources remain unchanged. The current manifest filename remains figures/manifest_v7_1.json and its internal version identifies this patch.
+Historical Fig1 icon-only patch v7.2: five original Tabler Outline SVGs replaced the prior schematic symbols. Original paths are unchanged, and the provenance and MIT notice remain recorded in `docs/FIG1_ICON_SOURCES.md` and `figures/icon_sources/tabler/`.
+
+Historical Fig1 patch v7.3 unified the four upper protocol schematics. It is preserved as a superseded archive and is not a current output.

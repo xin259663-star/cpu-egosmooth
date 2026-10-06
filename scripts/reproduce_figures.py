@@ -1,42 +1,53 @@
-"""Validate and export locked CEP publication figures; no experiment is rerun."""
+"""Validate frozen sources and export the current locked publication figures."""
 from __future__ import annotations
-import argparse, hashlib, json, shutil
+
+import argparse
+import hashlib
+import json
+import shutil
 from pathlib import Path
 
 CURRENT = tuple(f"Fig{i:02d}" for i in range(1, 7)) + ("FigS07", "FigS08")
 
-def sha(path):
+def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
-def main():
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--fig", default="all")
-    p.add_argument("--root", type=Path, default=Path("."))
-    p.add_argument("--output", type=Path)
-    a = p.parse_args()
-    root = a.root.resolve()
-    manifest = json.loads((root / "figures/manifest_cep.json").read_text(encoding="utf-8"))
-    keys = CURRENT if a.fig.lower() == "all" else (f"Fig{int(a.fig):02d}",) if a.fig.isdigit() else (a.fig,)
-    if not all(key in CURRENT for key in keys):
-        p.error("Current set: Fig01-Fig06, FigS07, FigS08")
-    for item in manifest["source_assets"]:
-        path = root / item["path"]
-        if sha(path) != item["sha256"]:
-            raise SystemExit(f"Source mismatch: {path}")
-    dest_dir = (a.output or root / "figures/reproduced").resolve()
-    dest_dir.mkdir(parents=True, exist_ok=True)
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--root", type=Path, default=Path("."))
+    parser.add_argument("--fig", default="all")
+    parser.add_argument("--output", type=Path, default=Path("reproduced_figures"))
+    args = parser.parse_args()
+    root = args.root.resolve()
+    manifest = json.loads((root / "manifest_current.json").read_text(encoding="utf-8"))
+    keys = CURRENT if args.fig.lower() == "all" else (args.fig,)
+    if not all(k in CURRENT for k in keys):
+        parser.error("Current set: Fig01–Fig06, FigS07, FigS08")
+    for relative, expected in manifest["scientific_source_hashes"].items():
+        source = root / relative
+        if not source.is_file() or sha256(source) != expected:
+            raise SystemExit(f"Scientific source mismatch: {relative}")
+    dest = args.output.resolve()
+    dest.mkdir(parents=True, exist_ok=True)
     for key in keys:
-        for item in manifest["figures"][key]["assets"]:
-            source = root / item["path"]
-            if sha(source) != item["sha256"]:
-                raise SystemExit(f"Locked artwork mismatch: {source}")
-            dest = dest_dir / source.name
-            if source.resolve() == dest:
-                raise SystemExit("Output directory must differ from source directory")
-            shutil.copyfile(source, dest)
-            if sha(dest) != item["sha256"]:
-                raise SystemExit(f"Export mismatch: {dest}")
-        print(f"{key}: locked SVG/PNG exported and verified")
+        if key.startswith("FigS"):
+            stem = "FigS07_Diagnostics" if key == "FigS07" else "FigS08_PredictorEffects"
+            record = manifest["supplementary_figures"][key]
+            files = [(root / "figures" / f"{stem}.svg", record["svg_sha256"]),
+                     (root / "figures" / f"{stem}.png", record["png_sha256"])]
+        else:
+            record = manifest["figures"][key]
+            files = [(root / record["path"], record["sha256"])]
+        for source, expected in files:
+            if not source.is_file() or sha256(source) != expected:
+                raise SystemExit(f"Publication asset mismatch: {source.name}")
+            target = dest / source.name
+            if source.resolve() == target:
+                raise SystemExit("Output must differ from the source directory")
+            shutil.copyfile(source, target)
+            if sha256(target) != expected:
+                raise SystemExit(f"Export mismatch: {target.name}")
+        print(f"{key}: validated and exported")
 
 if __name__ == "__main__":
     main()
