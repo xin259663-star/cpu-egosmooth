@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TEXT = {".py", ".json", ".yaml", ".yml", ".toml", ".md", ".mjs", ".js", ".txt", ".cff"}
 SKIP = {".git", ".venv", "venv", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
-PRIVATE = re.compile(r"(?i)([A-Z]:\\Users\\|[A-Z]:\\|/Users/|/home/[^/]+/|12944)")
+PRIVATE = re.compile(r"(?i)([A-Z]:\\[A-Za-z0-9_. -]{2,}|/Users/|/home/[^/]+/|12944)")
 HIGH_RISK = re.compile(r"(?i)(OPENAI_API_KEY|github_pat_[A-Za-z0-9_]+|ghp_[A-Za-z0-9]+|sk-[A-Za-z0-9]{12,}|AKIA[A-Z0-9]{12,}|DEEPSEEK\s*[:=])")
 ASSIGNMENT = re.compile(r"(?i)(api[_-]?key|apikey|password|passwd|bearer|authorization|cookie|session)\s*[:=]\s*['\"][^'\"]+['\"]")
 ALLOW = {"PUBLIC_RELEASE_AUDIT.md", "PUBLIC_RELEASE_SECURITY_REPORT.md", "FINAL_SECURITY_SCAN.md", "final_security_scan.py", "security_scan.py"}

@@ -1,4 +1,4 @@
-"""Export Table 5/6 from existing processed data; no new experiment or fit."""
+"""Export current Table 5 and historical timing sensitivity from saved data."""
 from __future__ import annotations
 import argparse,csv
 from pathlib import Path
@@ -18,12 +18,12 @@ def main():
         selected=float(next(r["relative_reduction_percent"] for r in block if r["comparison"].startswith("Validation")))
         rows.append({"Timing definition":label,"Fixed SG − Raw":f"{fixed:.1f}%","Selected − Raw":f"{selected:.1f}%","Difference":f"{selected-fixed:+.1f} pp"})
     assert [list(r.values())[1:] for r in rows]==[["44.3%","46.3%","+2.0 pp"],["23.5%","24.7%","+1.2 pp"]]
-    write(out/"Table05_timing_sensitivity.csv",list(rows[0]),rows)
+    write(out/"Supplementary_timing_sensitivity.csv",list(rows[0]),rows)
     controls=read(root/"results/figure_data/fig08_kinematic_controls.csv");rows=[]
     for code,label in [("Neural overall","Neural Raw"),("CV","CV"),("CA","CA"),("CTRV","CTRV")]:
         r=next(r for r in controls if r["method"]==code and r["strategy"]=="Raw");shape=float(r["history_aware_mean_geometric_jerk"])
         rows.append({"Control":label,"ADE (m)":f"{float(r['ADE']):.4f}","FDE (m)":f"{float(r['FDE']):.4f}","Shape (m s⁻³)":"0" if shape==0 else f"{shape:.3f}"})
     assert [list(r.values())[1:] for r in rows]==[["0.8019","1.7214","1.878"],["1.2467","2.6035","0.275"],["1.8183","4.0561","0"],["1.0786","2.3398","0.436"]]
-    write(out/"Table06_kinematic_controls.csv",list(rows[0]),rows)
-    print("Table 5/6 exported from unchanged full-precision source data")
+    write(out/"Table05_kinematic_controls.csv",list(rows[0]),rows)
+    print("Current Table 5 and historical timing sensitivity exported from unchanged sources")
 if __name__=="__main__":main()

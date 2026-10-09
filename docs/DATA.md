@@ -13,7 +13,7 @@ The predictor input has shape `(N, 4, 5)` and the future target has shape `(N, 6
 
 The evaluated strategies are Raw, Fixed SG(5,2), and Validation-B-selected. Complete prediction archives are not included in this repository.
 
-## Figure 3
+## Current Figure 2 (historical Figure 3)
 
 The provenance files identify the selected held-out windows, deterministic selection rules, run/model/seed, and metric values. The selected-trajectory NPZ, original map assets, sample annotations, and original metadata tables are not redistributed. Trajectory and map visualizations can be regenerated using the corresponding saved predictions and a local nuScenes installation.
 

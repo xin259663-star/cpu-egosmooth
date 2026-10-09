@@ -1,6 +1,6 @@
 # Current anonymous-review publication figures
 
-The current manuscript has six main figures, `Fig01`-`Fig06`, supplied as locked SVG artwork. The supplement has `FigS07_Diagnostics` and `FigS08_PredictorEffects`, supplied as SVG and PNG. The source-of-truth mapping and SHA-256 hashes are in the root `manifest_current.json`.
+The revised manuscript has five main figures, `Fig01`-`Fig05`, supplied as locked SVG artwork. `FigS07_Diagnostics` remains a supplementary figure; `FigS08_PredictorEffects` is retained as historical artwork supporting the revised Supplementary Table S08, not a current supplementary figure caption. The source-of-truth mapping and SHA-256 hashes are in the root `manifest_current.json`.
 
 Earlier journal-specific diagrams, manifests, and reproduced Fig.7/Fig.8 outputs are retained under `archive/superseded_journal_release/`. They are historical and are not current publication artwork.
 

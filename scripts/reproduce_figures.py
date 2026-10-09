@@ -7,7 +7,7 @@ import json
 import shutil
 from pathlib import Path
 
-CURRENT = tuple(f"Fig{i:02d}" for i in range(1, 7)) + ("FigS07", "FigS08")
+CURRENT = tuple(f"Fig{i:02d}" for i in range(1, 6)) + ("FigS07", "FigS08")
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -22,7 +22,7 @@ def main() -> None:
     manifest = json.loads((root / "manifest_current.json").read_text(encoding="utf-8"))
     keys = CURRENT if args.fig.lower() == "all" else (args.fig,)
     if not all(k in CURRENT for k in keys):
-        parser.error("Current set: Fig01–Fig06, FigS07, FigS08")
+        parser.error("Current set: Fig01-Fig05, FigS07, FigS08 (historical artwork)")
     for relative, expected in manifest["scientific_source_hashes"].items():
         source = root / relative
         if not source.is_file() or sha256(source) != expected:

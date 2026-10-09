@@ -17,7 +17,7 @@ def sha256(path: Path) -> str:
 
 def test_current_locked_assets():
     manifest = json.loads((ROOT / "manifest_current.json").read_text(encoding="utf-8"))
-    assert set(manifest["figures"]) == {f"Fig{i:02d}" for i in range(1, 7)}
+    assert set(manifest["figures"]) == {f"Fig{i:02d}" for i in range(1, 6)}
     assert set(manifest["supplementary_figures"]) == {"FigS07", "FigS08"}
     for item in manifest["figures"].values():
         assert sha256(ROOT / item["path"]) == item["sha256"]
@@ -36,11 +36,11 @@ def test_export_current_collection(tmp_path):
         text=True,
     )
     assert completed.returncode == 0, completed.stderr
-    assert len(list(tmp_path.iterdir())) == 10
+    assert len(list(tmp_path.iterdir())) == 9
     assert (tmp_path / "FigS08_PredictorEffects.svg").is_file()
 
 
-@pytest.mark.parametrize("name", ["Fig07", "Fig08"])
+@pytest.mark.parametrize("name", ["Fig06", "Fig07", "Fig08"])
 def test_export_rejects_superseded_numbered_figures(tmp_path, name):
     completed = subprocess.run(
         [sys.executable, str(ROOT / "scripts/reproduce_figures.py"), "--root", str(ROOT), "--fig", name, "--output", str(tmp_path)],

@@ -1,5 +1,5 @@
 
-# Figure 3 Provenance
+# Current Figure 2 Provenance (historical Figure 3)
 
 ## Formal identity
 

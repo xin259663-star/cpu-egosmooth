@@ -2,7 +2,7 @@
 
 ## Current publication artwork
 
-`python scripts/reproduce_figures.py --fig all --root .` verifies frozen scientific-source and locked-artwork hashes in the root `manifest_current.json`, then copies byte-identical Fig01-Fig06 SVGs and FigS07-FigS08 SVG/PNG files to the selected output directory. This is a checked publication-artwork export. It does **not** recompute panels from raw nuScenes data. Figure 3 map crops and S07/S08 layouts are frozen artwork.
+`python scripts/reproduce_figures.py --fig all --root .` verifies frozen scientific-source and locked-artwork hashes in the root `manifest_current.json`, then copies byte-identical Fig01-Fig05 SVGs, FigS07 SVG/PNG, and retained historical FigS08 SVG/PNG to the selected output directory. This is a checked publication-artwork export. It does **not** recompute panels from raw nuScenes data. Current Figure 2 map crops and the supplementary layouts are frozen artwork.
 
 ## Processed results and diagnostic definitions
 

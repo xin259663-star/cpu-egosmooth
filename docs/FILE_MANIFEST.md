@@ -2,19 +2,18 @@
 
 - `README.md`, `CITATION.cff`, `LICENSE`: project overview, citation metadata and software license.
 - `configs/`, `src/egosmooth/`: existing frozen scientific protocol and implementation, unchanged in the v7.1 publication polish.
-- `figures/Fig01.png/.svg` through `Fig06.png/.svg`: current main figures at 178 mm.
-- `figures/Fig01_final.svg` through `figures/Fig06_final.svg`: current locked main figures.
-- `figures/FigS07_Diagnostics.png/.svg` and `figures/FigS08_PredictorEffects.png/.svg`: current locked supplementary figures.
-- `manifest_current.json`: authoritative SHA-256 manifest for current artwork, scientific sources, and Table 5/6.
+- `figures/Fig01_final.svg` through `figures/Fig05_final.svg`: current locked main figures.
+- `figures/FigS07_Diagnostics.png/.svg`: current supplementary figure; `figures/FigS08_PredictorEffects.png/.svg` is retained historical artwork supporting revised Table S08.
+- `manifest_current.json`: authoritative SHA-256 manifest for current artwork, scientific sources, and current Table 5 mapping.
 - `figures/archive/pre_v6/`: earlier PDF exports and Fig08 PNG; superseded artwork, not current outputs.
-- `scripts/reproduce_figures.py`: hash-checked export of Fig01–Fig06 + FigS07/S08.
-- `scripts/reproduce_publication_tables.py`: Table 5/6 export from existing full-precision source CSVs.
-- `results/tables/Table05_timing_sensitivity.csv`: manuscript-precision Table 5.
-- `results/tables/Table06_kinematic_controls.csv`: manuscript-precision Table 6.
-- `results/figure_data/fig07_timestamp_sensitivity.csv`: Table 5 full-precision source; historical filename retained.
-- `results/figure_data/fig08_kinematic_controls.csv`: Table 6 full-precision source; historical filename retained.
-- `results/figure_data/fig07_selection_sensitivity.csv`: current Fig.6(c) data.
-- `results/figure_data/fig3_selected_cases.csv` and `results/provenance/Fig03*`: locked Fig.3/S1 case identity and metrics.
+- `scripts/reproduce_figures.py`: hash-checked export of Fig01-Fig05 + FigS07 and retained historical FigS08.
+- `scripts/reproduce_publication_tables.py`: export from existing full-precision sources; current Table 5 is kinematic controls.
+- `results/tables/Table05_timing_sensitivity.csv`: historical timing-sensitivity output, not current Table 5.
+- `results/tables/Table06_kinematic_controls.csv`: current Table 5 source under historical filename.
+- `results/figure_data/fig07_timestamp_sensitivity.csv`: historical timing-sensitivity source.
+- `results/figure_data/fig08_kinematic_controls.csv`: current Table 5 full-precision source under historical filename.
+- `results/figure_data/fig07_selection_sensitivity.csv`: current Fig.5(c) data under historical filename.
+- `results/figure_data/fig3_selected_cases.csv` and `results/provenance/Fig03*`: locked current Fig.2/S1 case identity and metrics under historical filenames.
 - `results/figure_data/figS07_*.csv`: S07 aggregation, LOLO and internal-configuration inputs.
 - `docs/FIGURE3_PROVENANCE.md`, `docs/FIGURES07_PROVENANCE.md`, `docs/PUBLICATION_V7_1_PROVENANCE.md`: case, supplement and release records.
 - `results/summary/formal_runs_summary.csv`: unchanged 50-run summary.

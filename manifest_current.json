@@ -7,8 +7,7 @@
       "Fig02",
       "Fig03",
       "Fig04",
-      "Fig05",
-      "Fig06"
+      "Fig05"
     ],
     "supplementary_figures": [
       "FigS07",
@@ -18,11 +17,17 @@
       "Table01",
       "Table02",
       "Table03",
-      "Table04A",
-      "Table04B",
-      "Table05",
-      "Table06"
-    ]
+      "Table04",
+      "Table05"
+    ],
+    "main_table_mapping": {
+      "Table01": "Primary log-exclusive roles and sample counts",
+      "Table02": "Lightweight predictors",
+      "Table03": "Validation-B candidate pool",
+      "Table04": "Primary window-weighted strategy means",
+      "Table05": "Kinematic controls (historical Table06)"
+    },
+    "supplementary_display_note": "FigS07 is current; historical FigS08 artwork is retained as a source record while the revised supplement presents Table S08."
   },
   "figures": {
     "Fig01": {
@@ -40,57 +45,45 @@
     },
     "Fig02": {
       "path": "figures/Fig02_final.svg",
-      "sha256": "33784f8cf6f24988d4a88ffa42bb5c26ab5695a090721c87fdf58dcfb11aa645",
-      "viewBox": "0 0 421.465783 154.318076",
-      "width": "178mm",
-      "height": "65.174mm",
-      "font_families": [
-        "Arial",
-        "STIXGeneral"
-      ],
-      "text_elements": 45,
-      "embedded_raster_count": 0
-    },
-    "Fig03": {
-      "path": "figures/Fig03_final.svg",
-      "sha256": "09667bd1a694523f9c7f19787fed3e6378cfa701f7ea9c0eeb8bc162823463be",
+      "sha256": "0e630a514ab6847ad49eed7e9e77f10afe5a3501500b64d930bfb246e06964bf",
       "viewBox": "0 0 504.566929 464.88189",
       "width": "178mm",
       "height": "164.000mm",
       "font_families": [
-        "Arial"
+        "Arial",
+        "STIXGeneral"
       ],
       "text_elements": 103,
       "embedded_raster_count": 4
     },
-    "Fig04": {
-      "path": "figures/Fig04_final.svg",
-      "sha256": "dd2b2879a828a0037c4cde11a9c967b83f9df8f74a395dff409f1e4556b0d250",
+    "Fig03": {
+      "path": "figures/Fig03_final.svg",
+      "sha256": "78993324368e93a4eecf41d79242b607e0ba94c6fccd8deaff2cb118cabbac81",
       "viewBox": "0 0 504.566929 133.228346",
       "width": "178mm",
       "height": "47.000mm",
       "font_families": [
-        "Arial",
-        "DejaVu Sans"
+        "Arial"
       ],
       "text_elements": 23,
       "embedded_raster_count": 0
     },
-    "Fig05": {
-      "path": "figures/Fig05_final.svg",
-      "sha256": "4104ec128ee20cc75d6859b79ef78e66cb4abceaeaed9231b11fcce14919672c",
+    "Fig04": {
+      "path": "figures/Fig04_final.svg",
+      "sha256": "feab60e43ab0ef8e71d3aad5693854f9727ee7dc1d0de0f2a498ac3918113e41",
       "viewBox": "0 0 478.733469 255.069266",
       "width": "178mm",
       "height": "94.838mm",
       "font_families": [
-        "Arial"
+        "Arial",
+        "DejaVu Sans"
       ],
       "text_elements": 56,
       "embedded_raster_count": 0
     },
-    "Fig06": {
-      "path": "figures/Fig06_final.svg",
-      "sha256": "bf156712cf34746eccee5beda9293a85fd73322ec0cff15e215dd5832670900f",
+    "Fig05": {
+      "path": "figures/Fig05_final.svg",
+      "sha256": "1527d940b222b2f126367bea34cb9aa5a8c5b64fcbf30e83f9e5a0acfd5a63f6",
       "viewBox": "0 0 487.050596 222.933266",
       "width": "178mm",
       "height": "81.474mm",
@@ -210,5 +203,17 @@
       "windows": 2901
     }
   },
-  "reproduction_note": "The publication SVGs are locked artwork. Reproduction exports these assets after validating source hashes; it does not retrain models or replot them."
+  "reproduction_note": "The publication SVGs are locked artwork. Reproduction exports these assets after validating source hashes; it does not retrain models or replot them.",
+  "figure_2_panel_b": {
+    "scene": "b0b26c1e5a1140e69598422f12ae1dc0",
+    "sample": "53a3b6ba49af484d9d0bab0ffb9dea01",
+    "log": "7a0fde44c3504eaeb18f9ad83bed65bc",
+    "window": 19,
+    "historical_figure_label": "Fig03"
+  },
+  "current_main_table_source": {
+    "path": "results/tables/Table06_kinematic_controls.csv",
+    "sha256": "3d3f910ed97aa8b5a831f0ecb48d0c9c6f6a8fcd572aa1312f1b1216cc2cfd2e",
+    "historical_filename": true
+  }
 }
