@@ -33,6 +33,7 @@
     "Fig01": {
       "path": "figures/Fig01_final.svg",
       "sha256": "914e5e104a09c1619ddb7951d44c54711b2a6f2377f91924720683546d8aceef",
+      "anonymous_mirror_sha256": "914e5e104a09c1619ddb7951d44c54711b2a6f2377f91924720683546d8aceef",
       "viewBox": "0 0 1780 800",
       "width": "178mm",
       "height": "80mm",
@@ -46,6 +47,7 @@
     "Fig02": {
       "path": "figures/Fig02_final.svg",
       "sha256": "0e630a514ab6847ad49eed7e9e77f10afe5a3501500b64d930bfb246e06964bf",
+      "anonymous_mirror_sha256": "52671674228659881af43f92720fa0405ecfbe11346db74057bf233b287a9eeb",
       "viewBox": "0 0 504.566929 464.88189",
       "width": "178mm",
       "height": "164.000mm",
@@ -59,6 +61,7 @@
     "Fig03": {
       "path": "figures/Fig03_final.svg",
       "sha256": "78993324368e93a4eecf41d79242b607e0ba94c6fccd8deaff2cb118cabbac81",
+      "anonymous_mirror_sha256": "36c9982b7dfdeccaf81f49bcae73ff3f2576335a24d76ad7ecd0237390be9a4a",
       "viewBox": "0 0 504.566929 133.228346",
       "width": "178mm",
       "height": "47.000mm",
@@ -71,6 +74,7 @@
     "Fig04": {
       "path": "figures/Fig04_final.svg",
       "sha256": "feab60e43ab0ef8e71d3aad5693854f9727ee7dc1d0de0f2a498ac3918113e41",
+      "anonymous_mirror_sha256": "73546e4bf56dca51f82b5997816417846386cc52c3b0ebb4a841a35b9a538f9c",
       "viewBox": "0 0 478.733469 255.069266",
       "width": "178mm",
       "height": "94.838mm",
@@ -84,6 +88,7 @@
     "Fig05": {
       "path": "figures/Fig05_final.svg",
       "sha256": "1527d940b222b2f126367bea34cb9aa5a8c5b64fcbf30e83f9e5a0acfd5a63f6",
+      "anonymous_mirror_sha256": "439e28302fa5566cc5aed1052de1cf0643693fa997fff4b52244e482c1316453",
       "viewBox": "0 0 487.050596 222.933266",
       "width": "178mm",
       "height": "81.474mm",

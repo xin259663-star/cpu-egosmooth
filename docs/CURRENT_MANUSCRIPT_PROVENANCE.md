@@ -4,6 +4,10 @@ The current manuscript has five main figures and five main tables. `manifest_cur
 
 Current Figure 2(b) preserves the historical Fig. 3(b) selection: scene `b0b26c1e5a1140e69598422f12ae1dc0`, sample `53a3b6ba49af484d9d0bab0ffb9dea01`, log `7a0fde44c3504eaeb18f9ad83bed65bc`, window `19`. No case was reselected. The historical original-file hashes in Supplement S1.5 refer to the original package bytes, not to anonymous-mirror bytes. For local public-source paths and hashes use `manifest_current.json`; anonymous-mirror bytes require an independent public read-back because text and SVG metadata may be filtered.
 
+## Public mirror hash read-back
+
+On 2026-10-09, the original anonymous URL was read independently. The five current SVG paths and their public-byte SHA-256 values are recorded in each figure's `anonymous_mirror_sha256` field in `manifest_current.json`; the existing `sha256` fields remain the unfiltered source-byte hashes. The anonymous mirror rewrites RDF/metadata URLs in four SVGs, so those public-byte hashes differ from the source-byte hashes. Fig01 is byte-identical. FigS07/FigS08 SVG/PNG and the historical-filename source for current Table 5 were byte-identical. This distinction must be preserved in any provenance claim; a source-byte hash alone does not validate the filtered public SVG.
+
 ## Log identifier availability
 
 `results/provenance/test_window_index.csv` contains 2,901 held-out Test windows and the following seven distinct Test log tokens:
