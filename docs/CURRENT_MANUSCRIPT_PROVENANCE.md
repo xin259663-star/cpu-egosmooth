@@ -8,6 +8,8 @@ Current Figure 2(b) preserves the historical Fig. 3(b) selection: scene `b0b26c1
 
 On 2026-10-09, the original anonymous URL was read independently. The five current SVG paths and their public-byte SHA-256 values are recorded in each figure's `anonymous_mirror_sha256` field in `manifest_current.json`; the existing `sha256` fields remain the unfiltered source-byte hashes. The anonymous mirror rewrites RDF/metadata URLs in four SVGs, so those public-byte hashes differ from the source-byte hashes. Fig01 is byte-identical. FigS07/FigS08 SVG/PNG and the historical-filename source for current Table 5 were byte-identical. This distinction must be preserved in any provenance claim; a source-byte hash alone does not validate the filtered public SVG.
 
+The three current `provenance/frozen_fig3_sources/` files are byte-identical between the local source and the audited anonymous ZIP. Their current public-byte hashes are in `figure_3_s1_source_trace[*].anonymous_sha256`. The previously recorded anonymous digests are retained separately as `historical_anonymous_sha256`; `original_sha256` refers to historical original-package bytes. Neither historical digest is a checksum for a current public path.
+
 ## Log identifier availability
 
 `results/provenance/test_window_index.csv` contains 2,901 held-out Test windows and the following seven distinct Test log tokens:

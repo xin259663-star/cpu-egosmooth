@@ -7,6 +7,8 @@ import sys
 
 import pytest
 
+from scripts.reproduce_figures import verified_digest
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -60,3 +62,26 @@ def test_table_source_hashes():
     for name, count in [("Table05_timing_sensitivity.csv", 2), ("Table06_kinematic_controls.csv", 4)]:
         with (ROOT / "results/tables" / name).open(encoding="utf-8", newline="") as handle:
             assert len(list(csv.DictReader(handle))) == count
+
+
+def test_source_and_anonymous_asset_hashes(tmp_path):
+    asset = tmp_path / "figure.svg"
+    source = b"source artwork"
+    anonymous = b"anonymous artwork"
+    source_hash = hashlib.sha256(source).hexdigest()
+    anonymous_hash = hashlib.sha256(anonymous).hexdigest()
+    asset.write_bytes(source)
+    assert verified_digest(asset, (source_hash, anonymous_hash)) == source_hash
+    asset.write_bytes(anonymous)
+    assert verified_digest(asset, (source_hash, anonymous_hash)) == anonymous_hash
+    asset.write_bytes(b"unexpected artwork")
+    with pytest.raises(SystemExit, match="Publication asset mismatch"):
+        verified_digest(asset, (source_hash, anonymous_hash))
+
+
+def test_current_anonymous_provenance_hashes():
+    manifest = json.loads((ROOT / "manifest_current.json").read_text(encoding="utf-8"))
+    for name, record in manifest["figure_3_s1_source_trace"].items():
+        path = ROOT / "provenance/frozen_fig3_sources" / name
+        assert sha256(path) == record["anonymous_sha256"]
+        assert len(record["original_sha256"]) == 64

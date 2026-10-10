@@ -118,18 +118,21 @@
   "figure_3_s1_source_trace": {
     "fig3_selection_summary.json": {
       "original_sha256": "8f57ad6e3c3e3a0c191dcb82a5562e05d8e2468faf062d4ae2afeb9fa67e3eb2",
-      "anonymous_sha256": "7f732efb71df2ae2309512c7fd7e4915182f0b9edfb777ba75682cb57f832f62",
-      "neutralization": "local paths only"
+      "historical_anonymous_sha256": "7f732efb71df2ae2309512c7fd7e4915182f0b9edfb777ba75682cb57f832f62",
+      "anonymous_sha256": "e9fa1ca4047df79cf9526f0dd3c8b60e6f3aa8bbf6ed78203cc8762596c971d7",
+      "neutralization": "historical source was path-neutralized; current public bytes equal local source"
     },
     "Fig03_case_selection.csv": {
       "original_sha256": "4c0add5872ff498cb8343f503e449c864ac8144a5b116efdb2be0d94f434fa71",
-      "anonymous_sha256": "4c0add5872ff498cb8343f503e449c864ac8144a5b116efdb2be0d94f434fa71",
-      "neutralization": "none"
+      "historical_anonymous_sha256": "4c0add5872ff498cb8343f503e449c864ac8144a5b116efdb2be0d94f434fa71",
+      "anonymous_sha256": "8af34dceeac38a95b417be957e9256e5e836ff7c6e49ae504c1cef5416ceb088",
+      "neutralization": "current public bytes equal local source"
     },
     "build_fig03_v6.py": {
       "original_sha256": "7566c2a98ed122767c4e6bd51b477de9d48cf78093cffd0ce374d7af4facb1ce",
-      "anonymous_sha256": "734c0d5b0bd23b7cab16faa3c0147401c0c7fc12121e42545f18a9e1ba77d34c",
-      "neutralization": "local paths only"
+      "historical_anonymous_sha256": "734c0d5b0bd23b7cab16faa3c0147401c0c7fc12121e42545f18a9e1ba77d34c",
+      "anonymous_sha256": "36a7bbaa149364c8ab06333b76d5b12f77b79cd1f51a284d2814b6da855a3779",
+      "neutralization": "historical source was path-neutralized; current public bytes equal local source"
     }
   },
   "scientific_source_hashes": {

@@ -12,6 +12,15 @@ CURRENT = tuple(f"Fig{i:02d}" for i in range(1, 6)) + ("FigS07", "FigS08")
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
+
+def verified_digest(path: Path, expected: tuple[str, ...]) -> str:
+    if not path.is_file():
+        raise SystemExit(f"Publication asset missing: {path.name}")
+    actual = sha256(path)
+    if actual not in expected:
+        raise SystemExit(f"Publication asset mismatch: {path.name}")
+    return actual
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path("."))
@@ -37,15 +46,16 @@ def main() -> None:
                      (root / "figures" / f"{stem}.png", record["png_sha256"])]
         else:
             record = manifest["figures"][key]
-            files = [(root / record["path"], record["sha256"])]
-        for source, expected in files:
-            if not source.is_file() or sha256(source) != expected:
-                raise SystemExit(f"Publication asset mismatch: {source.name}")
+            files = [(root / record["path"], record["sha256"], record.get("anonymous_mirror_sha256"))]
+        for item in files:
+            source = item[0]
+            expected = tuple(value for value in item[1:] if value)
+            actual = verified_digest(source, expected)
             target = dest / source.name
             if source.resolve() == target:
                 raise SystemExit("Output must differ from the source directory")
             shutil.copyfile(source, target)
-            if sha256(target) != expected:
+            if sha256(target) != actual:
                 raise SystemExit(f"Export mismatch: {target.name}")
         print(f"{key}: validated and exported")
 
