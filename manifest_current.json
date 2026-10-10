@@ -223,5 +223,9 @@
     "path": "results/tables/Table06_kinematic_controls.csv",
     "sha256": "3d3f910ed97aa8b5a831f0ecb48d0c9c6f6a8fcd572aa1312f1b1216cc2cfd2e",
     "historical_filename": true
+  },
+  "split_identifier_sources": {
+    "results/provenance/primary_split_log_tokens.json": "7451f09612e18c22f5d562c1b927269dacbb23e9d9a745dc661573043eaf17af",
+    "results/provenance/primary_split_log_tokens.csv": "4f49ca6a4ca4c13ff2567e3e2c3b0fe427dee4e36a9b4f8c7213cb4ad2a8d9a4"
   }
 }

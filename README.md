@@ -37,7 +37,7 @@ Map context is used only for qualitative visualization and is not provided to pr
 
 `manifest_current.json` identifies the revised five-figure scope, the current Table 5 source, exact artwork hashes, and unchanged frozen scientific-source hashes. The prior six-figure state remains recoverable from Git commit `b062d14`; older journal-specific artwork is under `figures/archive/`. The historical Table05 timing and Table06 kinematic filenames are retained without renaming their scientific data.
 
-See `docs/CURRENT_MANUSCRIPT_PROVENANCE.md` for current-to-historical file mapping, exact Test log identifiers, and the unresolved Train/Validation identifier gap. The repository supports source audit and hash-checked artwork export, not a self-contained rerun of all numerical results.
+See `docs/CURRENT_MANUSCRIPT_PROVENANCE.md` for current-to-historical file mapping and verified split identifiers. Complete Train, Validation-A, Validation-B, and Test log-token lists are available in `results/provenance/primary_split_log_tokens.json` and `.csv`. The repository supports source audit and hash-checked artwork export, not a self-contained rerun of all numerical results.
 
 ## Repository structure
 

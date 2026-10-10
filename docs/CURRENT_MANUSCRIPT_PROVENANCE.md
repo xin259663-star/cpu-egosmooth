@@ -24,7 +24,11 @@ The three current `provenance/frozen_fig3_sources/` files are byte-identical bet
 | `f61e86a4241b484484da143725dce8fc` | 280 |
 | `f93e8d66ce4b4fbea7062d19b1fe29fb` | 155 |
 
-The current public records state 49/6/6 Train/Validation-A/Validation-B log counts, but do not contain their token lists. Their exact identifiers remain unverified. Counts and the seven Test tokens cannot reconstruct those lists. Do not claim that this repository alone supports an end-to-end numerical rerun.
+The complete historical primary split was recovered on 2026-10-10. `results/provenance/primary_split_log_tokens.json` and `.csv` disclose all 49 Train, 6 Validation-A, 6 Validation-B, and 7 Test log tokens. These are copied from the existing primary split, not inferred from counts or generated anew. The four groups are pairwise log-disjoint and contain 68 unique logs.
+
+The original split SHA-256 is `6c4fbc453907b967850cb61e8a8e1d38197da64b7e4a33ac91f728e0484887fc`. It matches the split digest recorded in the historical formal dataset manifest. That manifest has SHA-256 `3d127e50b4ba61a06a72f5db04f376544ce1cd677928c23c5a648cf158a2a6eb`, matching all 50 primary predictor-seed run references. Split log/scene/window counts match the manuscript, and the seven Test tokens independently match all 2,901 records in the frozen Test index. Current exported identifier-file hashes are recorded in `manifest_current.json` under `split_identifier_sources`; original historical files and private paths are not redistributed.
+
+This closes the split-identifier disclosure gap, but does not establish an end-to-end numerical rerun. Licensed data, predictions or checkpoints, and further implementation verification remain separate requirements.
 
 ## Verification scope
 
