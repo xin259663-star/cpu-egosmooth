@@ -10,7 +10,7 @@ def test_fig1_icons_are_original_tabler_outline():
     assert sources['official_repository']=='tabler/tabler-icons'
     assert sources['path_modified'] is False
     figure=E.parse(archive/'Fig01.svg').getroot()
-    icons=figure.findall('{http://www.w3.org/2000/svg}svg')
+    icons=[child for child in figure if child.tag==figure.tag]
     assert len(icons)==len(sources['sources'])==5
     for icon,item in zip(icons,sources['sources']):
         raw=(ROOT/item['path']).read_bytes()
