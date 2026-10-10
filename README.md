@@ -4,9 +4,9 @@
 
 **Status:** Anonymous manuscript reproduction repository
 
-This repository contains frozen scientific sources, provenance records, and locked publication artwork for anonymous review. The revised manuscript has five main figures, `figures/Fig01_final.svg` through `figures/Fig05_final.svg`. Supplementary Figure S07 is retained; the historical S08 artwork remains as a source record for the revised Supplementary Table S08. The reproduction command validates hashes and exports exact artwork copies. It does not retrain models, recompute results, or reselect qualitative cases.
+This repository contains frozen scientific sources, provenance records, and locked publication artwork for anonymous review. The revised manuscript has five main figures and five main tables. Supplementary diagnostics and historical artwork are retained separately from these ten main items. The reproduction command validates hashes and exports exact artwork copies. It does not retrain models, recompute results, or reselect qualitative cases.
 
-## Current manuscript mapping
+## Current manuscript mapping: Fig. 1–5 and Table 1–5
 
 | Item | Content |
 | --- | --- |
@@ -15,10 +15,13 @@ This repository contains frozen scientific sources, provenance records, and lock
 | Fig. 3 | Paired post-processing effects (historical Fig04) |
 | Fig. 4 | Local paired-error and boundary/endpoint effects (historical Fig05) |
 | Fig. 5 | Selected-candidate composition and rule sensitivity (historical Fig06) |
+| Table 1 | Primary log-exclusive roles and sample counts |
+| Table 2 | Lightweight predictors |
+| Table 3 | Validation-B candidate pool |
 | Table 4 | Primary window-weighted strategy means |
 | Table 5 | Kinematic controls (`results/tables/Table06_kinematic_controls.csv`, historical filename) |
-| Fig. S07 | Supplementary sensitivity diagnostics |
-| Table S08 | Predictor-stratified paired effects; historical FigS08 artwork retained as source |
+
+Supplementary sensitivity diagnostics use `figures/FigS07_Diagnostics.*`. The historical `figures/FigS08_PredictorEffects.*` artwork remains a source record for the revised supplement; neither is an additional main figure or table.
 
 ## Reproduction
 
